@@ -1,0 +1,707 @@
+SCWG WG4 Telecon Minutes for 2017-08-21
+
+Agenda:
+  https://docs.google.com/document/d/1YrIVIK_hrtfD6M2-oBIqIrUpZ36AaDmdhQ3KmJqkKl0/edit
+Topics:
+  1. Getting situated
+  2. Introductions
+  3. Questions relating to WG purpose and operations
+  4. What is our direction particularly
+Present:
+  Chris Chapman, Nate Jacobs, Katie Chapman, Bruce Caron, Ivar Martin, Laura
+  ??? (muted)
+Audio:
+  <>
+
+Topic: Getting situated
+
+Chris Chapman: Okay so lets...
+Nate Jacobs: Anonymous Kraken? Sorry, sorry. I'm just looking at the animals on
+  the Google Docs. What is a kraken? Is that like an octopus? Do you see them?
+Bruce Caron: a mythological beast
+Nate Jacobs: Sorry Chris, continue. I didn't mean to interrupt.
+Chris Chapman: Oh that's fine. I'm going to actually switch rooms really quick
+  that I'm in, because Katie's in the same room as me, and her audio is picking
+  up on my mike.
+Nate Jacobs: Okay.
+Chris Chapman: But we can go ahead.
+
+Topic: Introductions
+
+Chris Chapman: I think we wanted to start with introductions. Who would like to
+  go first?
+Nate Jacobs: Why don't you go first Chris.
+Chris Chapman: I'm Chris Chapman, I've been working on this crazy idea about
+  changing research for a few years. This is a lot bigger of a thing than I
+  realized when I started into this idea. My wife and I co-founded a startup,
+  really little right now, working to change the way research is done.
+Nate Jacobs: What's your background. Do you have a CS background, Chris?
+Chris Chapman: Well, varied. The first part of undergrad I studied music, piano
+  performance. That led into different ways. A lot of this came out of a masters
+  project in information systems.
+  ... That's it about me. Go ahead Nate.
+Nate Jacobs: OK. I'm in kind of a weird place right now. I guess everybody's
+  kind of in a weird transition with the scholarly commons because it brings
+  into ... So I basically was in my own isolated little world doing
+  neuroscience research up until a couple months ago, like six months ago or
+  so. Most of my background is in systems neuroscience. I was studying sensory
+  physiology and cortical networks and a little bit of ascemic stroke. When I
+  was doing my postdoc I kind of realized I wanted basically to switch into
+  working on scholarly commons ... so hopefully at some point we'll be in the
+  startup world but right now I'm just trying to wrap my head around the
+  issues. Like Chris said, it's like some of it seems simple, right, so I think
+  everyone has their own little thread that kind of brings them in. They're
+  like 'oh yeah, this is simple. I can help work on this or help fix this, and
+  then you kind of realize that everything's all connected. It's this big
+  monster. There's like business models, all this stuff that Elsevier's doing,
+  and there's all these technical challenges that have kept drawing me in. So
+  basically I stopped the postdoc and I'm now working at UCLA as technically a
+  mobile platform manager. Basically, I was grossly under-qualified for the
+  job. So basically I'm just learning ... that environment... which is nice.
+  They've kind of taken me under their wing. I've done some programming for
+  data science type of stuff, analyzing data. But that's like a whole different
+  thing than actually developing software. So basically I'm just getting
+  comfortable with that... I'll probably be doing this for a year, and then the
+  next step is to start working more actively in developing software solutions
+  and random things for scholarly comm. So that's kind of where I'm at.
+Chris Chapman: Great. Katie it looks like you're typing something?
+Katie Chapman: I, obviously because I'm Chris' wife, I'm the other co-founder. I
+  guess my greatest qualification to do anything with any of this is that I'm
+  an exception thinker. I think outside the box, I think inside the box, I
+  think all around the box. It's just the way my brain works. So I tend to see
+  things that often get missed otherwise, which is part of what actually led us
+  into doing any of this. I was doing some research of my own, and didn't like
+  what I had to work with in terms of technology, and I was like, hey Chris,
+  build me something different! Fateful last words. As the scholarly commons
+  has come forward, I'm hugely ecstatic about this idea. My biggest job outside
+  of work is that I'm a mom of six kids, so that's a busy life.
+Nate Jacobs: Are they still young?
+Katie Chapman: The youngest is three. They range. Our oldest is fourteen. So
+  they're young enough to be a handful and a half, and old enough to get into
+  other sorts of handfuls and a half. But I'm excited to have school start.
+Nate Jacobs: I'm one of six. I like the big family lifestyle.
+Katie Chapman: It's nice. We love it. It's a bit of busy, and summer has been
+  especially busy...it just is that way, but it is good. I guess I claim myself
+  as a citizen scientist. I would imagine that that will likely come up, but I
+  tend to, again, with that whole exception thinker brain, tend to think of
+  that a little bit different than most people would. I have some
+  off-the-beaten path ideas of what citizen science can be. And I just like to
+  research all sorts of random things. Other than scholarly communication, I
+  don't have a specific research field that is my main domain. I research
+  whatever I need to. I actually studied liberal arts. It's kind of the way my
+  brain rolls, I think about it all.
+Bruce Caron: It looks like we have someone else on the line...
+Ivar Martin: Maybe its me. I just called in...should I introduce myself?
+Chris Chapman: Go ahead
+Ivar Martin: My name is Ivar Martin. It's kind of an unusual name. I am a
+  theoretical physicist. I'm at the Argon National Lab. I used to ... Los
+  Alamos for quite a while. So basically my day job is theoretical physics, and
+  as a result there are a lot of things that have to do with collaboration,
+  publication somehow and so forth. So it's kind of like that the way that I
+  live. The reason I joined this community basically is that I heard about
+  FORCE11 from very different sources. I decided to see I really curious to see
+  so I join about a month ago. I have been following a bit what are the topics
+  that people are excited about. The other reason besides my scientific work is
+  that a few years ago I started a project which is an online framework for
+  collaboration and could be for publication and so on. It's tailored more or
+  less to the workflow we used in physics, and I'm trying it out with a bunch
+  of my colleagues on various collaborative projects. But it would be
+  interesting to see if it resonates with the broader community. The framework
+  has some elements of Wikipedia, some elements of stack overflow. For example,
+  there is the potential for reputation building. But at this point the main
+  focus is to fill the gap between whiteboard discussion and really putting a
+  publication together and sending it out to the journals. I think there is
+  quite a significant gap at the present time, if we stay within the standard
+  paradigm of journal publication. But I could even imagine that it could morph
+  into something else. I was rereading the manifesto of FORCE11, and lots if
+  not all of the issues mentioned there are, of course, the things that are
+  real pains in scientific communication...something that I have been trying to
+  think through and address in this project of mine.
+Chris Chapman: Great! Thank you, Ivar. What is your online framework called?
+Ivar Martin: It's called knowen.org. It's not particularly elaborate at this
+  point, but if you go to the landing page you can get a feel for it. You can
+  also, without signing up or anything, you can go in and explore.
+Chris Chapman: OK. Thank you. Bruce?
+Bruce Caron: Oh yeah, hi. My name is Bruce Caron and I'm currently working as
+  the community architect for a large group of earth science data researchers
+  called Earth Science Information Partners. I'm an anthropologist in my own
+  training. I'm interested in how communities form and the differences in
+  various types of communities. And I think science is a very particular group,
+  and so I think its really important that we support the emergent team science
+  efforts and that we are embracing the fact that we are moving from a time of
+  scarcity to a time of abundance in terms of data availability and also
+  digital object availability. I've been working on open science for a long
+  time, and I'm a little bit dismayed by how it just hasn't [grown] like I
+  thought it would. Of course it has a whole deadweight of history in terms of
+  the academy and academic publishing against it. I think one of the reasons
+  open science hasn't grown is that there really isn't yet a vision of where
+  that would lead. I'm interesting in the use of commoning as one of the
+  potential visions for where open science may go, in the sense of re-commoning
+  universities, professional associations, and other ways that scientists work
+  together. ESIP is a really good example of this because its a member-run,
+  member-led, member-owned community. It's all volunteer. 115 different
+  organizations from all the NASA labs, through a bunch of universities,
+  through private companies like Lockheed, Raytheon, and folks like that. And
+  they're all here to work together and solve the problems of using several
+  petabytes of earth science data to solve the earth, climate problem. I blog
+  at cyberstructure.org, and there's a lot of ESIP information there. A month
+  ago tomorrow, we had a charrette at Ostrom workshop in Indiana University,
+  talk about building a pattern repository, a pattern lexicon, I don't know
+  whether it's a full language for the academy. I think since then everyone's
+  been on vacation, so we have to figure out, gather people together after
+  August is through, and start moving ahead with this. And I was involved in
+  some of FORCE11 Scholarly Commons workshop efforts over the past year too.
+  I think that some of that discussion for me missed the point that its not
+  just adding layers of technology to solve the problem, that it's really
+  adding a new cultural center for how the academy runs, and how people work
+  with each other and acknowledge each others' work. I'm really into commoning,
+  I guess.
+Chris Chapman: Great. Thank you. David Farmer wanted to join today, but is at a
+  workshop this week. So we'll have to hear from him next week. OK, anything
+  else before we move forward?
+
+Topic: Questions relating to WG purpose and operations
+
+Katie Chapman: I have one question for how do say it, Ivar?
+Ivar Martin: Well I say it ..., but the standard one is Ivar.
+Katie Chapman: Ivar, do you have the agenda?
+Ivar Martin: The agenda...I think I looked at it, yes. So that was the agenda
+  which was sent around a couple days ago.
+Nate Jacobs: I pasted it into the chat room. I don't know if you are calling in
+  or if you have a computer.
+Ivar Martin: I didn't get a chance to download Zoom, so basically I just called
+  in.
+Nate Jacobs: Ah. OK. OK.
+Ivar Martin: But I can follow the agenda on the ... that was sent around, yes.
+Katie Chapman: But it would be lovely if you could follow along and make sure
+  that what we have put in of what you've shared is accurate. We're going to
+  kind of group scribe. I will try to scribe, but I think its easier if we all
+  kind of throw in as we're going through so that we can get a better coverage.
+Ivar Martin: Yeah. Maybe I will download Zoom and install it so I'm more on the
+  same page with the rest of you guys.
+Chris Chapman: It would be nice if we this was kind of like a W3C group and we
+  could just follow along in IRC, but its not, so...
+Nate Jacobs: Could we do something like in Slack? I haven't used IRC...
+Chris Chapman: That's a possibility.
+Nate Jacobs: I haven't used IRC...but I could be interested in checking it out
+  if other people wanted to do it that way also.
+Chris Chapman: That is a question I would like to discuss: how do we want to do
+  these meetings, how we want to use some of these tools to help with that. I
+  know that we could use Slack for meetings. But maybe we should talk about
+  Bruce had some ideas about working together with his Slack, and wondered,
+  Bruce if you would want to share some of your thoughts about that?
+Chris Chapman: ... some good feedback
+Bruce Caron: Yeah, that's really nice feedback. Wow. High-quality feedback.
+Nate Jacobs: Sounds like a horror movie.
+Bruce Caron: We have a Slack team available, the CommonsPatterns Slack team.
+  Its a full Slack team, nonprofit, which means that we get all the
+  integrations we want basically. Also Slack phone too, so we could do some
+  talking with it over Slack. Whether we use Zoom or Slack ... is really the
+  problem. 
+Bruce Caron: is this a cosmic eclipse?
+Nate Jacobs: It's coming! It seems better now.
+Chris Chapman: Who's the 505 number?
+Ivar Martin: That's me. That's Ivar. Let me try plugging into a headset.
+Bruce Caron: ...
+Nate Jacobs: Should I mute myself? I wonder if that would help.
+Katie Chapman: Hello?
+Chris Chapman: Are you here Ivar?
+Ivar Martin: Is it good? ... plug in headset so I can and maybe you can hear...
+Bruce Caron: Ah the headset. Headsets are good.
+Chris Chapman: Yeah.
+Bruce Caron: I put the invitation to the CommonsPatterns Slack team on the
+  chat:
+  (09:15:31	 From Bruce Caron : Invite to Commons Patterns Slack team: https://limitless-island-44565.herokuapp.com/).
+  The other thing is that there's going to be a lot of stuff about commoning.
+  This group can have as many channels as it wants to do the work it wants to
+  do in terms of teamware, and then stay connected with the other efforts that
+  are happening as we move forward. I'm just saying its available.
+Chris Chapman: OK. So maybe it would be helpful to know what you're planning on
+  using it for, to see what kind of overlap we would have.
+Bruce Caron: One of the things I see from WG4 is looking at how community,
+  culture, and technology can become a layer of opportunity that promotes
+  commoning. And to me, in my sort of naive sense, I see that a lot as what
+  people are talking when they talk about platform cooperatives. This is not
+  something in the academy, but something that how do people use technology
+  platforms as a way to self govern sharing in important parts of their lives.
+  And that's something that the P2P foundation's looking at, a lot of commons
+  folks are looking at this, or commoning across, not geographically local,
+  necessarily, but commoning across the planet. So I think this would be an
+  important aspect of what the CommonsPatterns group is looking for. We're also
+  building patterns. There's a wiki pattern repository that people can
+  contribute to. You all get invitations to that too, if you want to build
+  design patterns. The rest of the group is also looking not just at
+  technology, but at cultural practices in general for commoning. We have
+  another platform called IdeaScale. Let me put that in the chat too
+  (09:28:36 From Bruce Caron : Ideascale: https://esipfed.ideascale.com/a/ideas/top/gn-filter/byids/campaigns/21152),
+  which is an idea farming platform that ESIP has been using to build
+  campaigns, but here its more collecting the solutions that people have either
+  attempted and liked (like Knowen), or solutions that people are imagining now
+  that could be part of this future solution. But you also have to imagine that
+  the academy is going to be something different than what it is now. We don't
+  want to just be constricted to the ... and the academy that we have now. Let
+  me throw that in the chat.
+Chris Chapman: OK
+Katie Chapman: Will you also put it in the agenda, please, Bruce?
+Bruce Caron: Yeah. I'll also put the invitation in the agenda, too.
+Katie Chapman: Thank you.
+Bruce Caron: We can Slack together or we can Slack apart.
+Chris Chapman: What are other people's feelings about this? Nate do you have
+  any thoughts?
+Nate Jacobs: I think based on the emails I feel like there's still some
+  confusion about what direction we want to go. So maybe we could have a few
+  calls to figure out what we're going to be doing or focusing on. I like Slack
+  a lot, I think if it it's going to be discussion-level stuff, then I think
+  just Zoom and Google Docs could probably work. But I think the idea is to try
+  to dig in and do some actual work on stuff. So then, yeah, we probably want
+  to do Slack or even I know some people are going to be using GitHub just for
+  kind of the issues and having conversations there also. Yeah...there's also
+  the question like what you're mentioning with the overlap...like we don't
+  want to kind of all...but I guess we could just create our own channel in
+  that commoning team, so ... yeah, I'm kind of open. We could maybe start out
+  there, and if it doesn't seem like a good fit branch out and create our own
+  space to communicate.
+Chris Chapman: Yeah. I like that. On one hand I don't see the point of
+  fragmenting discussions. And kind of sticking together, at least at this
+  point, makes a lot of sense to me.
+Katie Chapman: I think at least to me it makes sense especially about the
+  conversations that are pertinent to both groups that we would converse
+  together about those things. I still do have issue with Slack because you
+  do have to receive an invite to be in that, and that doesn't feel very
+  commoning to me. So that's part of the whole question about what does this
+  whole idea mean, what does that mean for how we interact. I don't like Slack
+  only for that purpose. I'm just not as familiar with using it yet, as I need
+  to be to be comfortable. But that is something that will come as we use it,
+  so that is something that will come as we use it, so that I'm not worried
+  about at all. But just the ability for people to get involved in the
+  conversation and see what we're saying. And I think as long as we're
+  proactively looking for ways to either archive or output those conversations
+  in a way that others can see them that are not in that Slack conversation,
+  then that concern for me gets less, because they can't necessarily join in
+  the conversation, but at least they can see the conversation that's going on.
+Chris Chapman: Yeah, I think archiving is a good, if we can do that. I know
+  there's slackarchive.io. It's a free archive for Slack. Any other thoughts
+  about that? It would be nice to make a decision about...
+Nate Jacobs: going forward?
+Chris Chapman: What I'm hearing is that let's go ahead and team up and see how
+  it goes?
+Bruce Caron: Looks like we have a new person on the call. Lauren?
+Nate Jacobs: Lauren, did you just join?
+Ivar Martin: Lauren is on mute.
+Nate Jacobs: Oh. Lauren, I think you're muted... Hmm. Okay, maybe the
+  connection's dead.
+Katie Chapman: I do have one other question about that. What all do we take to
+  Slack? What else do we talk about, and where? How much of our conversation do
+  we want to be having in Slack? Do we create a new channel and basically move
+  all of our conversation there, other than obviously when we're talking, it's
+  not on Slack, unless we're doing our calls through Slack. But do we take all
+  of our conversation to Slack? Do we still utilize email for the majority of
+  it? What are your thoughts?
+Nate Jacobs: Slack kind of..if you get everyone really involved and engaged,
+  Slack can kind of take over email, right, it can take over that
+  functionality, but then like you said, some people...it's annoying to sign up
+  or whatever, so then you kinda default back to email. But, yeah, it would
+  probably be good to focus on being in one place. I don't know.
+Ivar Martin: ... like Basecamp, things like that...fairly standard, fairly
+  stable.
+Nate Jacobs: I haven't used that before. Basecamp?
+Ivar Martin: Basecamp, yeah. It's more like project management. There are a
+  variety of different formats of the documents that can exist there and
+  attach. I've never used Slack, so maybe my false impression is that it is
+  basically like a chat stream, right? So for discussion which may be perfectly
+  fine, but if the goal is to produce some sort of document, some packageable
+  product, then probably it's not...
+Bruce Caron: It's actually...I think it may have started as a chat stream, but
+  now it has a lot of integrations that are very useful. I use both Basecamp
+  and Slack, and I think Slack's Google Doc integration is far superior.
+Nate Jacobs: I haven't used the Google Doc integration. That works pretty well?
+Bruce Caron: That works really well. When you integrate a Google Doc into
+  Slack, when you search Slack, there's the text of the Google Docs in it too,
+  which Basecamp never does, and of course email doesn't either. So its very,
+  very helpful to find a Google Doc that someone was talking about six months
+  ago. Things like that.
+Ivar Martin: So with Google Docs, I guess one issue that I have with Google
+  Docs, reason that I don't use it more than I do, maybe that's my ...
+  education, is that its not always easy to track changes---to track something
+  happening over time.
+Katie Chapman: right
+Nate Jacobs: Yeah, it doesn't version. I think you can sort of track changes,
+  but it's...yeah...
+Bruce Caron: It keeps a history, but it's not true versioning.
+Nate Jacobs: Yeah.
+Ivar Martin: Yes, so if there are multiple people working on a document, then
+  it becomes a bit of a pain, because then you run around to figure out what's
+  new.
+Chris Chapman: Yeah. This is part of the purpose of this group, to find out
+  what is needed for scholarship, and then to...I see this having high level
+  discussion, but also creating projects that would actually help overcome some
+  of these problems and create tools that we need.
+Katie Chapman: One other question about Slack: and I'm guessing that Bruce you
+  would know, because you've worked with it quite a lot. Some of the rest of
+  you have as well. Is it available when you are offline? Can you still see
+  what was happening in Slack when you were connected? I realized that that
+  tends to be a bigger problem than I have been aware of before. It was my I
+  was too stuck in my own box to recognize the need that people have to work
+  offline and be able to still utilize the information that they had when they
+  were online. Is Slack pretty good to work with so I work on Slack when I am
+  connected to the Internet, I walk away from the Internet, and I can continue
+  to at least utilize what knowledge was in Slack when I was connected? Does
+  that make sense as a question?
+Nate Jacobs: You can download - they have a desktop app - and it definitely
+  keeps everything in there. And you can type, but actually I'm not sure.
+  Bruce, I'm not sure. If you type something in and you're offline, will it
+  wait until you're online to post it?
+Bruce Caron: Well, uh yeah. But I've never tried that! Since its teamware...
+Katie Chapman: OK, I'll have to try it.
+Bruce Caron: It's the same thing with Google Docs. Google recently has an
+  offline option, so you can edit your own Google Docs while you're offline and
+  then thrown them in. I don't know if Slack has that capability. So it does
+  make sense to use Slack and email, although there's really good email
+  integration into Slack. If you have a listserv, you can set up Slack as a
+  member of the listserv and it will pull in everything into any channel you
+  want to do that. There will be other solutions, so this comes down to: pick
+  one.
+Katie Chapman: Right, for now. We just work with what we have. But being able
+  to talk through why we like this, why we don't like this, what we see as far
+  as is this working toward the future that we want, I think that's the whole
+  idea of that phrase which I'm not a fan of, but the dogfood idea. That idea
+  of trying it out, seeing is this meeting that need, what about this meets
+  then needs we see having, and what is missing. I think that conversation is
+  really, really important - that we have it as we're going - that we don't
+  just use something and say okay we're using this because we have it, and then
+  forget that part of the point of using it is to really think that through as
+  we're using it. What is this giving us that will feed into the future that we
+  hope for, and what is lacking. And to not miss that opportunity to learn that
+  as we use it.
+
+Topic: What is our direction particularly
+
+Nate Jacobs: So should we...so obviously there's always going to be email, its
+  always going to be the fallback, should we play around on the CommonsPatterns
+  Slack, even if its to spark conversations about productivity tools, and we
+  can go from there...I think, we don't have too much time left, I kind of
+  wanted to talk a little bit about, I guess we're already talking about this a
+  little bit, but for point 2 on the agenda. Going back to the purpose. Do we
+  want to focus more on high-level stuff, or do we want to focus more on
+  picking certain technologies and platforms and frameworks and going and
+  playing with them and then coming back and talking about how that relates to
+  commons stuff? I don't really know. The only thing I would add, and maybe
+  this is Maryann's influence on me, I feel that a lot of people have said that
+  what FORCE11 is really good at is floating above a bunch of existing efforts
+  and projects and trying to figure out what the common thread is through them,
+  staying at a high level. So that would be one thought, is to do a lot of
+  dogfooding and playing around, but sort of an end goal would be more like
+  trying to understand what the common thread is through everything, and then
+  communicating and packaging what that is to sort of like reinforce things and
+  help connect people. But that's just one thought. I don't know if I'm
+  necessarily that good at that. I also like the idea of trying to find some
+  gaps and working to fill those gaps, but I just wanted to try to throw some
+  of those thoughts out there.
+Katie Chapman: I like that. Will you do me a favor Nate and write that? I am
+  not that fast.
+Nate Jacobs: In the agenda?
+Katie Chapman: Yeah. Just in the agenda. I stuck your name in the agenda. Down I
+  made a new number 3 and put your name. That is my invitation. One thought I
+  had as you were talking: I feel we have to have both of those mindsets. I
+  think its really easy to pigeonhole ourselves, and say okay we're only
+  focusing on the use - these technologies - and let's look at them, let's
+  analyze them, let's compare them and pick them apart and dissect them. Or to
+  have the opposite pigeonhole and say okay we're going to take this ethereal
+  look at everything, and we're not going to really touch on anything specific,
+  we're going to keep it really separated. And I think we need to have both
+  mindsets going at the same time, not that we can't pigeonhole for a little
+  while as we look at - okay we just did that with Slack. We were talking
+  specifically about Slack. But if we only talk about Slack and we fail to
+  think about what is a scholarly commons at the same time, and for that I'm
+  really excited to talk with this group, Bruce, that you've got going, because
+  I think understanding the scholarly commons is so key. If we're not trying to
+  understand that bigger perspective there, we don't have anything to really
+  pick apart Slack with. We don't know what it is that we really want out of
+  Slack. We don't know what it is that we need out of Slack. So we don't have
+  enough perspective to apply to those smaller things. But if we don't look at
+  those smaller things, I don't think we get a feeling for what is it that
+  we're using and why are we using it right now, so that we can understand what
+  we really want later on. I think we end up with a lot of blinders if we're
+  taking either approach by itself.
+Ivar Martin: Can I jump in for a sec. Because I just joined this whole
+  enterprise, I'm still a complete newbie. So what is the actual goal of the
+  group, so what are we trying to achieve?
+Chris Chapman: That's what we are talking about.
+Nate Jacobs: That's what we are talking about. This group just started.
+Katie Chapman: So you're just in time!
+Chris Chapman: So the idea that Nate...I like how Nate said it...we're just
+  trying to find out how to take this the next step.
+Nate Jacobs: yeah, maybe its helpful to take this in small pieces. So maybe the
+  first step is to not have a big goal right now, but just to pick a few things
+  that we can all go and explore and then come back and talk about. And then
+  take it one week at at a time. And then sort of see how it goes. And then
+  maybe have a plan by the end of the month, by the end of September or
+  something, have a clearer goal about what our initial steps would be. I don't
+  know if that's too small steps. Like looking at Slack and maybe checking out
+  some of the things that people have talked about already. Like Ivar's thing
+  and some of the CommonsPatterns projects. Sorry kind of trailed off there...
+Ivar Martin: No, no, no, but seriously, I'm not trying to be facetious. But are
+  we trying to define standards, are we trying to propose the framework, or are
+  we trying to do something bigger...?
+Nate Jacobs: Maybe I can say what I think would be best. But I don't know if
+  this would actually ... so we can talk about it, or maybe we can just see how
+  it plays out. But I think in my mind when Chris started talking about this
+  working group and kind of as the conversations went, for what ever reason in
+  my mind went towards playing with these different things and going out and
+  maybe as a group checking different things out, maybe building a few things
+  on the side. But for me where my mind went is trying to come up with some
+  standards or principles that are described or communicated in much more
+  operational terms, kind of like what the larger SCWG is doing at F11, but
+  sort of my reaction to that, and I experienced this first hand when I tried
+  to translate those principles into what that actually means in terms of what
+  technologies fit into that or not. And its really difficult because its
+  conceptual, not even at the level of user story. It's like just really ...
+  principles. So I kind of like this idea of having something to communicate to
+  people, like in terms of more specifically what technologies we should be
+  moving towards. It can still be high level, like what types of technologies
+  and how things should be connected together. Standards for how things should
+  be decentralized or stored or archived and things like that. That's sort of
+  in my mind is more towards the standards in describing the technology at a
+  high level. But again, that's not as fun as building something, so I'd also
+  be okay if we wanted to go more towards actually working on a project. But I
+  feel that there's a lot already out there, and there's a lot going on. So
+  staying at a high level, but using more technical language would be
+  interesting to me. But I'm also down to go wherever the group goes. So...does
+  that make sense?
+Katie Chapman: Yeah, I think that makes sense. I would add to that the idea not
+  just the standards, I guess, but the why of the standards, because I feel
+  like a lot of the beginning work that was done of the SCWG, some of the why
+  was a bigger factor in some of that initial thinking. But I don't feel like
+  those whys particularly transmit super well into the principles sometimes. I
+  feel like a disconnect I guess with the principles. I read them and I'm like
+  okay, I guess I see that, but I feel that I'm reinventing the why, and I'm
+  not sure that my why is the same as what was intended in that principle. But
+  I feel like we need to understand both the why and the how of doing
+  scholarship. And if we have both the why and the how, then we can apply those
+  two things technically to whatever we need to. But I think if we skip either
+  of those two, we're not going to have what we need in terms of understanding
+  or at least connected, coherent understanding to really look at those
+  technologies and understand how does this apply, why does this apply, what
+  do we need from this, or what do we need that's missing? I think we won't
+  necessarily understand what those things are. So I think...
+Ivar Martin: Are you saying that basically your strategy as a first step would
+  be to survey what are the common practices in different fields as much as we
+  can to assemble the data. Because I mean, people are working. They're not
+  waiting for us to come up with some new...
+Nate Jacobs: Yeah. Yeah.
+Ivar Martin: ... and just try to synthesize that. And I think its great that
+  there are a few people from very different fields that are engaged, because
+  I'm sure there's quite a bit of variation from field to field.
+Nate Jacobs: Maybe a first step for some of that surveying, and that's
+  something really tangible that we could start actually doing stuff, maybe we
+  could build off of Bianca Kramer's list. We can start a whole new document,
+  but basically just listing everything that's out there, and just kind of with
+  some notes on it, try to get a comprehensive list. This might be tricky, it
+  might involve a lot of talking to people. So Ivar you mentioned that you are
+  working on your ... so I feel that there are so many people out there that
+  are working on their own things, and they're not necessarily that
+  discoverable, because they're just getting them started up. So I'm sure it's
+  going to be a huge, huge list. But which is also good, because you can find
+  what the common denominator is in all of that.
+Bruce Caron: It seems that we have almost two diametrically opposite
+  suggestions right next to each other. One is that we need to really look hard
+  at why do science or the academy in the first place? The other is to look at
+  all of these potential solutions, and try to build something from there. I
+  see this tension a lot - it was part of the tension that kind of destroyed
+  that workshop in San Diego.
+Katie Chapman: right
+Bruce Caron: But I think it can be a productive tension. But I think there's
+  another part of this which is there's a lot of scholarship on what's going on
+  with the future of the Internet outside of the academy that probably we'd
+  want to include. So it's not just talking to people. There's a fair amount of
+  reading that could be productively in this thing. One of the persons I could
+  suggest of course is Clay Shirky. Has everyone read Clay Shirky's work on the
+  future of the Internet and collaboration?
+Nate Jacobs: I haven't
+Ivar Martin: So what is the...
+Chris Chapman: I've listened to some of his stuff
+Bruce Caron: Just for example...
+(09:53:29	 From Bruce Caron : https://www.amazon.com/Here-Comes-Everybody-Organizing-Organizations/dp/0143114948)
+(09:54:54	 From Bruce Caron : https://www.amazon.com/Cognitive-Surplus-Technology-Consumers-Collaborators/dp/0143119583/ref=pd_sim_14_3?_encoding=UTF8&pd_rd_i=0143119583&pd_rd_r=X8M51T3T3T3AM5JB053G&pd_rd_w=GT4un&pd_rd_wg=7Hj3g&psc=1&refRID=X8M51T3T3T3AM5JB053G)
+Chris Chapman: But yeah, yeah, I agree with you Bruce. I think there is this
+  tension here, and this has been throughout this whole scholarly commons
+  project.
+Katie Chapman: right
+Chris Chapman: and I think it could be productive, and it could actually be
+  mutually beneficial. I think we could learn a lot from as many perspectives
+  as we can bring to the table. From my perspective, I would like to create
+  something that is better than what we have now.
+Nate Jacobs: So in terms of actually like building something, Chris?
+Chris Chapman: Yeah, that's kind of more where I'm coming from. All of these
+  other thoughts are important to bring in to the picture as well, so...
+Ivar Martin: So by building something, actually building a tool or a framework,
+  something that people would...?
+Chris Chapman: Not necessarily a tool. There's a lot of ideas going on about
+  the future of Internet. There's even ideas about blockchain which I think are
+  in their infancy state. It creates new ways for people to work together. But
+  bringing some of these ideas to the Web. There are some really interesting
+  possibilities.
+Katie Chapman: May I add to that. I feel like I think it is very important that
+  we look at what we have, but again, if we just look at what we have and we're
+  only looking for common denominators, all we're getting out of that is what
+  is common in our current system. And if we're okay with the current system,
+  why are we here? What is the purpose of this conversation? I guess...so again
+  it comes back to that applying that what is it that we really want? That
+  bigger perspective, I like the way you put it Bruce: why even do scholarship?
+  What's the point of this? and applying that to that list as we look at that
+  and as we talk about it and have not just: okay let's look at it and look for
+  common denominators, but let's look at it and say what is it that we actually
+  need for scholarship, for the future of scholarship. Not what do we need for
+  this current paradigm, what do we need to do this current paradigm better?
+  But is there a better paradigm, is there really a scholarly commons that we
+  can work toward?
+Nate Jacobs: I think the problem was when I was speaking before, basically, the
+  current paradigm is you just do all your productivity on your own computer
+  basically, and then you publish to journals... What I was talking about
+  before was people that are realizing we need a paradigm shift and then there
+  is all these sort of activities going towards: oh yeah, I want to do it
+  better and do it differently, and paradigm shift, and this stuff, and
+  creating new platforms. I was talking about more focusing on the projects
+  that are trying to break the mold, but are doing it all independently. And I
+  think, I'm going to have to go in a little bit because I have a 9 o'clock,
+  the other thing I was sort of was reacting to as we started getting the
+  conversation going was, and I don't know, maybe this is particular to
+  neuroscience, but I feel like the productivity tools we use for having
+  conversations like Slack and email and stuff, to me is a pretty different
+  domain than the productivity that goes on towards more heavy duty scholarship
+  like running an experiment and keeping track of all of that stuff and then
+  actually communicating those results. I don't know, maybe I need to get out
+  of that mode of thinking, but I feel like there's sort of this equivalent
+  that's set up between oh, what you use Slack for could also potential be the
+  exact same as what you use for actually publishing a big paper. To me, I
+  don't know why, maybe I need to get updated in my thinking a little bit, but
+  those are really different domains right now, and I'm having trouble merging
+  them. In terms of the dogfooding, I don't know...
+Chris Chapman: I don't think we're saying that, because I agree with you: there
+  is a very distinct difference between [productivity tools like Slack or
+  email] and publishing scholarship. But I think that exploring what that
+  difference is is useful for what we're doing here.
+Nate Jacobs: Okay, yeah that's probably correct. Part of it also it's hard to -
+  you could just use that potential for those other use cases, we're just not
+  right now - see so I might just need to update my thinking a little bit.
+Ivar Martin: I guess, also, if I could comment. I don't think the issue is
+  really to find a common denominator, but rather to build up a reasonably
+  complete taxonomy of approaches that people use and they find successful, at
+  least know they do the job. And again, even those I'm pretty sure they may be
+  different. Somebody let's say prefers to use DropBox, somebody uses their
+  Google Drive. So I guess these are too fairly interchangeable, but saying
+  there are some things which are not so much. But the workflow in general will
+  include storage, will include some short-term communication, I guess chat
+  rooms or things like that, and something which requires better preservation,
+  better organization, which is sort of approaching closer to the article
+  format, which is bound to be published. Or monographs, because people
+  sometimes ... big projects, books within GitHub. So there are some
+  examples... So I think there is value in maybe not an extremely detailed
+  survey, because I'm sure there's tons and tons of stuff, but at least to
+  capture some generic things which are at present in different fields. And we
+  can engage more people who actually...well I know at least one person who is
+  a physicist by training and ... is also into network science, and so on, so
+  he is interested in science of science and tools that people use. So we can
+  tap into published resources, we can tap into people who work on related
+  things. And just kind of like to map out the landscape. I think that would be
+  extremely useful. Because some of the things, that say, Chris was mentioning,
+  I think they're really forward looking, like if you think of cryptocurrency,
+  like Ethereum is pretty popular in how you can formulate contracts and so on,
+  and if you tried to overlay that onto science, I think in principle maybe
+  that is how things are going to be working in 100 years from now. But it's
+  kind of hard to imagine that there will be a revolutionary jump over the time
+  period of 5 years from people doing things as they are today to something
+  drastically different. So I think the key is to finding a smooth bridging,
+  which probably people are going to find anyway, but if we can help them
+  somehow, by doing this extra legwork, I think it will be really cool.
+Chris Chapman: Yeah. yeah. I agree with that Ivar. I like the smooth bridging.
+  We need that as well.
+Ivar Martin: And I guess one other thing... I think there are two different
+  aspects. There is the academy, you know the canonical science or
+  institutionalized science. And then there is more citizen science, which it
+  would be great if it were developing faster and were contributing more to the
+  discourse. I'm pretty sure there will be a difference also in the types of
+  tools and frameworks that one ... these two communities. Because I think
+  citizen science is still pretty nascent. There are a couple of sites that I
+  know of. I'm sure there is more activity than I know of, but it is not
+  definitely on the scale of the institutionalized science, and maybe that's
+  where actually one can make the biggest contribution in defining how people
+  could actually contribute to the scientific discourse. I don't know. Things
+  like which are on everybody's minds, but which are extremely controversial,
+  like climate change. You know, to go beyond polar bears sinking or the
+  floating ice. So how do you take that to a more scientific level? How do you
+  look at the data? How do actually make people analyze and ... binary: it's
+  either warming or its not warming. So these sort of things would have a huge
+  impact, and I guess everybody realizes that they would have a huge impact,
+  but I don't think many understand how to actually make it happen.
+Chris Chapman: Yeah. OK, I think we're out of time. This is a good discussion,
+  and should give us a little more to think about as we work towards
+  understanding how to move forward. Any other thoughts before we...
+Bruce Caron: I just want to second Katie's brilliant observation that is: if we
+  are just here to catalog what other people are doing, why are we having this
+  conversation? Why is it really important for us to be here, if in some ways
+  we're not anticipating, in a systemic way, some sort of improved, or a
+  different academy? and why is it different? and how that difference makes
+  doing science more productive, more fun, more whatever? I think that's a
+  really crucial part of the conversation.
+(10:00:43	 From Nate : nice chat everyone i’ve got to go, look forward to talking again next week!)
+Ivar Martin: I think the key is that, of course, at least people in the
+  sciences, I'm sure you included, realize that things are not great, there are
+  a lot of inefficiencies. So there's definitely a lot of space for
+  improvement. But I think cataloging things at least makes sense in order to
+  understand the language, to understand the mindsets of the people who are out
+  there, right, who are doing science, again institutionalized science.
+Chris Chapman: Yes. That is important. We have to understand the current system
+  if we are going to have any chance of changing it.
+Katie Chapman: But not just understand the system as it is, but why it is what
+  it is.
+Chris Chapman: Yeah. Why it is. right.
+Ivar Martin: right
+Katie Chapman: otherwise again we're still left with lots and lots and lots of
+  blinders on.
+Ivar Martin: Yeah. So the thing is that people basically have workarounds. They
+  do things because that somehow turned out to be the most efficient way at the
+  time they were making the decision, like whether to use A or B. So I think
+  the time is right to have some sort of change. But I'm pretty convinced that
+  if you come out with something that's completely fabulous which is internally
+  consistent, that you can prove mathematically is the best way to do science,
+  and you bring it out to people, they'll laugh at you. Because even less
+  revolutionary things they would be very resistant in accepting. Just by
+  virtue of academia, that people are conservative, they don't take anything on
+  trust. And you telling them that this is a better way to do things, most
+  likely they will just say 'okay'.
+Katie Chapman: Yeah, I think they will. And that's part of why I would love to
+  see us, whether it's us collectively, or individuals within this group, or
+  other individuals, build things so that they can see that it's actually
+  better, and not just read some fabulous research paper that declares it
+  better. But they're going to have to see it. They're going to have to
+  experience that, I think.
+Chris Chapman: And that there's an alternative I think is useful. That they can
+  take it or leave it. Right now I think there is no alternative.
+Katie Chapman: right
+Bruce Caron: Yeah, I think scientists are pretty resource aggressive when they
+  see that there's a benefit. But you have to demonstrate that.
+Katie Chapman: right
+Chris Chapman: yeah. Okay, any other thoughts?
+Ivar Martin: So do we have a plan? or...
+Chris Chapman: As far as any resolutions that we made, we're going to try out
+  using the CommonsPatterns slack...
+Katie Chapman: is someone going to create a specific channel for us, or should
+  we mostly wander and kind of familiarize ourselves with what they've already
+  been doing?
+Bruce Caron: Chris, you can start a new channel for the group.
+Chris Chapman: Okay. It might be good to start a channel and try out doing the
+  next meeting with it, at least. And we can talk about new channels as well.
+  It would be good I think to continue thinking about the direction of the
+  group, taking these thoughts and...we didn't get to the...there were several
+  submissions to FORCE2017 that may relate to how we move forward with this
+  group as well. We didn't get to that today, but I'll send an email out once
+  they're accessible. And then we can look at those this week.
+Bruce Caron: Thanks, Chris.
+Chris Chapman: Is there anything else we decided?
+Katie Chapman: nope
+Bruce Caron: Nope.
+Chris Chapman: If not, we'll see you next week, same time.
+Katie Chapman: sounds good
+Bruce Caron: Alright thanks
+Ivar Martin: ...
