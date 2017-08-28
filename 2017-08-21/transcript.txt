@@ -94,29 +94,29 @@ Bruce Caron: It looks like we have someone else on the line...
 Ivar Martin: Maybe its me. I just called in...should I introduce myself?
 Chris Chapman: Go ahead
 Ivar Martin: My name is Ivar Martin. It's kind of an unusual name. I am a
-  theoretical physicist. I'm at the Argon National Lab. I used to ... Los
-  Alamos for quite a while. So basically my day job is theoretical physics, and
-  as a result there are a lot of things that have to do with collaboration,
-  publication somehow and so forth. So it's kind of like that the way that I
-  live. The reason I joined this community basically is that I heard about
-  FORCE11 from very different sources. I decided to see I really curious to see
-  so I join about a month ago. I have been following a bit what are the topics
-  that people are excited about. The other reason besides my scientific work is
-  that a few years ago I started a project which is an online framework for
-  collaboration and could be for publication and so on. It's tailored more or
-  less to the workflow we used in physics, and I'm trying it out with a bunch
+  theoretical physicist. I'm at the Argon National Lab. I used to work at Los
+  Alamos for quite a while. So basically my day job is theoretical physics,
+  and as a result there are a lot of things that have to do with
+  collaboration, publication so on and so forth. The reason I joined this
+  community basically is that I heard about FORCE11 from many different
+  sources. I decided to see what is going on in this group, so I joined about
+  a month ago. I have been following a bit what are the topics that people are
+  excited about. The other reason besides my scientific work is that a few
+  years ago I started a project which is an online framework for collaboration
+  and could be also useful for publication purposes. It's tailored more or
+  less to the workflow we use in physics, and I'm trying it out with a bunch
   of my colleagues on various collaborative projects. But it would be
   interesting to see if it resonates with the broader community. The framework
-  has some elements of Wikipedia, some elements of stack overflow. For example,
-  there is the potential for reputation building. But at this point the main
-  focus is to fill the gap between whiteboard discussion and really putting a
-  publication together and sending it out to the journals. I think there is
-  quite a significant gap at the present time, if we stay within the standard
-  paradigm of journal publication. But I could even imagine that it could morph
-  into something else. I was rereading the manifesto of FORCE11, and lots if
-  not all of the issues mentioned there are, of course, the things that are
-  real pains in scientific communication...something that I have been trying to
-  think through and address in this project of mine.
+  has some elements of Wikipedia, some elements of Stack Overflow. For
+  example, there is the potential for reputation building. But at this point
+  the main focus is to fill the gap between whiteboard discussion and really
+  putting a publication together and sending it out to the journals. I think
+  there is quite a significant gap at the present time, if we stay within the
+  standard paradigm of journal publication. But I could even imagine that it
+  could morph into something else. I was rereading the manifesto of FORCE11,
+  and lots if not all of the issues mentioned there are, of course, the things
+  that are real pains in scientific communication...something that I have been
+  trying to think through and address in this project of mine.
 Chris Chapman: Great! Thank you, Ivar. What is your online framework called?
 Ivar Martin: It's called knowen.org. It's not particularly elaborate at this
   point, but if you go to the landing page you can get a feel for it. You can
@@ -321,9 +321,8 @@ Bruce Caron: That works really well. When you integrate a Google Doc into
   very helpful to find a Google Doc that someone was talking about six months
   ago. Things like that.
 Ivar Martin: So with Google Docs, I guess one issue that I have with Google
-  Docs, reason that I don't use it more than I do, maybe that's my ...
-  education, is that its not always easy to track changes---to track something
-  happening over time.
+  Docs, reason that I don't use it more than I do is that its not always easy
+  to track changes---to track something happening over time.
 Katie Chapman: right
 Nate Jacobs: Yeah, it doesn't version. I think you can sort of track changes,
   but it's...yeah...
@@ -587,53 +586,55 @@ Nate Jacobs: Okay, yeah that's probably correct. Part of it also it's hard to -
 Ivar Martin: I guess, also, if I could comment. I don't think the issue is
   really to find a common denominator, but rather to build up a reasonably
   complete taxonomy of approaches that people use and they find successful, at
-  least know they do the job. And again, even those I'm pretty sure they may be
-  different. Somebody let's say prefers to use DropBox, somebody uses their
-  Google Drive. So I guess these are too fairly interchangeable, but saying
-  there are some things which are not so much. But the workflow in general will
-  include storage, will include some short-term communication, I guess chat
-  rooms or things like that, and something which requires better preservation,
-  better organization, which is sort of approaching closer to the article
-  format, which is bound to be published. Or monographs, because people
-  sometimes ... big projects, books within GitHub. So there are some
-  examples... So I think there is value in maybe not an extremely detailed
-  survey, because I'm sure there's tons and tons of stuff, but at least to
-  capture some generic things which are at present in different fields. And we
-  can engage more people who actually...well I know at least one person who is
-  a physicist by training and ... is also into network science, and so on, so
-  he is interested in science of science and tools that people use. So we can
-  tap into published resources, we can tap into people who work on related
-  things. And just kind of like to map out the landscape. I think that would be
-  extremely useful. Because some of the things, that say, Chris was mentioning,
-  I think they're really forward looking, like if you think of cryptocurrency,
-  like Ethereum is pretty popular in how you can formulate contracts and so on,
-  and if you tried to overlay that onto science, I think in principle maybe
-  that is how things are going to be working in 100 years from now. But it's
-  kind of hard to imagine that there will be a revolutionary jump over the time
-  period of 5 years from people doing things as they are today to something
-  drastically different. So I think the key is to finding a smooth bridging,
-  which probably people are going to find anyway, but if we can help them
-  somehow, by doing this extra legwork, I think it will be really cool.
+  least know they do the job. And again, even those I'm pretty sure they may
+  be different. Somebody let's say prefers to use DropBox, somebody uses their
+  Google Drive. So I guess these two are fairly interchangeable, but there are
+  some things that are not so much. But the workflow in general will include
+  storage, will include some short-term communication, I guess chat rooms or
+  things like that, and something which requires better preservation, better
+  organization, which is sort of approaching closer to the article format,
+  which is bound to be published. Or monographs, because people sometimes work
+  together big projects, books within GitHub. So there are some examples in
+  the math community. So I think there is value in maybe not an extremely
+  detailed survey, because I'm sure there's tons and tons of stuff, but at
+  least to capture some generic things which exist at present in different
+  fields. And we can engage more people who actually work on collecting such
+  information. well I know at least one person who is a physicist by training
+  and ... is also into network science, and so on, so he is interested in
+  science of science and tools that people use. So we can tap into published
+  resources, we can tap into people who work on related things. And to map out
+  the landscape. I think that would be extremely useful. Because some of the
+  things, that say, Chris was mentioning, I think they're really forward
+  looking. If you think of cryptocurrency, like Ethereum is pretty popular in
+  how you can formulate contracts and so on, and if you tried to overlay that
+  onto science, I think in principle maybe that is how things are going to be
+  working in 100 years from now. But it's kind of hard to imagine that there
+  will be a revolutionary jump over the time period of 5 years from people
+  doing things as they are today to something drastically different. So I
+  think the key is to find a smooth bridging, which probably people are going
+  to find anyway, but if we can help them somehow, by doing this extra
+  legwork, I think it will be really cool.
 Chris Chapman: Yeah. yeah. I agree with that Ivar. I like the smooth bridging.
   We need that as well.
 Ivar Martin: And I guess one other thing... I think there are two different
   aspects. There is the academy, you know the canonical science or
   institutionalized science. And then there is more citizen science, which it
-  would be great if it were developing faster and were contributing more to the
-  discourse. I'm pretty sure there will be a difference also in the types of
-  tools and frameworks that one ... these two communities. Because I think
-  citizen science is still pretty nascent. There are a couple of sites that I
-  know of. I'm sure there is more activity than I know of, but it is not
-  definitely on the scale of the institutionalized science, and maybe that's
-  where actually one can make the biggest contribution in defining how people
-  could actually contribute to the scientific discourse. I don't know. Things
-  like which are on everybody's minds, but which are extremely controversial,
-  like climate change. You know, to go beyond polar bears sinking or the
-  floating ice. So how do you take that to a more scientific level? How do you
-  look at the data? How do actually make people analyze and ... binary: it's
-  either warming or its not warming. So these sort of things would have a huge
-  impact, and I guess everybody realizes that they would have a huge impact,
-  but I don't think many understand how to actually make it happen.
+  would be great if it were developing faster and were contributing more to
+  the discourse. I'm pretty sure there will be a difference also in the types
+  of tools and frameworks that one uses between these two communities. Because
+  I think citizen science is still pretty nascent. There are a couple of sites
+  that I know of. I'm sure there is more activity than I know of, but it is
+  not definitely on the scale of the institutionalized science, and maybe
+  that's where actually one can make the biggest contribution in defining how
+  people could actually contribute to the scientific discourse. I don't know.
+  Things like the ones on everybody's minds, but which are extremely
+  controversial, like climate change. You know, to go beyond polar bears
+  sinking off the floating ice. So how do you take that to a more scientific
+  level? How do you look at the data? How do actually make people analyze and
+  go beyond binary: it's either warming or its not warming. So these sort of
+  things would have a huge impact, and I guess everybody realizes that they
+  would have a huge impact, but I don't think many understand how to actually
+  make it happen.
 Chris Chapman: Yeah. OK, I think we're out of time. This is a good discussion,
   and should give us a little more to think about as we work towards
   understanding how to move forward. Any other thoughts before we...
