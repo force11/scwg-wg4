@@ -1,0 +1,40 @@
+Subject: Agenda for first telecon for the SCWG WG4 (this Monday!)
+
+Hi all,
+
+Here is the info for the first weekly meeting of the SCWG WG4:
+
+Monday, August 21st
+Time: 8am Pacific, 11am Boston, 15:00 UTC, 17:00 CEST
+      other time zones: https://goo.gl/MQCZXR
+Voice: tel:+1-646-558-8656, Meeting ID: 489-033-2111
+       international numbers: https://goo.gl/6wqeoA
+       https://ucsd.zoom.us/j/489-033-2111
+Duration: 60 minutes
+Scribes: Katie Chapman, ...
+
+To attend this meeting, you do not have had to sign up on the Doodle
+poll. Anyone is welcome to join these weekly calls at any time.
+
+PROPOSED AGENDA:
+
+1. Introductions
+2. Questions related to WG purpose and operations
+   * Working with CommonsPatterns https://commonspatterns.blog/
+   * Slack
+   * Wiki/Issues
+3. Thoughts relating to FORCE2017
+   https://www.force2017.org/
+   * Submissions relating to scholarly commons
+   * Meetup at FORCE 2017?
+4. ...
+
+I've pasted this proposed agenda into a Google Doc here:
+
+https://goo.gl/xhrGzS
+
+Feel free to hack. Also, please let me know if you have any questions.
+
+Cheers,
+
+Chris Chapman
