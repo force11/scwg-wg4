@@ -1,0 +1,61 @@
+Subject: [AGENDA] SCWG WG4 Weekly Call - 28 August 2017 8am PDT
+
+Hi all,
+
+I am still hoping to get these out earlier, but here is the info for the
+next weekly meeting of the SCWG WG4:
+
+Monday, August 28st
+Time: 8am Pacific, 11am Boston, 15:00 UTC, 17:00 CEST
+      other time zones: https://goo.gl/ivBMBe
+Text Chat: (Details will be forthcoming)
+Voice: tel:+1-646-558-8656, Meeting ID: 489-033-2111
+       international numbers: https://goo.gl/6wqeoA
+       https://ucsd.zoom.us/j/489-033-2111
+Duration: 60 minutes
+Scribes: [we'll talk more about this below]
+
+Headsets (+ mic) are recommended for the call unless, of course, you are
+calling in by phone. If this is your first time using Zoom, be sure to
+give ample time to download the Zoom client before the call (~200MB
+download). I can look into the possibility of an additional SIP option
+if that would work better for any.
+
+As always, anyone is welcome to join these weekly calls at any time.
+
+If you want to add anything to or modify the proposed agenda below,
+please respond via the mailing list, Google Doc agenda (below), or make
+a note of it at the beginning of the call.
+
+Agenda from last call: https://goo.gl/R84oQQ
+Minutes from last call: [IN PROCESS - I'll send an email when ready]
+
+PROPOSED AGENDA:
+
+1 Agenda review
+2 Introductions to new people
+3 Status of current action items
+  - Chris: setup new channel in Slack (#tech-meetings) [DONE TODAY]
+  - Chris: send group info about FORCE2017 submissions [IN PROCESS]
+  - All: keep thinking and talking about the purpose of this group
+4 Questions related to WG purpose and operations
+  - Meeting minutes/transcripts/Agenda notes
+  - Review of thoughts and facets of our purpose from last week
+  - FORCE2017 submissions relating to this group
+  - Further discussion on purpose and approaches
+  - Wiki/Issues
+5 Various discussion topics (as time permits)
+  - Content for scholarlycommons.org. The SCWG SC would like us to add
+    some info about this group on this website.
+  - Meetup at FORCE2017. Who's planning to attend?
+6 Action items and suggestions for next week's agenda
+
+I've pasted this proposed agenda into a Google Doc here:
+
+https://goo.gl/m29Dzh
+
+Feel free to hack. Also, please let me know if you have any questions.
+
+Cheers,
+
+Chris Chapman

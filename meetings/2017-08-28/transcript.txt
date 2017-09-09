@@ -1,0 +1,783 @@
+SCWG WG4 Telecon Minutes for 2017-08-28
+
+Agenda:
+  https://goo.gl/m29Dzh
+Topics:
+  1. Agenda review
+  2. Introductions to new people
+  3. Status of current action items
+  4. Questions relating to WG purpose and operations
+  5. Action items and suggestions for next week's agenda
+Present:
+  Chris Chapman, Bruce Caron, Nate Jacobs, Ian Bruno, David Farmer,
+  Sonja Blum, Ivar Martin, Katie Chapman
+Audio:
+  https://drive.google.com/open?id=0B-Du-YbryiJyRklMOWZsV0hDSzA
+
+Chris Chapman: So, we'll get started.
+
+Topic: Agenda review
+
+Chris Chapman: Just a quick agenda review. I wanted to go through some
+  introductions, and then talk about some of the action items from last week.
+  Some of these questions, like, do we use Zoom, how we do the calls and
+  meeting minutes and whatever, and I wanted to get a better idea of what our
+  purpose is as a group. That's really my biggest goal for today. If anyone
+  else has thoughts or anything else that they want to talk about, go ahead
+  and add them to the agenda. Unless there are questions, let's go ahead to
+  the introductions.
+
+Topic: Introductions to new people
+
+Chris Chapman: I see we have several new people on the call today. Maybe we
+  can start by introducing the new people.
+Katie Chapman: Can everyone put their names in as a participant please? Those
+  of us that aren't on Zoom can't see who anyone is.
+Chris Chapman: In the agenda?
+Katie Chapman: Yeah, in the agenda. Sorry!
+Chris Chapman: Who would like to go first? David, I know you're on the call,
+  do you want to go ahead and introduce yourself?
+David Farmer: Sure. So I'm David Farmer. I work at the American Institute of
+  Mathematics (AIM), which is in San Jose, CA. We're a research institute. Our
+  main activity is week-long focus workshops in all areas of the mathematical
+  sciences. So in addition to being an administrator and helping run
+  workshops, I also develop tools to foster collaborative research. One of
+  those is a better way of reading preprints online. PDF is no fun for reading
+  on your laptop, and its almost impossible on your smartphone, so we're
+  developing HTML versions of papers that are better. We're using those same
+  tools also for open source textbooks. So I'm kind of interested in tools
+  that help people work together and help people find the information and read
+  the information better.
+Chris Chapman: Great.
+David Farmer: Is that enough detail?
+Chris Chapman: Yeah, that's great. Any questions for David?
+Katie Chapman: Yes, and this is for everyone. If you weren't on the call last
+  week and didn't really introduce yourself, will you synopsize that in the
+  agenda, please? And we'll just kind of take group notes like last week. Is
+  that right?
+Nate Jacobs: Yep. I think so.
+Chris Chapman: Yeah.
+Chris Chapman: OK. Thank you, David. I see Ian. Do you want to introduce
+  yourself?
+Ian Bruno: Hi, can you hear me?
+Katie Chapman: (yes)
+Chris Chapman: yep
+Ian Bruno: Hi, my name's Ian Bruno. I work at the Cambridge Crystallographic
+  Data Center. ... business and research data for over 50 years. I was
+  involved in the steering group of the original FORCE11 Scholarly Commons
+  project, and my reason for joining this call is because I'm keen to see how
+  we move forward based on what we've during that time in any kind of
+  practical way.
+Sonja Blum: It was entirely my fault that I didn't hear any of that.
+Chris Chapman: Are you calling through the computer, Ian?
+Ian Bruno: I am calling through the computer, yes.
+Chris Chapman: though Zoom?
+Ian Bruno: I am. Let me just try changing audio devices. Just bear with me.
+Katie Chapman: And was that Sonja who said that, since you're the only other
+  female that I see in the participants? It makes it easy to recognize some
+  names! Did you just have your sound off, or were there others that couldn't
+  hear what Ian said as well?
+Nate Jacobs: I heard it - it just sounded echoey a little bit.
+Katie Chapman: OK. So do you want to recap, Ian? Or do you want to just read
+  what he writes, Sonja?
+Sonja Blum: That's fine. I can just read it, especially if I'm the only one
+  who ...
+Chris Chapman: It was a little muffled for me too...
+Katie Chapman: Sonja, you haven't introduced yourself yet, have you?
+Sonja Blum: Nope, nope. I am a neurologist. NYU. And I am also an artist. I'm
+  basically affiliated with NYU and the Art Institute of Chicago, and I not
+  directly involved in any big-data analysis or formally examining new
+  scholarly platforms, but I'm very interested in where we're going with that,
+  and also hybrid forms of knowledge production that kind of blend science and
+  art, in particular, to my practice. But in general, kind of more hybrid
+  forms.
+Katie Chapman: Awesome.
+Chris Chapman: Great.
+Nate Jacobs: Cool.
+Chris Chapman: Is Ian back? ... maybe we'll catch him if he's not back yet.
+  Are you back now Ian? ...
+Chris Chapman: Does anyone from last week want to re-introduce themselves to
+  the group, or should we move forward?
+Katie Chapman: It might be nice to review, at least for those of us who are
+  not on Zoom to have everyone say their name again, so we can hear voices and
+  names, so we know who's talking as we go forward. And I'm Katie.
+Nate Jacobs: Yeah, I'm Nate Jacobs, and I have a background in neuroscience
+  research at UCLA, but I actually just recently left my postdoc to get up to
+  speed with some mobile and web development, which I'm also doing at UCLA in
+  the OIT department.
+Katie Chapman: Cool.
+Chris Chapman: I'm Chris Chapman. I'm part of a startup that's working to
+  change or improve how research is published.
+Bruce Caron: I'm Bruce Caron. I'm the community architect for the ESIP (Earth
+  Science Information Partners). We're an organization of earth science data
+  providers and users.
+Ivar Martin: So I'm Ivar Martin. I'm a theoretical physicist. I'm working at
+  the Argon National Lab. I'm also one of the cofounders of the project called
+  knowen.org, which is an online framework for collaboration and potentially
+  publishing.
+Chris Chapman: Great. Thank you. And just so everyone is aware, we are trying
+  to get these calls transcribed, so that we can have a record of them.
+
+Topic: Status of current action items
+
+Chris Chapman: So I set up a channel in Slack. If we're not going to use Slack
+  for calls, we can change the channel name or whatever we need to do to talk
+  about some of this enabling technology stuff. We're just thinking, for those
+  that weren't on the call last week... Slack is a live chat application. You
+  have to join it, so there's an invite that's listed in the agenda. We're
+  working alongside the CommonsPatterns group, which is led by Bruce Caron who
+  is on the call. They're looking at... I could let you explain it a little
+  bit more, Bruce...
+Bruce Caron: Sure. CommonsPatterns is looking at how do we envision the
+  academy as innumerous commons that are self-managed in various ways, but
+  coordinated with each other, and have a way to create their own internal
+  economy. So what does this look like, if we start from scratch, in a way?
+  And we're working with a lot of the people who are doing commons in other
+  arenas, and we're working with a lot of open science folks who ... beyond
+  open. Because open is just the first part of what the new academy might be.
+Chris Chapman: Thanks Bruce. So if you haven't joined, go ahead and join, and
+  we'll see how things evolve there. I don't think we have any definitive
+  plans, at least now how that will happen. Katie, did you have something?
+Katie Chapman: I'm not figuring out how to join...
+Chris Chapman: OK. There's a link... 
+Katie Chapman: Like I clicked the link and it takes you over...but I put in my
+  email and there's nothing, like it says that I'm not invited, or something
+  to that effect. So I'm not sure...
+Bruce Caron: Give me your email, and I'll send you a direct invite. I don't
+  know what's going on there...
+Katie Chapman: Sorry, I'm not sure ... I may just be doing it wrong. I will
+  just paste it. It's probably easier if I just paste it...
+Sonja Blum: And also this is Sonja, but I haven't even found the link... I'm
+  still kind of struggling to find an invite to join.
+Bruce Caron: I'll put it into the agenda. It's in the chat. I'll throw it into
+  the agenda.
+Nate Jacobs: It's in the agenda also under ...
+Katie Chapman: Under number 3.
+Nate Jacobs: Yeah.
+Sonja Blum: Oh. Got it.
+Chris Chapman: It's the limitless island link.
+Nate Jacobs: Yeah it's like a third party to help.
+Chris Chapman: Yeah.
+Nate Jacobs: So there is a little bit of ... getting onto Slack teams, but
+  once you're in there it's great.
+David Farmer: I filled out my email, but I don't yet have it in my inbox - the
+  invite.
+Chris Chapman: Okay. I was supposed to send some info about the FORCE2017
+  submissions. I haven't yet, but I think we'll talk more about them later on.
+  Is that all that there was as far as action items from last week?
+Katie Chapman: I think so. There was the thought to just get on and wander
+  around Bruce's group and get the feel of what they are doing, but since
+  there are Slack issues, that I don't think has happened probably.
+Chris Chapman: Yeah. So are you Anonomous Kangaroo, Katie?
+Katie Chapman: Shoot, got me! If that's who you see typing, then that's me.
+Nate Jacobs: Yeah.
+Katie Chapman: Then yeah, I guess I am.
+Chris Chapman: Let's move on then to topic four: Questions relating to WG
+  purpose and operations.
+
+Topic: Questions relating to WG purpose and operations
+
+Chris Chapman: I think we kind of hit on the first item. I just wanted to talk
+  a little more about meeting minutes or transcript and the agenda. My own
+  thoughts are that (does everyone have the Google Doc agenda?) So I think  we
+  can keep notes topically in the agenda, but I also think it would be useful
+  to get a play by play - like we're recording this meeting, so having a
+  transcript and having that available for people to read would be good as
+  well. So does that sound good to everyone? Are there any concerns with that?
+Bruce Caron: I think my own concern is how long does it take to make a
+  transcript? And how useful is a transcript? If we have an audio recording we
+  can always go back to that. It seems like someone is volunteering to do a
+  lot of work.
+Chris Chapman: That's a good point.
+Nate Jacobs: Chris, just go for it if you feel strongly about it. To me it
+  seems a little bit premature, but if you get all the workflow worked out,
+  and at some point, and this group keeps expanding, it might be good to have
+  that in place at that point in time.
+Sonja Blum: Also it might be useful to have a repository of the audio as links
+  that can be listened to. It doesn't necessarily have to be transcribed, or
+  you can can use something like Dragon Dictation or another automated voice
+  to text translation tool.
+Chris Chapman: That's a good thought.
+Katie Chapman: When you sent that email, Chris, I hadn't thought even at all
+  about someone who couldn't listen to the audio. That had not ever crossed my
+  mind. So that is a thought. But bigger thought is I think it's a fun
+  experiment. I don't know how much it will be of use, but it's a fun
+  experiment to see if we can use these meetings in scholarly way as we go
+  forward. Some of the things that were said last week are things that I could
+  see myself wanting to refer back to. This person had this gem nugget of
+  thought that was really beatifully put, to be able to refer back to that,
+  but in a ... rather than to an audio file that's an hour long, to that spot
+  on the transcript. If it was referenceable, would be possibly useful. But
+  again, it would be totally an experiment because I have never done that
+  before.
+Ivar Martin: It seems like for sure it will be much easier to search. Say you
+  remember something that was from a conversation, but you don't feel like
+  trying to track it down in the audio, that's wonderful. The only concern
+  from my side is that Chris is doing humongous amount of work. But as long as
+  that's sustainable, I think that's a very nice thing to have.
+Chris Chapman: We'll see about the sustainable, but as long as everyone's okay
+  with experimenting with it. I'm interested to see how useful something like
+  that would be in a scholarly context, so ...
+Ivar Martin: So maybe we can get some public software from the NSA...
+Chris Chapman: That's a good idea. They're probably listening on to this call
+  and maybe they'll just appear.
+Nate Jacobs: Yeah.
+Chris Chapman: Okay. I'll send out some more info about that this week to get
+  thoughts as far as a workflow, and more specific questions.
+Nate Jacobs: So, actually this is only tangentially related, so a lot of what
+  I'm thinking about is user experience and how to...we have all the
+  technologies to do whatever we want. I'm trying to think about what you
+  should do, and what unintended consequences are.
+Chris Chapman: Right.
+Nate Jacobs: This is me saying something kind of extreme just for the purposes
+  of to see what happens, but this idea of...we can record the conversations
+  and do the transcripts, but then it's interesting to also think about how
+  that might potentially change people's behavior if they know they're being
+  recorded. I don't really care what I say - I'm kind of more impulsive about
+  saying things, but I do wonder about someone who's more shy. Would that
+  change the user experience for them, where they might be even less likely to
+  say something if it's like...I don't know. I'm just throwing it out there
+  just because we're talking...
+Nate Jacobs: So that's one thing I've been thinking about...do we need...is
+  the goal to have everything open? Or is the goal to clearly define areas of
+  like: this is not going to go on the official record vs it is. And how do
+  you like...where that boundary is. I feel like that's an interesting
+  conversation just all on its own. And maybe there's ways of recording but
+  then anonymizing...so that's kind of just some general thoughts that I've
+  been picking at in the back of my brain.
+Chris Chapman: Yeah, those I think are part of the purpose of this group. And
+  that's why I've been wanting to try something a little different, is to
+  figure out some of these questions. As far as our group goes, I'm totally
+  fine with off the record during the calls, and like I did last week, I think
+  it is good to get the transcript approved by the people who were invoved
+  beforehand, before it becomes public. If they want to take something out, I
+  think that's totally great. We're not the NSA, and I think choosing what we
+  want to have publicly available is important - to be able to have that
+  choice. I think it would be good to keep track of these questions and
+  thoughts about these things. I think that could be a good thing as a...I
+  think that's part of the next step in the scholarly commons, trying to find
+  out how does this work.
+Sonja Blum: I would just add in terms of the recording. One thought I have is
+  that if the calls are being recorded, then they should be publicly available
+  to the group. That content should be just made entirely available to
+  everyone who is part of the group rather than it being I don't know
+  where...kept somewhere. You know, at all times accessible to everyone.
+Chris Chapman: Yeah, and we had a discussion with the people from the meeting
+  last week. I've already made a transcript of it, and we were just trying to
+  get some details worked out. So the recording from last week will be
+  publicly available as well. Today or tomorrow probably, so...
+Sonja Blum: Okay, great.
+Chris Chapman: Any other thoughts about this? Any other questions that you
+  have about this, let's keep track of them. And this might be a good action
+  item, is to actually start collecting some of these questions so that we can
+  add to them.
+Katie Chapman: I like that, because I think those questions really help us to
+  understand the situation that we're talking about. What is it that we really
+  want here? and what does that mean? what does that look like? Why does it
+  matter? They seem like little, insignificant questions when we talk about
+  our meeting being recorded, being transcribed. It's a little thing. And it
+  seems only really relevant to the few of us. But as we talked about it, I
+  think it could have a lot of implication for understanding what is it that
+  we really think that is needed? what is it that we hope to see in the
+  scholarly commons? what are some of those principles that we need to be
+  based upon?
+Chris Chapman: There's something else, Nate, that you said as part of this.
+  Thinking from a user perspective is really critical to what we do and to the
+  scholarly commons. I think a lot of the efforts so far with the scholarly
+  commons have been focused more from the researcher's perspective, like what
+  does the researcher need to do research. But we haven't really talked about
+  what does someone need to use that research? who are the users of the
+  research, and how could we help them have what they need? I think that
+  changes a lot of the questions.
+Nate Jacobs: Yeah, for me, my bias is probably because I have a research
+  background, I tend to focus a lot on the researchers. For me, a lot of the
+  users are researchers, so my perspective might be a little biased and
+  pigeon-holed into that perspective as well. But that makes sense.
+Chris Chapman: And how much of that perspective...I know we talked a lot about
+  peer groups and knowledge clubs...how much of that is a result of the
+  current publication system, where people just didn't have access to journals
+  unless they are in that domain? and how much of that is due to...or is that
+  an effect of the current system.
+Nate Jacobs: Yeah it will be interesting to see for example will citizen
+  science stuff become more commonplace if there are easier entry points. I
+  think there is going to be fundamental differences between the people that
+  are in the tight research circles that are living and breathing it everyday,
+  and people that are coming in sort of more public...but it will definitely
+  be nice to have less barriers there, just to have a little bit more
+  cross-pollination...yeah it will be interesting to see.
+Chris Chapman: Okay, any other thoughts about the agenda or transcripts?
+Ivar Martin: Maybe just another point in support of transcriptions. I think
+  really it's a good thing in order to lower the barrier for the people who
+  are coming in, let's say the new guys who joined the meeting today. For them
+  it makes a huge difference whether you can just sort of skim through the
+  transcript which takes like 5 minutes, or whether you have to really
+  dedicate one hour of your time to listening to a sometimes not very coherent
+  discussion. So I think it's particularly the initiation of the group, I
+  think that's really a great thing. I'm not sure if it's going to be
+  necessary to have that if the group stabilizes roughly, sort of all the same
+  characters reappearing every week. But in the beginning its really, at least
+  for me, if I missed the previous meeting, I think it would be a great
+  resource.
+Nate Jacobs: Slack is also good for that sort of functionality, where you can
+  kind of jump into the informal conversations and get up to speed, because
+  you can obviously scroll back and search and stuff.
+Chris Chapman: Yeah, that is one thing...
+Ivar Martin: Yeah, but I guess there's effect of presence. Like when you
+  read a transcript you really kind of...
+Nate Jacobs: Yeah everybody's there...
+Ivar Martin: ...you feel like you're almost there, yeah.
+Chris Chapman: Okay. Let's move on to the next subtopic. I think we've hit on
+  some of it: Review of thoughts and facets of our purpose from last week.
+  Obviously if you weren't on the call last week you wouldn't know what to say
+  here, but I guess something I wanted to bring up as well is...I think Ivar,
+  you talked about this from a point of view that I hadn't really thought
+  about it before, but the potential for citizen science. To me, and looking
+  back on it I think this is my whole viewpoint, even in the creation of this
+  company, but that we need ways to open up research to more people to allow
+  anyone to get get involved. That to me is important in the scholarly
+  commons, and I think there is a lot that we could do as a group to think
+  about how to do that. That's just one thing I wanted to say. Are there any
+  other thoughts from our discussion last week?
+Nate Jacobs: So I had another call at 9 so I may have dropped off a little
+  earlier, but I think the other thing that excited me about this group is
+  that I'm...so I've been thinking about these just from a researcher's
+  perspective, and it just until very recently that I've been able to start
+  thinking about it from a technological perspective, so I'm still pretty new
+  to a lot of what exists out there. If you have a computer science background
+  it might be simple or trivial, but I'm still going through everything. So I
+  think I also like the idea of picking specific technologies or specific
+  things and just talking about them, maybe almost introducing them in a more
+  simple, basic way, and then second step, going in to figure out how to
+  potentially use them in a scholarly communications system. I thought it
+  would be cool if we pick a topic like interoperability and talk about what
+  people are doing in any context or any application, to go with
+  interoperability and APIs and things like that. And then as a second step
+  bring it in...like how would we use that. I know Chris you've been good at
+  sending me various links to different things that you're excited about. So
+  that's like another thing that I thought would be interesting, to go back
+  and forth between like just on a more basic conceptual level, making sure
+  we're getting exposed to all different kinds of technologies and things like
+  that. I don't know. That was kind of a general statement. Kind of also to
+  bridge the gap to people that don't have a strong tech background or maybe
+  at different levels of the spectrum.
+Chris Chapman: (agrees)
+Katie Chapman: I like that too. A lot. And we've talked about this a little
+  bit via email before. I think that gives us a lot of flexibility to look
+  at it from multiple perspectives, as we do that we can bring in a lot of
+  perspectives to get a better idea of really what we're looking at and what
+  we want to be seeing.
+Nate Jacobs: The other thing that's nice about this too is if we could get
+  people that don't have strong tech background in the conversation it also
+  helps with...one of the other side-projects I'm trying to work on is this
+  idea of scholarly communication communication: how do we communicate what
+  we're doing? and pitch it to a broader audience? If you have to explain
+  technical things to somebody that has never used that technology or never
+  developed anything then it kind of forces you to use broader terms and get
+  to the core of it.
+Katie Chapman: I'm happy to help with that part. That is part of why I'm here
+  frankly because I feel like the things that are discussed are so important
+  but sometimes they are, even if you can access it quote unquote, doesn't
+  mean I can actually access what was just said. I'm like okay I caught two
+  words of what you just said, and it was an 'and' and a 'the', and the rest
+  didn't mean anything. I mean not really, but I feel like there's definitely
+  some communication barrier. It's a different language. So for those of us
+  like me that are not particularly technical, it's a definite thing to think
+  about. So I am happy to help with that part.
+Ivar Martin: Yes, actually as far as the resources, as far as what's out
+  there, what people use. So in the agenda from last week I saw this little
+  snippet that was added, which I guess we didn't discuss explicitly. It goes
+  under item 3f, Bianca's work.
+Nate Jacobs: (affirms)
+Katie Chapman: Oh yes.
+Ivar Martin: And that was kind of curious. I mean it was very condensed, it
+  was hard to make out, how to really interpret the data, and I guess I didn't
+  go into too much detail...I think there's a blog post that goes along with
+  that. But it seemed like the did quite a bit of work surveying what people
+  use, what people use more commonly together...
+Nate Jacobs: So that was really focused on whole websites and tools and
+  platforms, which is interesting, definitely interesting. I think I was kind
+  of hoping to go a little more granular than that, so like how is
+  ResearchGate...if they're doing something that's with interoperability or
+  whatever it is they're doing, or indexing, kind of like a little deeper than
+  that, but that's definitely a good starting point, because that's a
+  comprehensive list of all the different domains and platforms that are out
+  there.
+Ivar Martin: And how did they manage to do that? I mean 20,000 respondents.
+  I mean, that's pretty amazing.
+Nate Jacobs: Yeah. That's what they do. I think they spend a lot of time on
+  it, and they're on podcasts and really promoting it. You know, spent a lot
+  of time and elbow grease.
+Ivar Martin: Interesting. So is this also part of FORCE11 or is this something
+  else?
+Nate Jacobs: No, I think Bianca and Jer...well, Chris, maybe you know better.
+  I thought that they just did that through their own library...
+Katie Chapman: yeah
+Chris Chapman: Yeah, the original project is separate, but they are...
+Katie Chapman: But they presented a poster 2 years ago at the FORCE11
+  conference, and a lot of the FORCE11 community got involved in that work at
+  that point. They were like oh, this is really interesting. I think didn't
+  they win best poster that year or something?
+Chris Chapman: Yeah, I think so.
+Katie Chapman: Anyway...
+Chris Chapman: They've been involved in the scholarly commons working group
+  from the beginning...
+Ivar Martin: (affirms)
+Katie Chapman: Yeah.
+Ivar Martin: Interesting. Yeah, because that couldn't be cheap. To run this
+  kind of survey sounds pretty amazing.
+Nate Jacobs: Well they're still analyzing it, and pulling stuff out of it,
+  so...
+Ivar Martin: I see, I see.
+Katie Chapman: Right.
+Chris Chapman: Yeah, and I can say along with Nate, and what I'm hoping we can
+  do with this group as well is to see more granular, more what is it that
+  people use and why. More on the functionality side I want to say.
+Ivar Martin: (affirms)
+Nate Jacobs: Well it's kind of weird in my mind, because it's more granular,
+  but in some levels it also allows to get more broad conceptually. I don't
+  know how to explain that very well, but focusing on the actual underlying
+  technologies and how they're moving or accomplishing specific high-level
+  conceptual things.
+Chris Chapman: Sounds like the spaceship is landing.
+Katie Chapman: Yeah, again I think that they'rs a lot of room for a lot of
+  perspectives. And I think if we go a little bit between those broader
+  tools...for instance we were talking earlier about Slack. Is this a useful
+  thing for our group? and if so, in what ways? then taking that a step
+  further and saying what are the specifics of Slack, technically and user
+  experience-wise that make it most useful? what are those takeaways we can
+  take from that conversation that help us understand where we're headed and
+  what we need?
+Ivar Martin: Yeah, interestingly enough, I don't see Slack in the list of apps
+  that they have here.
+Nate Jacobs: I think it started to get popular a little bit after...
+Ivar Martin: Yeah, yeah...
+Katie Chapman: Yeah.
+Nate Jacobs: ...I feel like in the last year or two it's kind of taken off.
+Ivar Martin: Right, right.
+Katie Chapman: Yeah.
+Ivar Martin: Yeah, I guess that's part of the issue. Some of those tools are
+  going to be ... come and go.
+Chris Chapman: Yeah, yeah.
+Katie Chapman: Yeah. A lot of the...
+Nate Jacobs: Another...
+Katie Chapman: A lot of the...I'm sorry go ahead.
+Nate Jacobs: Another thing I have been trying to think about is how to chunk
+  things. I think there's this assumption that, in terms of the commons, we're
+  moving towards this big pot, and everybody's going to be sharing everything
+  all the time. But I kind of have this feeling that it's obviously not going
+  to be that simple, and we're still going to have fairly clear divisions
+  between things that are productivity tools versus things that are more
+  formal publication tools. I don't know if I'm right about this or not, but I
+  feel like that might be a human nature issue or psychology issue that we're
+  not going to really overcome. So should we also think about these in terms
+  of these different domains? or do we really think that we will be able to
+  break down all these barriers and it will just be this constant sharing of
+  everything all the time? I don't know. I mean it's a little bit of a
+  cynicism in there, but you know...
+Ivar Martin: Maybe the point is that one should have an option to share. You
+  don't have to, it's like you don't have to tell all your secrets to us.
+Nate Jacobs: (affirms)
+Ivar Martin: But probably you don't have the framework in place - the
+  technology in place - which would allow you to share efficiently if you
+  choose so.
+Nate Jacobs: Yeah.
+Katie Chapman: And I think really there may be things that lend themselves
+  more to being shared, and things that don't. And that is something that
+  we're going to have to look for. What are things that intrinsically are of
+  value if shared, whereas some things really are not of intrinsic value to be
+  shared. Like, for example, our conversation earlier about these phone calls.
+  Do we record them? do we transcribe them? do we share those transcripts? are
+  they of value? That's a question that is important to find an answer to, and
+  then I think if it's not really important, maybe that's something that isn't
+  necessarily a common-pool resource. It's not something that we're going to
+  all share with everybody everywhere, because it only relates to that group.
+  But maybe it is, and maybe we find that out, or there are things that are
+  and things that aren't as we go...like I think again it's a granularity
+  question, and being willing to say okay these things really intrinsically
+  are important that we be able to share, and these things, it's just not as
+  important. And that flexibility I think has to be there, that we can
+  interact with things that are not the same. Like we need to be able to use a
+  journal article that is behind a paywall, and be okay to use that even if
+  we're trying to be as open as we can with what we're doing. And things like
+  that. I think that flexibility is important.
+David Farmer: Is part of your point that you not only want to find out about
+  the things you care about, but you want to shield yourself from the things
+  that just give information overload and aren't relevant to you.
+Chris Chapman: I think that's the hope, at least one of my hopes, with making
+  this stuff machine readable, is that machines can help sort through some of
+  that stuff.
+Sonja Blum: One of the concerns there is that if you only see things kind of
+  similar to the social media network platforms, things that you have quote
+  unquote liked or things that matter to you, that runs the risk of echo
+  chambers and actually limiting access to information that you might
+  otherwise encounter just by chance if you were accessing a printed form of
+  the journal.
+Nate Jacobs: yeah.
+Sonja Blum: So I definitely do have serious concerns about echo chambers.
+Nate Jacobs: Yeah.
+David Farmer: I think that's a concern of the algorithms they use and how it's
+  done. It's definitely good to not find out about stuff that's irrelevant to
+  you. There's just so much stuff out there.
+Sonja Blum: (affirms)
+David Farmer: So maybe we haven't solved the problem of how you avoid the echo
+  chamber problem, yet also filter out irrelevant things.
+Sonja Blum: Of course, of course. That's a really important question, but I
+  just want to highlight the concern, just obviously we should be very mindful
+  of the echo chamber problem.
+Katie Chapman: And even within your own field, I think you can lose
+  things...like of you, you worked in both your research field as well as in
+  art. You don't want to miss things in either one. And there may be things
+  going on in another field that really are relevant; they're using very
+  similar processes to you, similar methods, and they're looking at things
+  similarly, but from say a different scientific field, but they're also
+  connecting it with art. That's something you wouldn't want to miss because
+  it's in the wrong chamber.
+Nate Jacobs: (affirms)
+Sonja Blum: Right.
+Ivar Martin: Maybe that's something that, in principle, could be addressed if
+  the user could have some sort of control, how strong a filter you apply. You
+  feel adventurous, or let's say you're more relaxed, you don't have a
+  deadline, so you can dial it back. You let more quote unquote noise into the
+  system. It's like when people go to Starbucks to work. They do that because
+  they want to be distracted a bit. They want to be perhaps a bit more
+  creative than just sitting in their office blocked off with no sounds
+  penetrating.
+Sonja Blum: Right. And that's...because most of my life I've spent actually
+  purely in neuroscience and in neurology doing research and researching in
+  PubMed and whatnot, and reading print journals. Sometimes you get a
+  surprise, you just stumble on things by chance that end up being very useful
+  to you. So I think that I definitely would not want to have severe limits on
+  what you might encounter in your searching. But obviously if you're looking
+  for a super targetted search then there should be a way...it would be nice
+  if there was a way to make it very, very narrow. But that should not be the
+  default in my opinion.
+Nate Jacobs: Yeah. One thing that's interesting in this conversation is,
+  looking outside of academics, if you look at something like Instagram, it's
+  much more biased towards social follows and likes and all that stuff. But
+  then they do have...if you go to search for something, they do have a whole
+  discovery mechanism that's putting random stuff in front of you. So it would
+  be kind of interesting to think through how they're doing that, and then on
+  the other end, which is less social, something like Apple News, or like news
+  aggregators, where it's not just up to who you're following, but then
+  they also still are tracking what you're liking. So I feel like there's kind
+  of a spectrum here and it's interesting to think about what part of that
+  spectrum we should land at, and then potentially having feedback to dial it,
+  like you guys were saying, to different levels.
+Chris Chapman: And I think something else to keep in mind, going back to the
+  user perspective: you don't really know what could be useful for
+  scholarship or for research. I think we had discussion before where a
+  newspaper wouldn't be considered scholarship, but could it be used for
+  scholarship? Sure.
+Nate Jacobs: (affirms)
+Sonja Blum: And that's also one of the interests that I have, when I mentioned
+  in the introduction hybrid forms. I'm also interested in when you're
+  searching, being able to access information from different forms of data
+  presentation. Not just necessarily the purely empirical data, but something
+  maybe even from newspapers or whatnot. Just consider a blend of hybrid
+  sources accessible to the user as well.
+Nate Jacobs: And obviously if there's a way to have a lot better metadata so
+  you could search for all articles that used a particular method or something
+  that would be really awesome. I think people are working on that pretty
+  hard, but it would also help a lot with discovery.
+Katie Chapman: And I think that goes back to the idea of having more things
+  that are machine-readable. So that it's maybe not even just the metadata
+  that's readable, but how things are being interacted with? what is more of
+  the data saying, and more of the logical thought process? Things like that.
+  If we could understand those things more from a machine perspective, so that
+  we can for example...a machine that is trying to give you results that are
+  useful to you could be seeing what your process is, what your train of
+  thought is, something like that. It would be a lot easier to show you more
+  productive results, I think. Not just better metadata, but just better data,
+  I guess is what I want to say.
+David Farmer: I think we're going to have to change the way people write
+  documents in order to have that information embedded in there. And I think
+  that's a huge hurdle to get over, because there aren't good tools for doing
+  that, and people have to learn new things, which they don't like to do.
+Chris Chapman: That's a good point David, and I think that the way that we...I
+  don't think it's going to be paper based. I think we're going to have to do
+  things more granular to be able to do that (in some way).
+Nate Jacobs: (affirms)
+Ivar Martin: Yeah, I think I would agree with that. I think at least in my
+  mind that would be quite ideal both for the practitioners, the
+  professionals, but also for the public. And by public I mean, let's say,
+  undergraduate students, maybe even just people who have a bit of background
+  in sciences, but they're doing different types of day jobs. Because if there
+  is a bigger narrative which is evolving, let's say climate science, right?
+  It's on everybody's mind. And one could follow where the [discoveries?] are
+  and how the discussion is evolving. That would be very useful, as opposed to
+  reading even some fantastic review paper in the New York Times or reading
+  something on CNN.
+Katie Chapman: Yeah.
+Chris Chapman: Yeah, wow. I moved down the FORCE2017 submissions. I thought we
+  could probably discuss them later. I'll send an email out later once we have
+  ours publicly available. But time has flown! Are there any other thoughts
+  on...if we could bring this back down to the group and how we do things, or
+  how we do things or what we do?
+Katie Chapman: What I want to say is that this was amazing. Like the things we
+  talked about are amazing things that we need to discuss further. So like all
+  of it.
+Bruce Caron: I just want to say that it is good to get more people, different
+  people on the calls. Maybe to invite some talks and some people doing
+  technology. There's a group sponsoring FORCE17 and they're doing a whole
+  layer of publishing technology and things like that.
+Chris Chapman: Yeah, is that the Coko Foundation?
+Bruce Caron: Yeah.
+Chris Chapman: Is Nate still on the call? Because I know that he's worked a
+  little bit with them. Do you know much about them or do you want to
+  share...?
+Bruce Caron: No, I just saw their website today.
+Chris Chapman: Okay, okay.
+Chris Chapman: Yeah, let's check that website out (https://coko.foundation)
+Ivar Martin: Well I guess one risk that we're running if we basically stick to
+  this call format is that...I think right now we're approaching the
+  borderline. We have 7-8 people. Still it's possible to have a conversation.
+  I guess I'm hoping nobody is feeling shut out. But if there are 20 people,
+  I think the group pyschology works in a way that there will be a couple of
+  people talking and the others are going to be listening in, coming and
+  going.
+Chris Chapman: Yeah.
+Ivar Martin: So we would really have to think of a way to take this discussion
+  to the ... just conversational format.
+Chris Chapman: Yeah. I would love to have that problem where we have too many
+  people on the call. I think we'll have to see how it goes and keep that in
+  mind for sure.
+Ivar Martin: It could be essentially self-limiting. That's also part of the
+  issue. Right now we're on the second call, and indeed that would be a good
+  problem to have, but if we see over time that people are coming and going,
+  and particularly the new people. They may feel like the don't exactly know
+  what's going on, so they stay quiet then they don't come back. That would be
+  a sign that something's not working as well as we wish it would.
+Chris Chapman: (affirms)
+David Farmer: Earlier people were talking about 'what tools were out there, and
+  I want to know what tools are out there'. I don't want to know that. I want
+  to know what people want to have happening. I'd really like us to develop a
+  huge list of scenarios describing what someone's doing, and what the effect
+  is, and how it's good. Because you can't evaluate the tools if you don't
+  know what you want to do with them. So here's an example that follows up
+  what I said earlier: I write a paper on something, and I submit that. I put
+  it on my webpage or whatever. Embedded in the source is my ORCID id.
+  Embedded in the source are various tags describing the topic and the method
+  used that were taken from some central database by the experts in that
+  subject. Now all of a sudden, my paper's machine readable in a way it wasn't
+  before, because there's no looking for keywords. There's actual tags of
+  actual topics. And then some other website notices that and adds me to some
+  catalog of things. So I'd like to see from everyone several scenarios
+  describing how in the future things will work better, and I'm sure it will
+  be revealed that there's no tools out there that really let this happen, or
+  else the tools aren't being put together in quite the right way.
+Chris Chapman: (affirms)
+Kate Chapman: (affirms)
+Chris Chapman: Yeah, that's a really good point, and I'm glad you brought that
+  up David. Do you have any suggestions how to move forward with that?
+David Farmer: I mean a Google Doc, where each person just adds scenarios would
+  be perfectly fine. And you would want it to be as a narrative telling a
+  story: this person working in this area does that. And it should start out
+  brainstorming like. So you just make this crazy futuristic scenario about
+  what could happen. There's nothing wrong with that. Eventually we'll run out
+  of steam, and then we can say which of these are actually realistic? which
+  of these are actually supported by tools? which of these could one conceive
+  of a tool? which are way out there? Because I don't even know what all of
+  you do, or all of you want to do in this alleged commons [were it to
+  exist?].
+Chris Chapman: Yeah.
+Sonja Blum: Yeah. I mean I agree that that's an extremely, extremely necessary
+  step for me at least. In general I think it's really useful to have both the
+  lay of the land - sort of what's being done - and also maybe a wish list.
+  Maybe just starting with this summary of what's actually out there, how
+  people are presenting their data, publicly online, and what works, what
+  doesn't work. But also, I think it will be useful...because I think a lot of
+  people, including myself, still have concerns about just putting stuff
+  openly on...even though there's huge increase in computer literacy and
+  coding, and sort of understanding what's happening on the Internet, there's
+  also a huge amount of...it's like a black hole to a ton of people,
+  especially in terms of intellectual property, copyright, and just what is
+  happening to the information that you're actually putting out publicly. I
+  think that's a really, really important wing of whatever this group does: to
+  clarify, summarize those kind of intellectual propery and copyright issues.
+David Farmer: Well I'd like to hear you write a scenario describing when
+  somebody does something and somebody else tries to infringe upon them, and
+  what happens, and how people know about it.
+Chris Chapman: And Bruce just put a comment. He also has a place where he's
+  collecting ideas, and I think scenarios [would be included] in there.
+Bruce Caron: Sure, Yeah.
+Chris Chapman: I also want to know from you, Bruce, I know we're over time,
+  but what is the difference between what you're going for with patterns of
+  scholarly commoning and the scenarios that David is talking about?
+Bruce Caron: So patterns try to work both from problems to solutions and
+  solutions then back to context. So using design patterns is a way to distill
+  and synthesize a layer of understanding above what the scenarios are. So
+  scenarios are like the grist for that mill. And I think it's great to have
+  someone say well this is my vision for how this part of the academy could
+  work better in the future. It doesn't have to be a solution that's already
+  been tried. It's a solution you have some idea would work in the future. And
+  then we have another sort of idea: this is something that's really broken.
+  So you can have a scenario: I tried this and it really didn't work. Or
+  there's something in the process that really holding me up, taking my time,
+  wasting my life. So we can collect those too. I think it fits in pretty well
+  with what David was talking about.
+Chris Chapman: So some of these scenarios I guess...what you're saying is that
+  we could extract patterns from them?
+Bruce Caron: Right.
+Chris Chapman: Okay.
+Bruce Caron: Yeah, patterns are a little more focused and synthetic, and they
+  really isolate how a problem space can find a set of solutions spaces. The
+  whole point of why they're not practices or good practices, although they do
+  inform good practices, is that you can have have any number of solutions
+  coming off of a pattern that solve a problem that you have right now.
+Chris Chapman: (affirms)
+Bruce Caron: Again it's a way to move the conversation beyond just let's open
+  everything up and hope everyone shares.
+Chris Chapman: Yeah.
+Chris Chapman: Okay so check out Bruce's ideascale things. Bruce put a link in
+  the agenda for that...because you have two...
+Bruce Caron: Yeah. We'll have other challenges and things, but the point here
+  is that you can also get comments, and the comments are really
+  important...build from one idea into something that can create a pattern.
+  You can comment on other ideas too. A lot of these ideas came out of the
+  FORCE11 conversations for the scholarly commons a year ago.
+
+Topic: Action items and suggestions for next week's agenda
+
+Chris Chapman: Great. And really quickly before we end: does anyone have
+  suggestions for what we talk about next week?
+Sonja Blum: This last bit that we talked about in terms of taking practical
+  next steps to summarize practices that I've ... so far. I guess just
+  finishing up on that, sort of how to do that, and maybe strategizing,
+  dividing up that work.
+Chris Chapman: Okay. And someone else, is that Ivar?
+Ivar Martin: Yeah, yeah. I just wanted to comment. I think actually David's
+  idea as a way forward and to frame our thinking was a Google Doc where we
+  would put together scenarios and organize them perhaps by topic or by...I
+  don't know, whichever way we decide to diagonalize that...I think that would
+  be actually a fun exercise that everybody can participate in, and I think it
+  will be actually quite useful.
+Chris Chapman: Okay.
+Ivar Martin: And to make it really targetted, indeed. Maybe some of the things
+  which are practices of the present day to what we see could be a good
+  evolution of them in the future, what would be, kind of be, the endpoint.
+  Yeah. I think that would be really cool.
+Chris Chapman: Okay. Great.
+Katie Chapman: My one other thought is just looking over some of those
+  questions that were brought up or throwing other questions out there and
+  just starting some of those conversations, maybe in the same way. Start a
+  Google Doc of questions, maybe. Just some things to start brainstorming
+  around different...and I guess it's kind of the same thing. It's just
+  looking at it in terms of maybe more granular questions or really broad
+  questions, not necessarily a specific situation scenario. That way we can be
+  working from whatever direction our brain is clicking at the moment. We can
+  be progressing with any of those things.
+Chris Chapman: Okay, thank you. Anything else we need to bring up before the
+  end?
+Katie Chapman: no
+Chris Chapman: Okay, thank you all. This has been a great call.
+Ivar Martin: Thank you.
+Chris Chapman: I will send an email out with the transcript as soon as it is
+  ready, and then you can have the option to adjust anything. I'll send an
+  email out as well with how we want to actually...like where we want to put
+  the transcript, or these meeting notes and stuff.
+Chris Chapman: Okay.
+Sonja Blum: Okay thank you.
+Chris Chapman: Thank you! Have a great week.
+Bruce Caron: Thanks everyone.
+Ivar Martin: Alright, thank you.
+All: Bye-bye!
