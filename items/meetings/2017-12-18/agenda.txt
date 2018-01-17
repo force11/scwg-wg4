@@ -1,0 +1,73 @@
+Subject: [AGENDA] SCWG WG4 Weekly Call - 18 December 2017 8am PST
+
+Hi all,
+
+Here is the info for the next weekly meeting of the SCWG WG4. Just a reminder
+that there are no calls for the two weeks after this call (the 25th and Jan
+1st). This is the last call of this year. After this Monday, the next group
+telecon will be January 8th, 2018.
+
+Monday, December 18th
+Time: 8am Pacific, 11am Boston, 16:00 UTC, 17:00 CET, 18:00 EET
+      other time zones: https://goo.gl/Junakj
+Text Chat: CommonsPatterns Slack (#tech-meetings channel)
+           https://commonspatterns.slack.com/messages/C6V6AAEUF/
+           invite here: https://limitless-island-44565.herokuapp.com/
+Voice: tel:+1-646-558-8656, Meeting ID: 489-033-2111
+       international numbers: https://goo.gl/6wqeoA
+       https://ucsd.zoom.us/j/489-033-2111
+Duration: 60 minutes
+
+Headsets (+ mic) are recommended for the call unless, of course, you are
+calling in by phone. If this is your first time using Zoom, be sure to give
+ample time to download the Zoom client before the call (~200MB download for
+some operating systems). I can look into the possibility of an additional SIP
+option if that would work better for any.
+
+As always, these calls are open. Anyone is welcome to join these weekly calls
+at any time.
+
+If you want to add anything to or modify the proposed agenda below,
+please respond via the mailing list, Google Doc agenda (below), or make
+a note of it at the beginning of the call during the agenda review.
+
+Agenda from last call: https://goo.gl/HX6gbv
+Recording of last call: https://goo.gl/411XTC
+Transcript of last call: [IN PROCESS - I'll send an email when ready]
+
+PROPOSED AGENDA:
+
+1 Welcome and agenda review
+2 Introductions to new people
+3 Status of current action items
+  - Add thoughts to the narrative generally about how we think we should
+    present the topics project so it will be well-structured, digested,
+    meaningful, and will engage and encourage dialog between parties
+    https://goo.gl/xs496P [ALL]
+  - Report on the meeting transcriptions & the beginnings of a website to
+    support transcriptions and possibly other parts of our work [CHRIS]
+  - Add to the scenarios. https://goo.gl/XikbTf [ONGOING]
+  - Add to the questions to consider: https://goo.gl/MxA41E [ONGOING]
+4 Our goal and how we can productively work towards it
+  - Using knowen as a tool to collect ideas and info from our calls:
+    http://knowen.org/nodes/23379. See this thread for some context and
+    discussion: https://goo.gl/i5jA2A
+  - Proposed topics project:
+    * Start laying some groundwork for inviting people, specifically work on
+      categorizing the scenarios: structure, tags, etc.
+    * Start with Ivar and knowen as our test subjects.
+5 Various discussion topics (as time permits)
+  - Scenarios: https://goo.gl/XikbTf
+  - Questions to consider: https://goo.gl/MxA41E
+  - Technologies: https://goo.gl/8r822b
+6 Action items and suggestions for next week's agenda
+
+I've pasted this proposed agenda into a Google Doc here:
+
+https://goo.gl/jvgYWR
+
+Feel free to hack. Also, please let me know if you have any questions.
+
+Cheers,
+
+Chris Chapman

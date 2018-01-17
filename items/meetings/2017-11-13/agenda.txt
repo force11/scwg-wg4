@@ -1,0 +1,62 @@
+Subject: [AGENDA] SCWG WG4 Weekly Call - 13 November 2017 8am PST
+
+Hi all,
+
+Here is the info for the next weekly meeting of the SCWG WG4.
+
+Monday, November 13th
+Time: 8am Pacific, 11am Boston, 16:00 UTC, 17:00 CET, 18:00 EET
+      other time zones: https://goo.gl/mtD9mZ
+Text Chat: CommonsPatterns Slack (#tech-meetings channel)
+           https://commonspatterns.slack.com/messages/C6V6AAEUF/
+           invite here: https://limitless-island-44565.herokuapp.com/
+Voice: tel:+1-646-558-8656, Meeting ID: 489-033-2111
+       international numbers: https://goo.gl/6wqeoA
+       https://ucsd.zoom.us/j/489-033-2111
+Duration: 60 minutes
+
+Headsets (+ mic) are recommended for the call unless, of course, you are
+calling in by phone. If this is your first time using Zoom, be sure to
+give ample time to download the Zoom client before the call (~200MB
+download). I can look into the possibility of an additional SIP option
+if that would work better for any.
+
+As always, these calls are open. Anyone is welcome to join these weekly calls
+at any time.
+
+If you want to add anything to or modify the proposed agenda below,
+please respond via the mailing list, Google Doc agenda (below), or make
+a note of it at the beginning of the call.
+
+Agenda from last call: https://goo.gl/ekaFQB
+Minutes from last call: [IN PROCESS - I'll send an email when ready]
+
+PROPOSED AGENDA:
+
+1 Agenda review
+2 Introductions to new people
+3 Status of current action items
+  - Add to the scenarios. Please see David's instructions for how to do this:
+    https://goo.gl/ay6CWJ. Also be sure to attribute your contributions to
+    preserve some context. [ONGOING]
+  - Add to the questions to consider: https://goo.gl/MxA41E [ONGOING]
+4 Our goal and how we can productively work towards it
+  - FORCE2017 Recap - Blockchain workshop [Nate?]
+  - Schedule of Invited Topics https://goo.gl/nLmfj4 [Chris]
+5 Various discussion topics (as time permits)
+  - Scenarios: https://goo.gl/XikbTf
+  - Questions to consider: https://goo.gl/MxA41E
+  - Technologies: https://goo.gl/8r822b
+  - Content for scholarlycommons.org. The SCWG SC would like us to add some
+    info about this group on this website.
+6 Action items and suggestions for next week's agenda
+
+I've pasted this proposed agenda into a Google Doc here:
+
+https://goo.gl/gZJhMc
+
+Feel free to hack. Also, please let me know if you have any questions.
+
+Cheers,
+
+Chris Chapman

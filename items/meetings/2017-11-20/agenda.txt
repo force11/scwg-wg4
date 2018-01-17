@@ -1,0 +1,62 @@
+Subject: [AGENDA] SCWG WG4 Weekly Call - 20 November 2017 8am PST
+
+Hi all,
+
+Here is the info for the next weekly meeting of the SCWG WG4.
+
+Monday, November 20th
+Time: 8am Pacific, 11am Boston, 16:00 UTC, 17:00 CET, 18:00 EET
+      other time zones: https://goo.gl/LJPLr9
+Text Chat: CommonsPatterns Slack (#tech-meetings channel)
+           https://commonspatterns.slack.com/messages/C6V6AAEUF/
+           invite here: https://limitless-island-44565.herokuapp.com/
+Voice: tel:+1-646-558-8656, Meeting ID: 489-033-2111
+       international numbers: https://goo.gl/6wqeoA
+       https://ucsd.zoom.us/j/489-033-2111
+Duration: 60 minutes
+
+Headsets (+ mic) are recommended for the call unless, of course, you are
+calling in by phone. If this is your first time using Zoom, be sure to
+give ample time to download the Zoom client before the call (~200MB
+download). I can look into the possibility of an additional SIP option
+if that would work better for any.
+
+As always, these calls are open. Anyone is welcome to join these weekly calls
+at any time.
+
+If you want to add anything to or modify the proposed agenda below,
+please respond via the mailing list, Google Doc agenda (below), or make
+a note of it at the beginning of the call.
+
+Agenda from last call: https://goo.gl/gZJhMc
+Recording of last call: https://goo.gl/KBaL6S
+Minutes from last call: [IN PROCESS - I'll send an email when ready]
+
+PROPOSED AGENDA:
+
+1 Agenda review
+2 Introductions to new people
+3 Status of current action items
+  - Get feedback from steering committee on the schedule of invited topics
+    https://goo.gl/nLmfj4 [DONE]
+  - Add to the scenarios. https://goo.gl/XikbTf [ONGOING]
+  - Add to the questions to consider: https://goo.gl/MxA41E [ONGOING]
+4 Our goal and how we can productively work towards it
+  - Discussion on how we go about inviting topics
+    * How do we decide which topics to focus on?
+    * How does this relate to the technologies document?
+5 Various discussion topics (as time permits)
+  - Scenarios: https://goo.gl/XikbTf
+  - Questions to consider: https://goo.gl/MxA41E
+  - Technologies: https://goo.gl/8r822b
+6 Action items and suggestions for next week's agenda
+
+I've pasted this proposed agenda into a Google Doc here:
+
+https://goo.gl/Jtzv3B
+
+Feel free to hack. Also, please let me know if you have any questions.
+
+Cheers,
+
+Chris Chapman

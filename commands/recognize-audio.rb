@@ -1,0 +1,100 @@
+# frozen_string_literal = true
+
+usage 'recognize-audio [args] audio_file'
+aliases :recognize_audio, :ra
+summary 'creates a recognition of an audio file'
+description 'Currently uses the IBM Watson Speech to Text service to recognize audio'
+
+class RecognizeAudio < ::Nanoc::CLI::CommandRunner
+
+  ACCEPTED_FORMATS = %w(flac mp3 mpeg ogg wav webm) unless defined? ACCEPTED_FORMATS
+
+  def run
+    require 'time'
+    require 'json'
+    require 'net/http'
+    require 'media'
+
+    # Extract arguments
+    if arguments.length != 1
+      raise Nanoc::Int::Errors::GenericTrivial, "usage: #{command.usage}"
+    end
+    audio_file = arguments[0]
+
+    # Verify that audio file exists
+    if !File.exist?(audio_file) 
+      raise Nanoc::Int::Errors::GenericTrivial, "audio file does not exist"
+    end
+
+    # Verify the audio file is the right type
+    if !ACCEPTED_FORMATS.include?(File.extname(audio_file).strip.downcase[1..-1])
+      raise(
+        Nanoc::Int::Errors::GenericTrivial,
+        "audio file must be one of the following: #{ACCEPTED_FORMATS.join(' ')}"
+      )
+    end
+
+    $stderr.print 'Probing audio file… '
+    $stderr.flush
+    probe = Media.probe(audio_file)
+    duration = probe.format.duration.to_f / 60
+    $stderr.puts 'done'
+
+    File.open('.ibm_client_secret.json') do |file|
+      client_secret = JSON.parse(file.read, symbolize_names: true)
+      @base_url = client_secret[:url]
+      @username = client_secret[:username]
+      @password = client_secret[:password]
+    end
+
+    uri = URI.parse(@base_url + '/v1/recognize')
+    params = {
+      timestamps: true,
+      smart_formatting: true,
+      speaker_labels: true,
+      inactivity_timeout: -1
+    }
+    uri.query = URI.encode_www_form(params)
+
+    $stderr.print 'Reading bits of audio file into memory… '
+    $stderr.flush
+    audio_data = File.read(audio_file, mode: 'rb')
+    $stderr.puts 'done'
+
+    req = Net::HTTP::Post.new uri
+    req.basic_auth(@username, @password)
+    req.body = audio_data
+    req.content_type = "audio/#{File.extname(audio_file).delete('.')}"
+
+    $stderr.print "Starting recognition of #{duration.round} minutes of audio… "
+    $stderr.flush
+    http = Net::HTTP.new(uri.host, uri.port)
+    http.use_ssl = uri.scheme == 'https'
+    http.read_timeout = 5 * 60
+    http.set_debug_output($stderr) if debug?
+
+    start = Time.now
+    res = http.start { |connection| connection.request(req) }
+    $stderr.puts 'done'
+
+    case res
+    when Net::HTTPSuccess
+      response_duration = ((Time.now - start) / 60).round
+      $stderr.puts 'Audio recognition request finished successfully in about ' \
+                   "#{response_duration} minutes"
+
+      meeting_dir, audio_name = File.split(audio_file)
+      recognition_file = File.join(meeting_dir, File.basename(audio_name, '.*') + '.json')
+      File.open(recognition_file, 'w') do |file|
+        $stderr.print "Saving recognition file to #{recognition_file}… "
+        $stderr.flush
+        file.write(res.body)
+        $stderr.puts 'done'
+      end
+    else
+      res.value
+    end
+  end
+end
+
+runner RecognizeAudio

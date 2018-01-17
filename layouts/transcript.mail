@@ -1,0 +1,22 @@
+From: Chris Chapman <chris@pentandra.com>
+To: "SCWG WG4: Enabling technologies" <scwgwg4@force11.org>
+Subject: Transcript of the <%= @item[:meeting_date] %> telecon
+
+Hi everyone,
+<% if @item.key?(:message) %>
+<%= @item[:message] %>
+<% end %>
+Here are the minutes for this call:
+
+------------------------------------------------------------------------
+
+SCWG WG4 Telecon Minutes for <%= @item[:meeting_date] %>
+
+Agenda:
+  <%= @item[:agenda] %>
+Topics:
+Present:
+  <%= @item[:participants]&.to_sentence %>
+Audio:
+
+<%= yield %>
