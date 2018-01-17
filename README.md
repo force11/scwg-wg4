@@ -5,6 +5,10 @@ An evolving playground for the work of [FORCE11 SCWG WG4].
 See [this document][requirements] for some high-level thoughts on what this is
 trying to achieve from at least the standpoint of an archive of meetings.
 
+WARNING: This repository contains an archive of all of our meetings and will
+get quite large. Be sure to have a good Internet connection before cloning or
+downloading this repository.
+
 ## Requirements and prerequisites
 
 An effort is being made to make this site compile in a cross-platform way,
