@@ -76,5 +76,9 @@ appropriate locations):
 nanoc [compile] [--verbose]
 ```
 
+## License
+
+[MIT](LICENSE.txt)
+
 [FORCE11 SCWG WG4]: https://www.force11.org/group/scholarly-commons-working-group/wg4enabling-technologies-and-infrastructures
 [requirements]: https://docs.google.com/document/d/1Dd075OgS3siZS5zdwPrR6Wrn7zltJhUv66TXJMKTkxU/edit#
