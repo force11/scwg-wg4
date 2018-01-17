@@ -40,6 +40,7 @@ nanoc create-agenda 'next monday at 9am'
 High-level overview of the sequential nanoc commands to create a raw
 transcription:
 
+<pre>
                   +-----+               +------+               +-----+
              +----| ogg +-----+   +-----| json +------+   +----| vtt +-----+
              |    +-----+     |   |     +------+      |   |    +-----+     |
@@ -51,6 +52,7 @@ transcription:
              |    +-----+     |   |                   |   |                |
              +----| mp3 +-----+   +-------------------+   +----------------+
                   +-----+
+</pre>
 
 The general process goes like this (of course replace file paths with the
 appropriate locations):
