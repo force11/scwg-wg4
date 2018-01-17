@@ -18,7 +18,7 @@ Before compiling this site, you will need to install several programs:
 
 * `ffmpeg` compiled with `libopus` support for the `import-audio` command.
 * `pandoc` for the file processing and conversions
-* Ruby, to run `nanoc` static site generator and commands
+* [Ruby], to run the [Nanoc static site generator][Nanoc] and commands
 
 Then install Ruby gems:
 
@@ -82,3 +82,5 @@ nanoc [compile] [--verbose]
 
 [FORCE11 SCWG WG4]: https://www.force11.org/group/scholarly-commons-working-group/wg4enabling-technologies-and-infrastructures
 [requirements]: https://docs.google.com/document/d/1Dd075OgS3siZS5zdwPrR6Wrn7zltJhUv66TXJMKTkxU/edit#
+[Nanoc]: https://nanoc.ws/
+[Ruby]: https://www.ruby-lang.org/
