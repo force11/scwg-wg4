@@ -3,7 +3,7 @@
 An evolving playground for the work of [FORCE11 SCWG WG4].
 
 See [this document][requirements] for some high-level thoughts on what this is
-trying to achieve from at least the standpoint of an archive of meetings.
+trying to achieve from at least the standpoint of a tool for meetings.
 
 WARNING: This repository contains an archive of all of our meetings and will
 get quite large. Be sure to have a good Internet connection before cloning or
@@ -18,7 +18,7 @@ Before compiling this site, you will need to install several programs:
 
 * `ffmpeg` compiled with `libopus` support for the `import-audio` command.
 * `pandoc` for the file processing and conversions
-* [Ruby], to run the [Nanoc static site generator][Nanoc] and commands
+* [Ruby], to run the [Nanoc static site generator][Nanoc] and [commands]
 
 Then install Ruby gems:
 
@@ -52,7 +52,7 @@ transcription:
                +----| mp3 +-----+   +-------------------+   +----------------+
                     +-----+
 
-The general process goes like this (of course replace file paths with the
+The general process goes like this (of course replace these file paths with the
 appropriate locations):
 
 1. Import the audio into formats and bitrates appropriate for the Web,
@@ -63,7 +63,7 @@ appropriate locations):
     ```
 
 2. Send the audio to a speech-to-text service for initial transcription and
-   forced alignment.
+   forced alignment
 
     ```bash
     nanoc recognize-audio items/meetings/2017-12-18/audio_0.ogg
@@ -91,3 +91,4 @@ nanoc [compile] [--verbose]
 [requirements]: https://docs.google.com/document/d/1Dd075OgS3siZS5zdwPrR6Wrn7zltJhUv66TXJMKTkxU/edit#
 [Nanoc]: https://nanoc.ws/
 [Ruby]: https://www.ruby-lang.org/
+[commands]: commands/
