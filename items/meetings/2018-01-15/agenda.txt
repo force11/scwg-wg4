@@ -1,0 +1,64 @@
+Subject: [AGENDA] SCWG WG4 Weekly Call - 15 January 2018 8am PST
+
+Hi all,
+
+Here is the info for the next weekly meeting of the SCWG WG4. Despite the
+holiday in the US, I think it would be prudent to meet to try to finish our
+preparations for the Knowen call on the 22nd.
+
+Monday, January 15th
+Time: 8am Pacific, 11am Boston, 16:00 UTC, 17:00 CET, 18:00 EET
+      other time zones: https://goo.gl/grArq6
+Text Chat: CommonsPatterns Slack (#tech-meetings channel)
+           https://commonspatterns.slack.com/messages/C6V6AAEUF/
+           invite here: https://limitless-island-44565.herokuapp.com/
+Voice: tel:+1-646-558-8656, Meeting ID: 489-033-2111
+       international numbers: https://goo.gl/6wqeoA
+       https://ucsd.zoom.us/j/489-033-2111
+Duration: 60 minutes
+
+Headsets (+ mic) are recommended for the call unless, of course, you are
+calling in by phone. If this is your first time using Zoom, be sure to give
+ample time to download the Zoom client before the call (~200MB download for
+some platforms). I can look into the possibility of an additional SIP option
+if that would work better for any.
+
+As always, these calls are open. Anyone is welcome to join these weekly calls
+at any time.
+
+If you want to add anything to or modify the proposed agenda below,
+please respond via the mailing list, Google Doc agenda (below), or make
+a note of it at the beginning of the call during the agenda review.
+
+Agenda from last call: https://goo.gl/Wfg2b4
+Recording of last call: https://goo.gl/9dpNJf
+
+PROPOSED AGENDA:
+
+1 Welcome and agenda review
+2 Introductions to new people
+3 Status of current action items
+  - Add to the scenarios. https://goo.gl/XikbTf [ONGOING]
+  - Add to the questions to consider: https://goo.gl/MxA41E [ONGOING]
+4 Topics project
+  - Preparation for our first topic: Knowen, on January 22nd (cont.)
+    * Logistics around creating and sending out an announcement
+    * Preparing questions and approaches
+    * Considerations for using http://knowen.org/nodes/23387 or
+      https://goo.gl/GvWwb9 (or both?) to manage our preparation
+  - Choosing next topics
+5 Various discussion topics (as time permits)
+  - Scenarios: https://goo.gl/XikbTf
+  - Questions to consider: https://goo.gl/MxA41E
+6 Action items and suggestions for next week's agenda
+7 Post-call summary and wrap-up
+
+I've pasted this proposed agenda into a Google Doc here:
+
+https://goo.gl/C541Ko
+
+Feel free to hack. Also, please let me know if you have any questions.
+
+Cheers,
+
+Chris Chapman
