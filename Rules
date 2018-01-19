@@ -6,7 +6,10 @@ preprocess do
 end
 
 ignore '/meetings/*/*.json'
-passthrough '/**/*.txt'
+
+compile '/meetings/*/agenda.txt' do
+  write ext: 'mail'
+end
 
 compile '/meetings/*/index.md' do
   filter :pandoc, args: [
