@@ -58,16 +58,16 @@ appropriate locations):
 1. Import the audio into formats and bitrates appropriate for the Web,
    enriching with appropriate metadata
 
-    nanoc import-audio ~/Documents/Zoom/2017-12-18 09.02.31*/audio_only.m4a
+        nanoc import-audio ~/Documents/Zoom/2017-12-18 09.02.31*/audio_only.m4a
 
 2. Send the audio to a speech-to-text service for initial transcription and
    forced alignment
 
-    nanoc recognize-audio items/meetings/2017-12-18/audio_0.ogg
+        nanoc recognize-audio items/meetings/2017-12-18/audio_0.ogg
 
 3. Generate a WebVTT file to use as a starting point for the transcription
 
-    nanoc generate-vtt items/meetings/2017-12-18/audio_0.json
+        nanoc generate-vtt items/meetings/2017-12-18/audio_0.json
 
 4. Edit the WebVTT file for accuracy, clarification, diplomacy, etc.
 
