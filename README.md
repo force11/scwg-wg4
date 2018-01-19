@@ -6,8 +6,8 @@ See [this document][requirements] for some high-level thoughts on what this is
 trying to achieve from at least the standpoint of a tool for meetings.
 
 WARNING: This repository contains an archive of all of our meetings and will
-get quite large. Be sure to have a good Internet connection before cloning or
-downloading this repository.
+become quite large over time. Be sure to have a good Internet connection before
+cloning or downloading this repository.
 
 ## Requirements and prerequisites
 
@@ -82,6 +82,13 @@ appropriate locations):
 ```bash
 nanoc [compile] [--verbose]
 ```
+### Serving the site
+
+```bash
+nanoc view
+```
+
+The site should then be available at [http://localhost:3000/].
 
 ## License
 
