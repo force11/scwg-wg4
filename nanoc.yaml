@@ -90,3 +90,9 @@ checks:
     # E.g.:
     #   exclude_files: ['blog/page']
     exclude_files: []
+
+cache:
+  short_urls: 'var/cache/short_urls'
+
+google:
+  application_name: SCWG WG4 static build

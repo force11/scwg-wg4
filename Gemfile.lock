@@ -149,9 +149,9 @@ DEPENDENCIES
   chronic
   filesize
   google-api-client
+  googleauth
   guard
   guard-nanoc
-  httpclient
   media!
   nanoc
   nokogiri

@@ -1,11 +1,9 @@
 source 'https://rubygems.org'
 
 gem 'chronic'
-gem 'google-api-client'
 gem 'media', git: 'https://github.com/jamiehodge/media'
 gem 'webvtt-ruby', git: 'https://github.com/opencoconut/webvtt-ruby.git'
 gem 'yajl-ruby'
-gem 'httpclient'
 
 group :nanoc do
   gem 'nanoc'
@@ -13,6 +11,8 @@ group :nanoc do
   gem 'nokogiri'
   gem 'filesize'
   gem 'pandoc-ruby'
+  gem 'google-api-client'
+  gem 'googleauth'
 end
 
 group :development, optional: true do

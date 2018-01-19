@@ -3,3 +3,6 @@
 require "active_support/core_ext/array/conversions"
 
 include Nanoc::Helpers::Rendering
+
+include LinkTo
+include Dates
