@@ -6,6 +6,7 @@ summary 'creates a recognition of an audio file'
 description 'Currently uses the IBM Watson Speech to Text service to recognize audio'
 
 class RecognizeAudio < ::Nanoc::CLI::CommandRunner
+  Credentials = Struct.new(:url, :username, :password)
 
   ACCEPTED_FORMATS = %w(flac mp3 mpeg ogg wav webm) unless defined? ACCEPTED_FORMATS
 
@@ -14,6 +15,8 @@ class RecognizeAudio < ::Nanoc::CLI::CommandRunner
     require 'json'
     require 'net/http'
     require 'media'
+
+    config = Nanoc::Int::ConfigLoader.new.new_from_cwd
 
     # Extract arguments
     if arguments.length != 1
@@ -40,14 +43,10 @@ class RecognizeAudio < ::Nanoc::CLI::CommandRunner
     duration = probe.format.duration.to_f / 60
     $stderr.puts 'done'
 
-    File.open('.ibm_client_secret.json') do |file|
-      client_secret = JSON.parse(file.read, symbolize_names: true)
-      @base_url = client_secret[:url]
-      @username = client_secret[:username]
-      @password = client_secret[:password]
-    end
+    ibm = JSON.parse(File.read(config[:ibm][:credentials]),
+                     object_class: Credentials)
 
-    uri = URI.parse(@base_url + '/v1/recognize')
+    uri = URI.parse(ibm.url + '/v1/recognize')
     params = {
       timestamps: true,
       smart_formatting: true,
@@ -58,11 +57,11 @@ class RecognizeAudio < ::Nanoc::CLI::CommandRunner
 
     $stderr.print 'Reading bits of audio file into memory… '
     $stderr.flush
-    audio_data = File.read(audio_file, mode: 'rb')
+    audio_data = File.binread(audio_file)
     $stderr.puts 'done'
 
     req = Net::HTTP::Post.new uri
-    req.basic_auth(@username, @password)
+    req.basic_auth(ibm.username, ibm.password)
     req.body = audio_data
     req.content_type = "audio/#{File.extname(audio_file).delete('.')}"
 
