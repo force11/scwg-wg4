@@ -87,9 +87,11 @@ class GenerateVTT < ::Nanoc::CLI::CommandRunner
       NOTE This file was generated for the FORCE11 Scholarly Commons Working
       Group 4 through a semi-automatic process. It now represents the
       authoritative transcript of this telecon, and should be edited for
-      correction and clarification. Other representations of the meeting will
-      be generated from this document. For further information about the WebVTT
-      syntax and data model, visit: https://w3c.github.io/webvtt/
+      correction, clarification, and diplomacy. Other representations of the
+      meeting will be generated from this document.
+
+      NOTE For further information about the WebVTT syntax and data model,
+      visit: https://w3c.github.io/webvtt/
     EOS
 
     content = content + cues.map(&:to_webvtt).compact.join
