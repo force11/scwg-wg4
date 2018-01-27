@@ -95,7 +95,8 @@ cache:
   short_urls: 'var/cache/short_urls'
 
 ibm:
-  credentials: '.config/ibm/client_secret.json'
+  credentials_path: '.config/ibm'
 
 google:
   application_name: SCWG WG4 static build
+  credentials_path: '.config/google'

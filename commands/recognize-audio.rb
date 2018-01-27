@@ -16,7 +16,7 @@ class RecognizeAudio < ::Nanoc::CLI::CommandRunner
     require 'net/http'
     require 'media'
 
-    config = Nanoc::Int::ConfigLoader.new.new_from_cwd
+    @config = Nanoc::Int::ConfigLoader.new.new_from_cwd
 
     # Extract arguments
     if arguments.length != 1
@@ -43,8 +43,7 @@ class RecognizeAudio < ::Nanoc::CLI::CommandRunner
     duration = probe.format.duration.to_f / 60
     $stderr.puts 'done'
 
-    ibm = JSON.parse(File.read(config[:ibm][:credentials]),
-                     object_class: Credentials)
+    ibm = JSON.parse(File.read(client_secrets_path), object_class: Credentials)
 
     uri = URI.parse(ibm.url + '/v1/recognize')
     params = {
@@ -93,6 +92,16 @@ class RecognizeAudio < ::Nanoc::CLI::CommandRunner
     else
       res.value
     end
+  end
+
+  private
+
+  def client_secrets_path
+    well_known_path_for('client_secrets.json')
+  end
+
+  def well_known_path_for(file)
+    File.join(@config[:ibm][:credentials_path], file)
   end
 end
 

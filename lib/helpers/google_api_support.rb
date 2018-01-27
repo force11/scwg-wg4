@@ -17,7 +17,7 @@ module GoogleApiSupport
   end
 
   def well_known_path_for(file)
-    File.join('.config', 'google', file)
+    File.join(@config[:google][:credentials_path], file)
   end
 
   # Returns user credentials for the given scope. Requests authorization if
