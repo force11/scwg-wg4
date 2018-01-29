@@ -44,13 +44,18 @@ class GenerateVTT < ::Nanoc::CLI::CommandRunner
 
     # Check for file existence and force flag
     meeting_dir, recognition_name = File.split(recognition_path)
-    output = File.join(meeting_dir, File.basename(recognition_name, '.*') + '.vtt')
-    if File.exist?(output) && !options[:force]
+    output_file = File.join(meeting_dir, File.basename(recognition_name, '.*') + '.vtt')
+    if File.exist?(output_file) && !options[:force]
       raise(
         Nanoc::Int::Errors::GenericTrivial,
-        "The transcript was not created because '#{output}' already exists. " \
+        "The transcript was not created because '#{output_file}' already exists. " \
         'Re-run the command using --force to create the transcript anyway.',
       )
+    end
+
+    # Setup notifications
+    Nanoc::Int::NotificationCenter.on(:file_created) do |file_path|
+      Nanoc::CLI::Logger.instance.file(:high, :create, file_path)
     end
 
     recognition_file = File.open(recognition_path)
@@ -95,9 +100,14 @@ class GenerateVTT < ::Nanoc::CLI::CommandRunner
     EOS
 
     content = content + cues.map(&:to_webvtt).compact.join
-    File.write(output, content, mode: 'w')
+    write(output_file, content)
+  end
 
-    $stderr.puts "Wrote diarized transcript to '#{output}'"
+  private
+
+  def write(filename, content)
+    File.write(filename, content)
+    Nanoc::Int::NotificationCenter.post(:file_created, filename)
   end
 end
 

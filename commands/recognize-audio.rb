@@ -37,6 +37,11 @@ class RecognizeAudio < ::Nanoc::CLI::CommandRunner
       )
     end
 
+    # Setup notifications
+    Nanoc::Int::NotificationCenter.on(:file_created) do |file_path|
+      Nanoc::CLI::Logger.instance.file(:high, :create, file_path)
+    end
+
     $stderr.print 'Probing audio file… '
     $stderr.flush
     probe = Media.probe(audio_file)
@@ -83,18 +88,18 @@ class RecognizeAudio < ::Nanoc::CLI::CommandRunner
 
       meeting_dir, audio_name = File.split(audio_file)
       recognition_file = File.join(meeting_dir, File.basename(audio_name, '.*') + '.json')
-      File.open(recognition_file, 'w') do |file|
-        $stderr.print "Saving recognition file to #{recognition_file}… "
-        $stderr.flush
-        file.write(res.body)
-        $stderr.puts 'done'
-      end
+      write(recognition_file, res.body)
     else
       res.value
     end
   end
 
   private
+
+  def write(filename, content)
+    File.write(filename, content)
+    Nanoc::Int::NotificationCenter.post(:file_created, filename)
+  end
 
   def client_secrets_path
     well_known_path_for('client_secrets.json')
