@@ -11,25 +11,34 @@ class GenerateVTT < ::Nanoc::CLI::CommandRunner
   Utterance = Struct.new(:word, :start_time, :end_time, :speaker) unless defined? Utterance
 
   class VTTCue
-    attr_reader :identifier, :start_time, :end_time, :speaker, :text
+    attr_reader :identifier, :start_time, :end_time
+
+    def self.v(speaker, text)
+      "<v %SPEAKER_#{speaker}>#{text}</v>"
+    end
 
     def initialize(identifier, utterances)
       @identifier = identifier
       @start_time = WebVTT::Timestamp.new(utterances.first.start_time)
       @end_time = WebVTT::Timestamp.new(utterances.last.end_time)
-      @speaker = utterances.first.speaker
-      @text = utterances.map { |u| u.word }.join(' ')
+      @utterances = utterances
     end
 
     def to_webvtt
       cue = String.new
-      cue << "\ns-#{identifier}\n"
-      cue << "#{start_time} --> #{end_time}\n"
-      cue << "<v %SPEAKER_#{speaker}>#{text}\n"
+      cue << "\ncue-#{identifier}"
+      cue << "\n#{start_time} --> #{end_time}"
+      cue << "\n#{text}\n"
       cue
     end
-
     alias to_s to_webvtt
+
+    def text
+      @utterances
+        .chunk { |u| u.speaker }
+        .map { |s, utts| self.class.v(s, utts.map { |u| u.word }.join(' ')) }
+        .join
+    end
   end
 
   def run
@@ -64,28 +73,23 @@ class GenerateVTT < ::Nanoc::CLI::CommandRunner
 
     utterance_map = {}
 
-    results = recognition[:results]
-    results.each do |result|
+    speaker_labels = recognition[:speaker_labels].to_enum
+    recognition[:results].each do |result|
       next unless result[:final]
       alternative = result[:alternatives].first
-      alternative[:timestamps].each do |timestamp|
-        start_time = timestamp[1]
-        utterance_map[start_time] = Utterance.new(*timestamp)
+      utterances = alternative[:timestamps].map do |u|
+        speaker_label = speaker_labels.next
+        Utterance.new(*u, speaker_label[:speaker])
       end
-    end
-
-    speaker_labels = recognition[:speaker_labels]
-    speaker_labels.each do |speaker_label|
-      start_time = speaker_label[:from]
-      utterance_map[start_time]&.speaker = speaker_label[:speaker]
+      start_time = utterances.first.start_time
+      utterance_map[start_time] = utterances
     end
 
     cues = utterance_map.values
-      .chunk_while { |b, a| b.speaker == a.speaker }
       .map.with_index(1) { |u, i| VTTCue.new(i, u) }
 
     meeting_date = recognition_path[/([0-9]{4}-[0-9]{2}-[0-9]{2})/]
-    content = <<~EOS
+    header = <<~EOS
       WEBVTT - SCWG WG4 Telecon (#{meeting_date})
       lang: en
 
@@ -99,7 +103,7 @@ class GenerateVTT < ::Nanoc::CLI::CommandRunner
       visit: https://w3c.github.io/webvtt/
     EOS
 
-    content = content + cues.map(&:to_webvtt).compact.join
+    content = header + cues.map(&:to_webvtt).compact.join
     write(output_file, content)
   end
 
