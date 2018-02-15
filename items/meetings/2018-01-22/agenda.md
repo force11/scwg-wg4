@@ -1,5 +1,5 @@
 ---
-title: 2018-01-22 SCWG WG4 Weekly Meeting
+title: 2018-01-22 Agenda
 meeting_time: 2018-01-22T16:00:00Z
 ---
 

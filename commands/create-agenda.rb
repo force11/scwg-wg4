@@ -38,7 +38,7 @@ class CreateAgenda < ::Nanoc::CLI::CommandRunner
 
     agenda = <<~EOS
     ---
-    title: #{meeting_time.strftime('%F')} SCWG WG4 Weekly Meeting
+    title: #{meeting_time.strftime('%F')} Agenda
     meeting_time: #{meeting_time.utc.iso8601}
     ---
     # Proposed Agenda
