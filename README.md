@@ -29,11 +29,47 @@ bundle install
 
 ## Workflows
 
-### Agenda
+### Agenda & meeting preparation
 
-```bash
-nanoc create-agenda 'next monday at 9am'
-```
+High-level overview of the sequential nanoc commands used to create an agenda
+and prepare for a meeting:
+
+                                               +-------------+
+                                               | Google Docs |
+                                               +-------------+
+                                                      ^
+       +-----------+          +------+                |
+    +--+ agenda.md +--+   +---+ html +---+   +--------+--------+
+    |  +-----------+  |   |   +------+   |   |                 |
+    |                 |   |              |   |                 |
+    |                 |   |              |   |                 |
+    |  create-agenda  +-->|   compile    +-->|  create-notes   |
+    |                 |   |              |   |                 |
+    |                 |   |              |   |                 |
+    |                 |   |   +------+   |   |                 |
+    +-----------------+   +---+ mail +---+   +-----------------+
+                              +------+
+
+
+1. Create an agenda for the next meeting.
+
+        nanoc create-agenda 'next monday at 9am'
+
+2. When the agenda is ready, compile it into two representations, one for email
+   and one as html, to be imported into a Google Doc as a working agenda.
+
+        nanoc [compile] [--verbose]
+
+3. Generate a working agenda and meeting notes from the html representation of
+   the agenda.
+
+        nanoc create-notes output/meetings/2018-02-13/agenda.html
+
+4. Compile again to generate short links to the working agenda.
+
+        nanoc [compile] [--verbose]
+
+5. Notify group of the meeting
 
 ### Transcription
 
