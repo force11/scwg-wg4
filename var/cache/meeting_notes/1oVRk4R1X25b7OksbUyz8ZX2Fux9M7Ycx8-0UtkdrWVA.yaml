@@ -1,0 +1,18 @@
+---
+:alternate_link: https://docs.google.com/document/d/1oVRk4R1X25b7OksbUyz8ZX2Fux9M7Ycx8-0UtkdrWVA/edit?usp=drivesdk
+:created_date: !ruby/object:DateTime 2018-01-14 11:58:51.150000000 Z
+:embed_link: https://docs.google.com/document/d/1oVRk4R1X25b7OksbUyz8ZX2Fux9M7Ycx8-0UtkdrWVA/preview?ouid=102332274449851755462
+:etag: '"G9mQazc6pdRCuGfUPB_oyY074Ug/MTUxNjM2NjM4NDY2MQ"'
+:icon_link: https://drive-thirdparty.googleusercontent.com/16/type/application/vnd.google-apps.document
+:id: 1oVRk4R1X25b7OksbUyz8ZX2Fux9M7Ycx8-0UtkdrWVA
+:kind: drive#file
+:last_modifying_user:
+  :display_name: Chris Chapman
+  :email_address: chris@pentandra.com
+  :kind: drive#user
+  :picture:
+    :url: https://lh3.googleusercontent.com/-a61xAsIhAOA/AAAAAAAAAAI/AAAAAAAAAIk/gg4RcQb5yTM/s64/photo.jpg
+:mime_type: application/vnd.google-apps.document
+:modified_date: !ruby/object:DateTime 2018-01-19 12:53:04.661000000 Z
+:title: 2018-01-15 Agenda
+:version: 85
