@@ -65,6 +65,10 @@ data_sources:
     # be “legacy”, primarily used by older Nanoc sites.
     identifier_type: full
 
+  -
+    type: meeting_notes
+    items_root: /meetings
+
 # Configuration for the “check” command, which run unit tests on the site.
 checks:
   # Configuration for the “internal_links” checker, which checks whether all
@@ -93,6 +97,7 @@ checks:
 
 cache:
   short_urls: 'var/cache/short_urls'
+  meeting_notes: 'var/cache/meeting_notes'
 
 ibm:
   credentials_path: '.config/ibm'
@@ -100,3 +105,9 @@ ibm:
 google:
   application_name: SCWG WG4 static build
   credentials_path: '.config/google'
+  group_subfolder_id: '0B-3fjDTO3dDaYzNOek9vZkRSa3c'
+  agenda_subfolder_id: '0B-3fjDTO3dDaY1pJczVqU0JfZ3c'
+
+mail:
+  from: '"Chris Chapman" <chris@pentandra.com>'
+  to: '"SCWG WG4: Enabling technologies" <scwgwg4@force11.org>'
