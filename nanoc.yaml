@@ -103,7 +103,7 @@ ibm:
   credentials_path: '.config/ibm'
 
 google:
-  application_name: SCWG WG4 static build
+  application_name: SCWG WG4 Playground
   credentials_path: '.config/google'
   group_subfolder_id: '0B-3fjDTO3dDaYzNOek9vZkRSa3c'
   agenda_subfolder_id: '0B-3fjDTO3dDaY1pJczVqU0JfZ3c'
