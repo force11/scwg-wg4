@@ -111,3 +111,5 @@ google:
 mail:
   from: '"Chris Chapman" <chris@pentandra.com>'
   to: '"SCWG WG4: Enabling technologies" <scwgwg4@force11.org>'
+  server: albeniz.process.tree
+  port: 587

@@ -34,21 +34,21 @@ bundle install
 High-level overview of the sequential nanoc commands used to create an agenda
 and prepare for a meeting:
 
-                                               +-------------+
-                                               | Google Docs |
-                                               +-------------+
-                                                      ^
-       +-----------+          +------+                |
-    +--+ agenda.md +--+   +---+ html +---+   +--------+--------+
-    |  +-----------+  |   |   +------+   |   |                 |
-    |                 |   |              |   |                 |
-    |                 |   |              |   |                 |
-    |  create-agenda  +-->|   compile    +-->|  create-notes   |
-    |                 |   |              |   |                 |
-    |                 |   |              |   |                 |
-    |                 |   |   +------+   |   |                 |
-    +-----------------+   +---+ mail +---+   +-----------------+
-                              +------+
+                                               +-------------+                        +--------+
+                                               | Google Docs |                        |  smtp  |
+                                               +-------------+                        +--------+
+                                                      ^                                    ^
+       +-----------+          +------+                |                +------+            |
+    +--+ agenda.md +--+   +---+ html +---+   +--------+--------+   +---+ html +---+   +----+---+
+    |  +-----------+  |   |   +------+   |   |                 |   |   +------+   |   |        |
+    |                 |   |              |   |                 |   |              |   |        |
+    |                 |   |              |   |                 |   |              |   |        |
+    |  create-agenda  +-->|   compile    +-->|  create-notes   +-->|   compile    +-->|  mail  |
+    |                 |   |              |   |                 |   |              |   |        |
+    |                 |   |              |   |                 |   |              |   |        |
+    |                 |   |   +------+   |   |                 |   |   +------+   |   |        |
+    +-----------------+   +---+ mail +---+   +-----------------+   +---+ mail +---+   +--------+
+                              +------+                                 +------+
 
 
 1. Create an agenda for the next meeting.
@@ -70,6 +70,8 @@ and prepare for a meeting:
         nanoc [compile] [--verbose]
 
 5. Notify group of the meeting
+
+        nanoc mail output/meetings/2018-02-13/agenda.mail
 
 ### Transcription
 
