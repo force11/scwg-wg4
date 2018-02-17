@@ -22,7 +22,7 @@ module LinkTo
     Urlshortener::Url.new(parsed_url_object).id
   end
 
-  def link_to_timezones(agenda)
+  def link_to_other_timezones(agenda)
     meeting_time = agenda.fetch(:meeting_time)
     uri = URI.parse('https://www.timeanddate.com/worldclock/fixedtime.html')
     params = {

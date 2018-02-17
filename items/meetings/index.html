@@ -1,5 +1,11 @@
 ---
-title: Teleconferences
+title: Telecons
 ---
 
 <h1><%= @item[:title] %></h1>
+
+<% sorted_meetings.each do |meeting| %>
+<section id="meeting_<%= meeting_date(meeting) %>">
+  <h2><%= link_to(meeting[:title], meeting) %></h2>
+</section>
+<% end %>

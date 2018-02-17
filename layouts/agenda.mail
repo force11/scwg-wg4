@@ -1,14 +1,15 @@
-From: Chris Chapman <chris@pentandra.com>
+From: <%= @config[:mail][:from] %>
 To: "SCWG WG4: Enabling technologies" <scwgwg4@force11.org>
-Subject: [AGENDA] SCWG WG4 Weekly Call - 27 November 2017 8am PST
+Subject: [AGENDA] SCWG WG4 Weekly Call - <%= @item.fetch(:meeting_time) %>
 
 Hi all,
 
 Here is the info for the next weekly meeting of the SCWG WG4:
 
-Monday, November 27th
-Time: 8am Pacific, 11am Boston, 16:00 UTC, 17:00 CET, 18:00 EET
-      other time zones: https://goo.gl/8ukWdo
+Date: <%= @item.fetch(:meeting_time).to_date.to_s(:long_ordinal_with_weekday) %>
+Time: <%= ['America/Los_Angeles', 'America/New_York', 'UTC', 'Berlin', 'Moscow']
+          .map { |tz| time_in_zone(@item.fetch(:meeting_time), tz) }.join(', ') %>
+      other time zones: <%= short link_to_other_timezones(@item) %>
 Text Chat: CommonsPatterns Slack (#tech-meetings channel)
            https://commonspatterns.slack.com/messages/C6V6AAEUF/
            invite here: https://limitless-island-44565.herokuapp.com/
@@ -23,39 +24,34 @@ give ample time to download the Zoom client before the call (~200MB
 download depending on the platform). I can look into the possibility of
 an additional SIP option if that would work better for any.
 
-As always, these calls are open. Anyone is welcome to join these weekly calls
-at any time.
+As always, these calls are open. Anyone is welcome to join these weekly
+calls at any time.
 
-If you want to add anything to or modify the proposed agenda below,
-please respond via the mailing list, Google Doc agenda (below), or make
-a note of it at the beginning of the call.
+<% previous_index = previous_index_for(@item) %>
+<% if previous_index && notes_for(previous_index) %>
+Meeting notes from last call: <%= short notes_for(previous_index).fetch(:alternate_link) %>
+Recording of last call: TODO
+Transcript of last call: [IN PROCESS - I'll send an email when ready]
+<% end %>
 
-Agenda from last call: https://goo.gl/Jtzv3B
-Recording of last call: https://goo.gl/s6tJb9
-Minutes from last call: [IN PROCESS - I'll send an email when ready]
+------------------------------------------------------------------------
 
-PROPOSED AGENDA:
+<%= yield %>
 
-1 Agenda review
-2 Introductions to new people
-3 Status of current action items
-  - Prepare a more robust option (spreadsheet?) for tracking the proposed
-    topics, so that we can talk about how to get the ball rolling [CHRIS - IN PROCESS]
-  - Add to the scenarios. https://goo.gl/XikbTf [ONGOING]
-  - Add to the questions to consider: https://goo.gl/MxA41E [ONGOING]
-4 Our goal and how we can productively work towards it
-  - Discussion on how to track proposed topics and our progress/analysis
-5 Various discussion topics (as time permits)
-  - Scenarios: https://goo.gl/XikbTf
-  - Questions to consider: https://goo.gl/MxA41E
-  - Technologies: https://goo.gl/8r822b
-6 Action items and suggestions for next week's agenda
+<% if notes_for(@item) %>
+If you would like to add anything to or modify the proposed agenda
+above, please respond via the mailing list, update the working agenda
+below, or make a note of it at the beginning of the call.
 
-I've pasted this proposed agenda into a Google Doc here:
+Working agenda: <%= short notes_for(@item).fetch(:alternate_link) %>
 
-https://goo.gl/trn896
+Feel free to hack, and let me know if you have any questions.
+<% else %>
+If you would like to add anything to the proposed agenda above, please
+respond to this email or make a note of it at the beginning of the call.
 
-Feel free to hack. Also, please let me know if you have any questions.
+Please feel free to contact me if you have any questions.
+<% end %>
 
 Cheers,
 

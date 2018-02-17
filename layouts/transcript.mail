@@ -1,6 +1,6 @@
-From: Chris Chapman <chris@pentandra.com>
-To: "SCWG WG4: Enabling technologies" <scwgwg4@force11.org>
-Subject: Transcript of the <%= @item[:meeting_date] %> telecon
+From: <%= @config[:mail][:from] %>
+To: <%= @config[:mail][:to] %>
+Subject: Transcript of the <%= meeting_date(@item) %> telecon
 
 Hi everyone,
 <% if @item.key?(:message) %>
@@ -10,13 +10,17 @@ Here are the minutes for this call:
 
 ------------------------------------------------------------------------
 
-SCWG WG4 Telecon Minutes for <%= @item[:meeting_date] %>
+SCWG WG4 Telecon Minutes for <%= meeting_date(@item) %>
 
-Agenda:
-  <%= @item[:agenda] %>
+Meeting notes
+  <%= short(notes_for(@item).fetch(:alternate_link)) if notes_for(@item) %>
 Topics:
 Present:
   <%= @item[:participants]&.to_sentence %>
 Audio:
 
 <%= yield %>
+
+<% transcripts_for(@item).each do |transcript| %>
+<%= transcript.compiled_content(rep: :text) %>
+<% end %>

@@ -2,20 +2,25 @@
 <main id="main">
   <header>
     <h1>SCWG WG4 Weekly Meeting</h1>
-    <h2><%= @item[:date] %></h2>
+    <h2><%= meeting_date(@item) %></h2>
   </header>
 
-  <video width="100%" height="300px" controls>
-    <source type="audio/ogg" src="audio_0.ogg">
-    <source type="audio/mp3" src="audio_0.mp3">
-    <track label="Chapters" kind="chapters" srclang="en" src="index.vtt" default>
-    <track label="English" kind="captions" srclang="en" src="audio_0.vtt">
-  </video>
+  <% @items.find_all(File.dirname(@item.identifier.to_s) + '/audio_?.ogg').each do |video| %>
+    <%= render('/partials/video.*', video: video) %>
+  <% end %>
+
+  <% if notes_for(@item) %>
+  <%= link_to('Meeting notes', short(notes_for(@item).fetch(:alternate_link))) %>
+  <% end %>
 
   <nav id="toc">
     <h2>Agenda</h2>
     <%= yield %>
   </nav>
+
+  <% transcripts_for(@item).each do |transcript| %>
+  <%= transcript.compiled_content(rep: :html) %>
+  <% end %>
 
 </main>
 <% end %>

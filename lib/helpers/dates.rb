@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 module Dates
-  def meeting_date(item)
-    date_string = item.identifier.to_s[/[0-9]{4}-[0-9]{2}-[0-9]{2}/]
-    Date.parse(date_string)
+  def time_in_zone(time, zone)
+    zone_time = time.in_time_zone(zone)
+    "#{zone_time.to_s(:time)} #{zone_time.zone}"
   end
 end
