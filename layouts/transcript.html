@@ -5,8 +5,8 @@
     <h2><%= meeting_date(@item) %></h2>
   </header>
 
-  <% @items.find_all(File.dirname(@item.identifier.to_s) + '/audio_?.ogg').each do |video| %>
-    <%= render('/partials/video.*', video: video) %>
+  <% media_groups_for(@item).each do |index, group| %>
+    <%= render('/partials/media.*', index: index, media: group) %>
   <% end %>
 
   <% if notes_for(@item) %>

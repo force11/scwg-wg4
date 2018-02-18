@@ -38,7 +38,21 @@ module Meetings
   end
 
   def transcripts_for(item)
-    @items.find_all(File.dirname(item.identifier.to_s) + '/audio_*.vtt').sort_by(&:identifier)
+    pattern = File.join(File.dirname(item.identifier.to_s), 'audio_*.vtt')
+    @items.find_all(pattern).sort_by(&:identifier)
+  end
+
+  def media_for(item)
+    pattern = File.join(File.dirname(item.identifier.to_s), '{audio,video}_*.{ogg,mp3,mp4}')
+    @items.find_all(pattern).sort_by(&:identifier)
+  end
+
+  def media_groups_for(item)
+    media_for(item).group_by { |i| i.identifier.to_s[/_(?<index>\d+)/, 'index'] }
+  end
+
+  def mimetype_for(item)
+    item.identifier.to_s[/(audio|video)/] + '/' + item.identifier.ext
   end
 
   def generate_meeting_index_for(item)

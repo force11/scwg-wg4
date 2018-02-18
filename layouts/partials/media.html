@@ -1,0 +1,8 @@
+<video id="<%= "media_#{index}" %>" controls>
+  <% media.each do |medium| %>
+  <source type="<%= mimetype_for(medium) %>" src="<%= File.basename(medium.path) %>">
+  <% end %>
+  <track label="Chapters" kind="chapters" srclang="en" src="chapters.vtt" default>
+  <track label="English" kind="captions" srclang="en" src="<%= "audio_#{index}.vtt" %>">
+</video>
+
