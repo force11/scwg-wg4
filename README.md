@@ -2,8 +2,9 @@
 
 An evolving playground for the work of [FORCE11 SCWG WG4].
 
-See [this document][requirements] for some high-level thoughts on what this is
-trying to achieve from at least the standpoint of a tool for meetings.
+See [<cite>Meeting transcripts: towards a more FAIR representation of a
+scholarly meeting</cite>][requirements] for some high-level thoughts on what
+this is trying to achieve from at least the standpoint of a tool for meetings.
 
 WARNING: This repository contains an archive of all of our meetings and will
 become quite large over time. Be sure to have a good Internet connection before
@@ -12,7 +13,7 @@ cloning or downloading this repository.
 ## Requirements and prerequisites
 
 An effort is being made to make this site compile in a cross-platform way,
-though it has been tested mostly on Linux.
+though it has been tested exclusively on Linux.
 
 Before compiling this site, you will need to install several programs:
 
@@ -55,17 +56,18 @@ and prepare for a meeting:
 
         nanoc create-agenda 'next monday at 9am'
 
-2. When the agenda is ready, compile it into two representations, one for email
-   and one as html, to be imported into a Google Doc as a working agenda.
+2. When the agenda is ready, compile it into two representations, one to be
+   sent as an email to the group and one to be imported into a Google Doc as a
+   working agenda.
 
         nanoc [compile] [--verbose]
 
-3. Generate a working agenda and meeting notes from the html representation of
-   the agenda.
+3. Generate a working agenda and meeting notes Google Doc from the html
+   representation of the agenda.
 
         nanoc create-notes output/meetings/2018-02-13/agenda.html
 
-4. Compile again to generate short links to the working agenda.
+4. Recompile to generate short links to the working agenda.
 
         nanoc [compile] [--verbose]
 
