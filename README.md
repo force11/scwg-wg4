@@ -71,13 +71,13 @@ and prepare for a meeting:
 
         nanoc [compile] [--verbose]
 
-5. Notify group of the meeting
+5. Notify group of the meeting.
 
         nanoc mail output/meetings/2018-02-13/agenda.mail
 
 ### Transcription
 
-High-level overview of the sequential nanoc commands to create a raw
+High-level overview of the sequential nanoc commands to generate a
 transcription:
 
                     +-----+               +------+               +-----+
@@ -96,16 +96,17 @@ The general process goes like this (of course replace these file paths with the
 appropriate locations):
 
 1. Import the audio into formats and bitrates appropriate for the Web,
-   enriching with appropriate metadata
+   enriching with appropriate metadata.
 
         nanoc import-audio ~/Documents/Zoom/2017-12-18 09.02.31*/audio_only.m4a
 
-2. Send the audio to a speech-to-text service for initial transcription and
-   forced alignment
+2. Send the audio to a speech-to-text service for forced alignment and initial
+   raw recognition of the audio.
 
         nanoc recognize-audio items/meetings/2017-12-18/audio_0.ogg
 
-3. Generate a WebVTT file to use as a starting point for the transcription
+3. Generate a WebVTT file from the recognition to use as a starting point for
+   the transcription.
 
         nanoc generate-vtt items/meetings/2017-12-18/audio_0.json
 
