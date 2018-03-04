@@ -1,0 +1,66 @@
+From: "Chris Chapman" <chris@pentandra.com>
+To: "SCWG WG4: Enabling technologies" <scwgwg4@force11.org>
+Subject: [AGENDA] SCWG WG4 Weekly Call - 2018-02-27 16:00:00 UTC
+
+Hi all,
+
+Here is the info for the next weekly meeting of the SCWG WG4:
+
+Date: Tuesday, February 27th, 2018
+Time: 08:00 PST, 11:00 EST, 16:00 UTC, 17:00 CET, 19:00 MSK
+      other time zones: https://goo.gl/WM4htp
+Text Chat: CommonsPatterns Slack (#tech-meetings channel)
+           https://commonspatterns.slack.com/messages/C6V6AAEUF/
+           invite here: https://limitless-island-44565.herokuapp.com/
+Voice: tel:+1-646-558-8656, Meeting ID: 489-033-2111
+       international numbers: https://goo.gl/6wqeoA
+       https://ucsd.zoom.us/j/489-033-2111
+Duration: 60 minutes
+
+Headsets (+ mic) are recommended for the call unless, of course, you are
+calling in by phone. If this is your first time using Zoom, be sure to
+give ample time to download the Zoom client before the call (~200MB
+download depending on the platform). I can look into the possibility of
+an additional SIP option if that would work better for any.
+
+As always, these calls are open. Anyone is welcome to join these weekly
+calls at any time.
+
+
+------------------------------------------------------------------------
+
+Last week we took a deep dive into some design theory. While I do think
+it is a useful perspective to look at what we’re doing, I apologize if
+the point of the exercise wasn’t very clear. This week as we finish up
+our analysis of Knowen, I’m hoping that the point will become more
+clear.
+
+In March we will be looking at some ideas that Rowan Cockett and Lindsey
+Heagy have been working about a component-based approach to researching.
+Rowan has already shared a blog post to get us thinking about this
+topic: https://row1.ca/on-my-website-2018
+
+
+
+PROPOSED AGENDA
+
+
+1.  Agenda review
+2.  Introductions to new people
+3.  Status of current action items
+4.  Topics Project: Knowen
+    -   Finishing our formal analysis https://goo.gl/GvWwb9
+5.  Action items and suggestions for next week’s agenda
+6.  Post call summary and wrap-up
+
+If you would like to add anything to or modify the proposed agenda
+above, please respond via the mailing list, update the working agenda
+below, or make a note of it at the beginning of the call.
+
+Working agenda: https://goo.gl/X1N7RJ
+
+Feel free to hack, and let me know if you have any questions.
+
+Cheers,
+
+Chris Chapman
