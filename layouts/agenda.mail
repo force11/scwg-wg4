@@ -1,6 +1,6 @@
 From: <%= @config[:mail][:from] %>
 To: "SCWG WG4: Enabling technologies" <scwgwg4@force11.org>
-Subject: [AGENDA] SCWG WG4 Weekly Call - <%= @item.fetch(:meeting_time) %>
+Subject: [AGENDA] SCWG WG4 Weekly Call - <%= @item.fetch(:meeting_time).to_s(:long_ordinal_with_weekday) %>
 
 Hi all,
 

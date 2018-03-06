@@ -8,6 +8,11 @@ Date::DATE_FORMATS[:long_ordinal_with_weekday] = lambda do |date|
   date.strftime("%A, %B #{day_format}, %Y") # => "April 25th, 2007"
 end
 
+Time::DATE_FORMATS[:long_ordinal_with_weekday] = lambda do |time|
+  day_format = ActiveSupport::Inflector.ordinalize(time.day)
+  time.strftime("%A, %B #{day_format}, %Y %H:%M %Z")
+end
+
 include Nanoc::Helpers::Rendering
 include Nanoc::Helpers::LinkTo
 
