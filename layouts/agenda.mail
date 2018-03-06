@@ -4,7 +4,26 @@ Subject: [AGENDA] SCWG WG4 Weekly Call - <%= @item.fetch(:meeting_time).to_s(:lo
 
 Hi all,
 
-Here is the info for the next weekly meeting of the SCWG WG4:
+<%= yield %>
+
+------------------------------------------------------------------------
+
+<% if notes_for(@item) %>
+If you would like to add anything to or modify the proposed agenda,
+please respond via the mailing list, update the working agenda below, or
+make a note of it at the beginning of the call.
+
+Working agenda: <%= short notes_for(@item).fetch(:alternate_link) %>
+
+Feel free to hack.
+<% else %>
+If you would like to add anything to the proposed agenda, please respond
+to this email or make a note of it at the beginning of the call.
+<% end %>
+
+As always, these calls are open. Anyone is welcome to join these weekly
+calls at any time. For those that are joining the call this week, here
+are the call details:
 
 Date: <%= @item.fetch(:meeting_time).to_date.to_s(:long_ordinal_with_weekday) %>
 Time: <%= ['America/Los_Angeles', 'America/New_York', 'UTC', 'Berlin', 'Moscow']
@@ -24,34 +43,13 @@ give ample time to download the Zoom client before the call (~200MB
 download depending on the platform). I can look into the possibility of
 an additional SIP option if that would work better for any.
 
-As always, these calls are open. Anyone is welcome to join these weekly
-calls at any time.
-
 <% previous_index = previous_index_for(@item) %>
 <% if previous_index && notes_for(previous_index) %>
 Meeting notes from last call: <%= short notes_for(previous_index).fetch(:alternate_link) %>
-Recording of last call: TODO
 Transcript of last call: [IN PROCESS - I'll send an email when ready]
 <% end %>
 
-------------------------------------------------------------------------
-
-<%= yield %>
-
-<% if notes_for(@item) %>
-If you would like to add anything to or modify the proposed agenda
-above, please respond via the mailing list, update the working agenda
-below, or make a note of it at the beginning of the call.
-
-Working agenda: <%= short notes_for(@item).fetch(:alternate_link) %>
-
-Feel free to hack, and let me know if you have any questions.
-<% else %>
-If you would like to add anything to the proposed agenda above, please
-respond to this email or make a note of it at the beginning of the call.
-
 Please feel free to contact me if you have any questions.
-<% end %>
 
 Cheers,
 
