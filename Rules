@@ -11,10 +11,6 @@ end
 ignore '/meetings/*/*.json'
 ignore '/meetings/*/notes'
 
-compile '/meetings/*/agenda.txt' do
-  write ext: 'mail'
-end
-
 compile '/meetings/*/agenda.md' do
   layout '/working_agenda.md'
   filter :erb
@@ -28,7 +24,7 @@ compile '/meetings/*/agenda.md', rep: :mail do
   filter :pandoc, from: :markdown, to: :plain
   layout '/agenda.mail'
 
-  cached_mail = @items[@item.identifier.without_ext + '.txt']
+  cached_mail = @items[@item.identifier.without_ext + '.mail']
   write cached_mail ? nil : { ext: 'mail' }
 end
 
