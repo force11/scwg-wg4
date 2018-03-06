@@ -9,7 +9,7 @@ Text Chat: CommonsPatterns Slack [#tech-meetings channel][#tech-meetings]
 
 <% previous_index = previous_index_for(@item) %>
 <% if previous_index && notes_for(previous_index) %>
-Meeting notes from last call: <%= short notes_for(previous_index).fetch(:alternate_link) %>
+Agenda and meeting notes from last call: <%= short notes_for(previous_index).fetch(:alternate_link) %>
 
 <% end %>
 Recording of this call:
