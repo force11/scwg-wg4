@@ -1,0 +1,75 @@
+From: "Chris Chapman" <chris@pentandra.com>
+To: "SCWG WG4: Enabling technologies" <scwgwg4@force11.org>
+Subject: [AGENDA] SCWG WG4 Weekly Call - Tuesday, March 13th, 2018 15:00 UTC
+
+Hi all,
+
+We will be pleased to have Rowan Cockett and Lindsey Heagy on this call
+to learn about the scholarly commons through some of the work they have
+been doing in geoscience (Geosci.xyz).
+
+This topic incorporates ideas about the creation and reuse of
+educational resources made from extensible, imported components and
+various approaches to peer review, testing, reproducibility, and
+collaboration that they have developed over time as the need arose,
+leveraging technologies such as Python, Sphinx, and Jupyter Notebooks.
+For a brief introduction to these ideas, you are encouraged to watch
+this presentation by Lindsey from SciPy 2016:
+
+https://www.youtube.com/watch?v=IW2LDsevvDk
+
+
+
+PROPOSED AGENDA
+
+
+1.  Agenda review
+2.  Invited topic: Geosci.xyz
+    -   Introduction to the Geosci.xyz project, by Rowan and Lindsey
+        [10-15 min]
+    -   Perspectives on the commons or what we can learn about scholarly
+        commons from this topic and general discussion. Our shared
+        document that we have started and will continue using for this
+        topic can be found here: https://goo.gl/ThvTcV.
+3.  Action items and suggestions for next week’s agenda
+4.  Post call summary and wrap-up
+
+------------------------------------------------------------------------
+
+If you would like to add anything to or modify the proposed agenda,
+please respond via the mailing list, update the working agenda below, or
+make a note of it at the beginning of the call.
+
+Working agenda: https://goo.gl/zp9PyG
+
+Feel free to hack.
+
+As always, these calls are open. Anyone is welcome to join these weekly
+calls at any time. For those that are joining the call this week, here
+are the call details:
+
+Date: Tuesday, March 13th, 2018
+Time: 08:00 PDT, 11:00 EDT, 15:00 UTC, 16:00 CET, 18:00 MSK
+      other time zones: https://goo.gl/ywzEpw
+Text Chat: CommonsPatterns Slack (#tech-meetings channel)
+           https://commonspatterns.slack.com/messages/C6V6AAEUF/
+           invite here: https://limitless-island-44565.herokuapp.com/
+Voice: tel:+1-646-558-8656, Meeting ID: 489-033-2111
+       international numbers: https://goo.gl/6wqeoA
+       https://ucsd.zoom.us/j/489-033-2111
+Duration: 60 minutes
+
+Headsets (+ mic) are recommended for the call unless, of course, you are
+calling in by phone. If this is your first time using Zoom, be sure to
+give ample time to download the Zoom client before the call (~200MB
+download depending on the platform). I can look into the possibility of
+an additional SIP option if that would work better for any.
+
+Meeting notes from last call: https://goo.gl/TBazPo
+Transcript of last call: [IN PROCESS - I'll send an email when ready]
+
+Please feel free to contact me if you have any questions.
+
+Cheers,
+
+Chris Chapman
