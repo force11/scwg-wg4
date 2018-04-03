@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative '../lib/helpers/mixins/google_api_support'
+require_relative '../lib/mixins/google_api_support'
 
 usage 'import-notes [options] doc_id'
 aliases :import_notes, :in

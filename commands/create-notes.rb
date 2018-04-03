@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative '../lib/helpers/mixins/google_api_support'
+require_relative '../lib/mixins/google_api_support'
 
 usage 'create-notes [options] html_agenda'
 aliases :create_notes, :cn
