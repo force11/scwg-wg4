@@ -1,6 +1,6 @@
-# SCWG WG4
+# Scholarly Commons Working Group 4
 
-An evolving playground for the work of [FORCE11 SCWG WG4].
+An evolving playground for the work of [FORCE11 SCWG4].
 
 See [<cite>Meeting transcripts: towards a more FAIR representation of a
 scholarly meeting</cite>][requirements] for some high-level thoughts on what
@@ -129,7 +129,7 @@ The site should then be available at <http://localhost:3000/>.
 
 [MIT](LICENSE.txt)
 
-[FORCE11 SCWG WG4]: https://www.force11.org/group/scholarly-commons-working-group/wg4enabling-technologies-and-infrastructures
+[FORCE11 SCWG4]: https://www.force11.org/group/scholarly-commons-working-group/wg4enabling-technologies-and-infrastructures
 [requirements]: https://docs.google.com/document/d/1Dd075OgS3siZS5zdwPrR6Wrn7zltJhUv66TXJMKTkxU/edit#
 [Nanoc]: https://nanoc.ws/
 [Ruby]: https://www.ruby-lang.org/
