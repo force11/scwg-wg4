@@ -6,7 +6,7 @@ require 'json'
 require 'yaml/store'
 require 'uri'
 
-require_relative 'mixins/google_api_support'
+require_relative '../mixins/google_api_support'
 require_relative 'dates'
 
 module LinkTo
