@@ -25,16 +25,16 @@ As always, these calls are open. Anyone is welcome to join these weekly
 calls at any time. For those that are joining the call this week, here
 are the call details:
 
+Zoom: https://ucsd.zoom.us/j/489-033-2111, Meeting ID: 489-033-2111
 Date: <%= @item.fetch(:meeting_time).to_date.to_s(:long_ordinal_with_weekday) %>
 Time: <%= ['America/Los_Angeles', 'America/New_York', 'UTC', 'Berlin', 'Moscow']
           .map { |tz| time_in_zone(@item.fetch(:meeting_time), tz) }.join(', ') %>
       other time zones: <%= short link_to_other_timezones(@item) %>
+Voice: tel:+1-646-558-8656, Meeting ID: 489-033-2111
+       international numbers: https://goo.gl/6wqeoA
 Text Chat: CommonsPatterns Slack (#tech-meetings channel)
            https://commonspatterns.slack.com/messages/C6V6AAEUF/
            invite here: https://limitless-island-44565.herokuapp.com/
-Voice: tel:+1-646-558-8656, Meeting ID: 489-033-2111
-       international numbers: https://goo.gl/6wqeoA
-       https://ucsd.zoom.us/j/489-033-2111
 Duration: 60 minutes
 
 Headsets (+ mic) are recommended for the call unless, of course, you are
