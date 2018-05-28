@@ -34,7 +34,7 @@ module GoogleApiSupport
     credentials = authorizer.get_credentials(user_id)
     if credentials.nil?
       url = authorizer.get_authorization_url(base_url: OOB_URI)
-      $stderr.puts "Open the following URL in your browser and authorize the application."
+      $stderr.puts 'Open the following URL in your browser and authorize the application.'
       $stderr.puts url
       code = $stdin.gets
       credentials = authorizer.get_and_store_credentials_from_code(
