@@ -11,7 +11,7 @@ class GenerateVTT < ::Nanoc::CLI::CommandRunner
   Utterance = Struct.new(:word, :start_time, :end_time, :speaker) unless defined? Utterance
 
   class VTTCue
-    attr_reader :identifier, :start_time, :end_time
+    attr_reader :identifier, :start_time, :end_time, :text
 
     def self.v(speaker, text)
       "<v %SPEAKER_#{speaker}>#{text}</v>"
@@ -21,7 +21,10 @@ class GenerateVTT < ::Nanoc::CLI::CommandRunner
       @identifier = identifier
       @start_time = WebVTT::Timestamp.new(utterances.first.start_time)
       @end_time = WebVTT::Timestamp.new(utterances.last.end_time)
-      @utterances = utterances
+      @text = utterances
+        .chunk { |u| u.speaker }
+        .map { |s, utts| self.class.v(s, utts.map { |u| u.word }.join(' ')) }
+        .join
     end
 
     def to_webvtt
@@ -32,13 +35,6 @@ class GenerateVTT < ::Nanoc::CLI::CommandRunner
       cue
     end
     alias to_s to_webvtt
-
-    def text
-      @utterances
-        .chunk { |u| u.speaker }
-        .map { |s, utts| self.class.v(s, utts.map { |u| u.word }.join(' ')) }
-        .join
-    end
   end
 
   def run
