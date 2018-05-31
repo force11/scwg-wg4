@@ -3,23 +3,29 @@ To: <%= @config[:mail][:to] %>
 Subject: Transcript of the <%= meeting_date(@item) %> telecon
 
 Hi everyone,
+
 <% if @item.key?(:message) %>
 <%= @item[:message] %>
 <% end %>
-Here are the minutes for this call:
+
+Here are the minutes for this week’s call:
 
 ------------------------------------------------------------------------
 
 SCWG WG4 Telecon Minutes for <%= meeting_date(@item) %>
 
-Meeting notes
-  <%= short(notes_for(@item).fetch(:alternate_link)) if notes_for(@item) %>
-Topics:
-Present:
-  <%= @item[:participants]&.to_sentence %>
-Audio:
+Meeting Notes:
+    <%= short(notes_for(@item).fetch(:alternate_link)) if notes_for(@item) %>
 
-<%= yield %>
+Topics:
+
+Present:
+    <%= @item[:participants]&.to_sentence %>
+
+Archive:
+    <%= @config[:base_url] + index_for(@item).path %>
+
+Transcript:
 
 <% transcripts_for(@item).each do |transcript| %>
 <%= transcript.compiled_content(rep: :text) %>

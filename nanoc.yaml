@@ -95,6 +95,8 @@ checks:
     #   exclude_files: ['blog/page']
     exclude_files: []
 
+base_url: 'https://force11.github.io/scwg-wg4'
+
 cache:
   short_urls: 'var/cache/short_urls'
   meeting_notes: 'var/cache/meeting_notes'

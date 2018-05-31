@@ -34,7 +34,6 @@ compile '/meetings/*/index' do
 end
 
 compile '/meetings/*/index', rep: :mail do
-  filter :pandoc, from: :markdown, to: :plain
   layout '/transcript.mail'
   write ext: 'mail'
 end
@@ -46,7 +45,8 @@ compile '/meetings/*/audio_*.vtt', rep: :html do
 end
 
 compile '/meetings/*/audio_*.vtt', rep: :text do
-  filter :vtt2text
+  filter :vtt2md
+  filter :pandoc, from: :markdown, to: :plain
 end
 
 compile '/**/*.html' do
