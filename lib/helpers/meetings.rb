@@ -29,7 +29,8 @@ module Meetings
   end
 
   def previous_index_for(item)
-    previous_index = sorted_meetings.index(index_for(item))&.succ
+    current_index_item = index_for(item)
+    previous_index = current_index_item ? sorted_meetings.index(current_index_item).succ : 0
     previous_index &&= sorted_meetings.at(previous_index)
   end
 
