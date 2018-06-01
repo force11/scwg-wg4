@@ -13,8 +13,8 @@ class GenerateVTT < ::Nanoc::CLI::CommandRunner
   class VTTCue
     attr_reader :identifier, :start_time, :end_time, :text
 
-    def self.v(speaker, text)
-      "<v %SPEAKER_#{speaker}>#{text}</v>"
+    def self.v(speaker, text, start_time)
+      "<#{start_time}><v %SPEAKER_#{speaker}>#{text}</v>"
     end
 
     def initialize(identifier, utterances)
@@ -22,9 +22,12 @@ class GenerateVTT < ::Nanoc::CLI::CommandRunner
       @start_time = WebVTT::Timestamp.new(utterances.first.start_time)
       @end_time = WebVTT::Timestamp.new(utterances.last.end_time)
       @text = utterances
-        .chunk { |u| u.speaker }
-        .map { |s, utts| self.class.v(s, utts.map { |u| u.word }.join(' ')) }
-        .join
+        .chunk { |utt| utt.speaker }
+        .map do |speaker, ch_utts|
+          self.class.v(speaker,
+                       ch_utts.map { |u| u.word }.join(' '),
+                       WebVTT::Timestamp.new(ch_utts.first.start_time))
+        end.join
     end
 
     def to_webvtt
