@@ -15,11 +15,9 @@ class GenerateVTT < ::Nanoc::CLI::CommandRunner
 
     def self.v(speaker, text, start_time = nil)
       v_span = String.new
-      v_span << "<v %SPEAKER_#{speaker}>"
-      if start_time
-        v_span << "<#{start_time}>"
-      end
-      v_span << "#{text}</v>"
+      v_span << "<v %SPEAKER_#{speaker}>#{text}</v>"
+      v_span.prepend("<#{start_time}>") if start_time
+      v_span
     end
 
     def initialize(identifier, utterances)

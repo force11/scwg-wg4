@@ -1,17 +1,53 @@
 # frozen_string_literal = true
 
-class WebVTT2HTML < Nanoc::Filter
+class WebVTT2Transcript < Nanoc::Filter
   include Nanoc::Helpers::HTMLEscape
 
   VoiceSpan = Struct.new(:speaker, :text, :start, :classes) unless defined? VoiceSpan
 
-  identifier :vtt2html
+  V_SPAN_REGEXP = /(?:<(\d{2}:\d{2}:\d{2}\.\d{3})>)?<v((?:\.[\w-]+)*) (.+?)>(.*?)(?:<\/v>|\z)/
 
-  requires 'nokogiri', 'webvtt'
+  identifier :vtt2transcript
 
+  requires 'nokogiri', 'webvtt', 'active_support/core_ext/string/indent'
+
+  # Transform a WebVTT file into a transcript, as either Markdown or HTML.
+  #
+  # @param [String] content The content to filter
+  #
+  # @option params [Symbol] :output The type of output desired; can be
+  #   `:html` or `:markdown`.
+  #
+  # @return [String] The filtered content
   def run(content, params = {})
     webvtt = WebVTT.from_blob(content)
 
+    # Filter
+    case params[:output]
+    when :markdown, :md
+      vtt_to_markdown(webvtt)
+    when :html
+      vtt_to_html(webvtt)
+    else
+      raise 'The vtt2transcript filter needs to know the type of output desired. ' \
+        'Pass a :output to the filter call (:html for HTML, ' \
+        ':markdown or :md for Markdown).'
+    end
+  end
+
+  protected
+
+  def vtt_to_markdown(webvtt)
+    webvtt.cues
+      .flat_map { |cue| voice_spans_from(cue) }
+      .chunk { |s| s.speaker }
+      .map do |speaker, v_spans|
+        statement = ::Nokogiri::HTML.fragment(v_spans.map(&:text).join(' ')).text
+        "#{speaker}\n:#{statement.indent(3)}\n\n"
+      end.join
+  end
+
+  def vtt_to_html(webvtt)
     fragment = Nokogiri::HTML::DocumentFragment.parse ''
 
     Nokogiri::HTML::Builder.with(fragment) do |html|
@@ -34,15 +70,13 @@ class WebVTT2HTML < Nanoc::Filter
   end
 
   def voice_spans_from(cue)
-    cue.text
-      .scan(/<v((?:\.[\w-]+)*) (.+?)>(?:<(\d{2}:\d{2}:\d{2}\.\d{3})>)?(.*?)(?:<\/v>|\z)/)
-      .map do |v_span|
-        classes = cue.identifier ? v_span[0] << cue.identifier.dup.prepend('.') : v_span[0]
-        speaker = v_span[1]
-        timestamp = v_span[2] ? WebVTT::Timestamp.new(v_span[2]) : cue.start
-        text = v_span[3]
-        VoiceSpan.new(speaker, text, timestamp.to_f.round(2, half: :down), classes)
-      end
+    cue.text.scan(V_SPAN_REGEXP).map do |v_span|
+      timestamp = v_span[0] ? WebVTT::Timestamp.new(v_span[0]) : cue.start
+      classes = cue.identifier ? v_span[1] << cue.identifier.dup.prepend('.') : v_span[1]
+      speaker = v_span[2]
+      text = v_span[3]
+      VoiceSpan.new(speaker, text, timestamp.to_f.round(2, half: :down), classes)
+    end
   end
 
   # Assumes that none of the text is evil markup

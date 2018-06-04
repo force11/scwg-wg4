@@ -38,14 +38,12 @@ compile '/meetings/*/index', rep: :mail do
   write ext: 'mail'
 end
 
-passthrough '/meetings/*/*.vtt'
-
 compile '/meetings/*/audio_*.vtt', rep: :html do
-  filter :vtt2html
+  filter :vtt2transcript, output: :html
 end
 
 compile '/meetings/*/audio_*.vtt', rep: :text do
-  filter :vtt2md
+  filter :vtt2transcript, output: :markdown
   filter :pandoc, from: :markdown, to: :plain
 end
 
