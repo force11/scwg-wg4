@@ -110,7 +110,7 @@ appropriate locations):
 
         nanoc generate-vtt items/meetings/2017-12-18/audio_0.json
 
-4. Edit the WebVTT file for accuracy, clarification, diplomacy, etc.
+4. Manually edit the WebVTT file for accuracy, clarification, diplomacy, etc.
 
 ### Site compilation
 
