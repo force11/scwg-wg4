@@ -1,0 +1,1503 @@
+WEBVTT - SCWG WG4 Telecon (2018-05-29)
+lang: en
+
+NOTE This file was generated for the FORCE11 Scholarly Commons Working
+Group 4 through a semi-automatic process. It now represents the
+authoritative transcript of this telecon, and should be edited for
+correction, clarification, and diplomacy. Other representations of the
+meeting will be generated from this document.
+
+NOTE For further information about the WebVTT syntax and data model,
+visit: https://w3c.github.io/webvtt/
+
+cue-1
+00:00:01.270 --> 00:00:03.180
+<v J.-S. Caux>I'll keep out the really juicy details</v>
+
+cue-2
+00:00:05.700 --> 00:00:08.390
+<v Chris Chapman>Anything that you don't want recorded just say that</v>
+
+cue-3
+00:00:09.150 --> 00:00:16.870
+<v Chris Chapman>you want it off the record and we can take it off</v><00:00:11.290><v J.-S. Caux>oh it's okay - I have the habit of being pretty open about my opinions and everything so it's a it's all fine</v>
+
+cue-4
+00:00:23.200 --> 00:00:25.250
+<v Chris Chapman>Welcome everyone</v>
+
+cue-5
+00:00:26.730 --> 00:00:31.470
+<v Chris Chapman>For the meeting today we are delighted to have J.-S. Caux with us for a discussion</v>
+
+cue-6
+00:00:32.500 --> 00:00:35.500
+<v Chris Chapman>on SciPost and</v>
+
+cue-7
+00:00:36.370 --> 00:00:36.890
+<v Chris Chapman>to</v>
+
+cue-8
+00:00:37.800 --> 00:00:39.120
+<v Chris Chapman>talk a little bit about</v>
+
+cue-9
+00:00:41.860 --> 00:00:44.430
+<v Chris Chapman>the Scholarly Commons too and share</v>
+
+cue-10
+00:00:45.460 --> 00:00:45.960
+<v Chris Chapman></v>
+
+cue-11
+00:00:47.760 --> 00:00:49.210
+<v Chris Chapman>share some perspectives</v>
+
+cue-12
+00:00:50.010 --> 00:00:50.310
+<v J.-S. Caux>yeah</v>
+
+cue-13
+00:00:53.480 --> 00:00:56.470
+<v Chris Chapman>Does everyone have the link to the agenda?</v>
+
+cue-14
+00:00:59.700 --> 00:01:00.030
+<v Katie Chapman>yeah</v>
+
+cue-15
+00:01:03.680 --> 00:01:04.920
+<v Chris Chapman>okay super</v>
+
+cue-16
+00:01:09.200 --> 00:01:14.100
+<v Chris Chapman>so as we go along feel free to add either to the agenda</v>
+
+cue-17
+00:01:15.260 --> 00:01:16.640
+<v Chris Chapman>and we also have a</v>
+
+cue-18
+00:01:17.610 --> 00:01:20.350
+<v Chris Chapman>a document that we started on SciPost</v>
+
+cue-19
+00:01:25.530 --> 00:01:25.920
+<v Chris Chapman>and</v>
+
+cue-20
+00:01:27.570 --> 00:01:35.960
+<v Chris Chapman>do I need to share that link as well? If you have a copy of the agenda you can there is a link on there to the SciPost document</v>
+
+cue-21
+00:01:40.770 --> 00:01:41.130
+<v Chris Chapman>so</v>
+
+cue-22
+00:01:42.450 --> 00:01:44.150
+<v Chris Chapman>any questions about</v>
+
+cue-23
+00:01:44.990 --> 00:01:46.280
+<v Chris Chapman>those things before we move forward?</v>
+
+cue-24
+00:01:51.060 --> 00:01:55.860
+<v Chris Chapman>Maybe since this is our first meeting together what if</v>
+
+cue-25
+00:01:57.490 --> 00:02:00.490
+<v Chris Chapman>we took a minute to introduce ourselves</v>
+
+cue-26
+00:02:02.490 --> 00:02:05.310
+<v J.-S. Caux>that would be great for me</v><00:02:03.420><v Chris Chapman>would that be okay?</v>
+
+cue-27
+00:02:06.340 --> 00:02:07.570
+<v J.-S. Caux>yes</v>
+
+cue-28
+00:02:09.470 --> 00:02:20.260
+<v Chris Chapman>So J.-S., since you're our guest, why don't you go first</v><00:02:12.480><v J.-S. Caux>okay so my name is <lang fr>Jean-Sébastien Caux</lang>, but like I like discussed with Chris you can just call me J.-S. - keep it simple</v>
+
+cue-29
+00:02:21.310 --> 00:02:33.890
+<v J.-S. Caux>so I'm a professor of theoretical physics at the university of Amsterdam and I've been there for quite awhile. I'm originally Canadian but then I studied in the UK for a few years and moved to the Netherlands about fifteen years ago</v>
+
+cue-30
+00:02:35.140 --> 00:03:14.570
+<v J.-S. Caux>so I'm working professionally as a scientist - that's my day job, it's already over a full time job. I have quite a big research group for a theorist - got kind of grants to keep a large army of PhD students and postdocs running, so I have little time for hobbies, so I choose my hobbies carefully. A couple of years ago I decided to refocus all my hobbies on the question of reform of the scientific publishing business and that's essentially what led to the creation of SciPost that we'll be talking about today. So essentially I work at my good hundred hours a week</v>
+
+cue-31
+00:03:16.440 --> 00:03:20.090
+<v J.-S. Caux>you know half of that or a little bit more is for my science and the rest is for SciPost</v>
+
+cue-32
+00:03:22.090 --> 00:03:24.240
+<v J.-S. Caux>that's the important thing you need to know about me for today</v>
+
+cue-33
+00:03:26.280 --> 00:03:27.480
+<v Chris Chapman>great thank you J. S.</v>
+
+cue-34
+00:03:29.550 --> 00:03:33.280
+<v Chris Chapman>I can go next. My name is Chris Chapman and</v>
+
+cue-35
+00:03:34.360 --> 00:03:38.510
+<v Chris Chapman>I have been I'm coming at this from the perspective of</v>
+
+cue-36
+00:03:39.990 --> 00:03:41.480
+<v Chris Chapman>the researcher and</v>
+
+cue-37
+00:03:42.320 --> 00:03:43.630
+<v Chris Chapman>an entrepreneur</v>
+
+cue-38
+00:03:44.470 --> 00:03:47.020
+<v Chris Chapman>in the sense of trying to</v>
+
+cue-39
+00:03:48.090 --> 00:03:50.380
+<v Chris Chapman>create tools</v>
+
+cue-40
+00:03:51.220 --> 00:03:53.140
+<v Chris Chapman>or mechanisms that could help</v>
+
+cue-41
+00:03:53.980 --> 00:03:57.030
+<v Chris Chapman>change the world as far as research goes so</v>
+
+cue-42
+00:03:59.150 --> 00:04:02.060
+<v Chris Chapman>I am co founder of a company called Pentandra</v>
+
+cue-43
+00:04:02.900 --> 00:04:04.320
+<v Chris Chapman>and</v>
+
+cue-44
+00:04:05.580 --> 00:04:13.120
+<v Chris Chapman>I have the interesting perspective of being of thinking about this kind of from a for profit perspective to see if</v>
+
+cue-45
+00:04:13.970 --> 00:04:14.590
+<v Chris Chapman>what</v>
+
+cue-46
+00:04:15.540 --> 00:04:21.950
+<v Chris Chapman>overlap there is from that perspective so I'm looking forward to some good discussion about that</v>
+
+cue-47
+00:04:23.500 --> 00:04:23.760
+<v J.-S. Caux>yeah
+
+cue-48
+00:04:26.420 --> 00:04:29.190
+<v Chris Chapman>who else would like to introduce themselves?</v>
+
+cue-49
+00:04:35.380 --> 00:04:38.790
+<v Ivar Martin>I guess I can go next. So my name is Ivar Martin</v>
+
+cue-50
+00:04:40.180 --> 00:04:41.690
+<v Ivar Martin>I am also a theoretical physicist.</v>
+
+cue-51
+00:04:42.640 --> 00:04:45.890
+<v Ivar Martin>I work Argon national labs so that's my day job</v>
+
+cue-52
+00:04:46.790 --> 00:04:47.480
+<v Ivar Martin>and</v>
+
+cue-53
+00:04:49.020 --> 00:04:53.640
+<v Ivar Martin>and I guess with similar motivation to JS, I started a project Knowen.org</v>
+
+cue-54
+00:04:54.730 --> 00:04:59.890
+<v Ivar Martin>a few years ago which is the kind of mixed of Wikipedia, stack overflow</v>
+
+cue-55
+00:05:00.730 --> 00:05:03.980
+<v Ivar Martin>so essentially it's a collaboration tool but at the same time</v>
+
+cue-56
+00:05:04.850 --> 00:05:08.800
+<v Ivar Martin>potentially could work as perhaps a next generation publishing tool</v>
+
+cue-57
+00:05:13.850 --> 00:05:14.470
+<v David Farmer>I can go next.</v>
+
+cue-58
+00:05:15.310 --> 00:05:19.870
+<v David Farmer>This is David farmer. I'm a mathematician. I work at the American Institute of Mathematics.</v>
+
+cue-59
+00:05:20.870 --> 00:05:24.350
+<v David Farmer>My day job is a mixture of administration and research.</v>
+
+cue-60
+00:05:25.260 --> 00:05:38.220
+<v David Farmer>In my spare time I think a lot about online textbooks and making good online versions like HTML versions of research papers and about accessibility,</v>
+
+cue-61
+00:05:40.480 --> 00:05:46.440
+<v David Farmer>and about how to make it easier for authors to put high quality materials online.</v>
+
+cue-62
+00:05:51.690 --> 00:05:53.240
+<v Chris Chapman>Thanks David. And Katie?</v>
+
+cue-63
+00:05:54.090 --> 00:05:56.370
+<v Chris Chapman>are you on?</v><00:05:54.450><v Katie Chapman>And I'm Katie - yeah, I'm here.</v>
+
+cue-64
+00:05:57.840 --> 00:06:01.920
+<v Katie Chapman>I'm Katie and I'm the other half of Chris'</v>
+
+cue-65
+00:06:04.060 --> 00:06:04.490
+<v Katie Chapman>same</v>
+
+cue-66
+00:06:06.780 --> 00:06:10.140
+<v Katie Chapman>company and also his wife and</v>
+
+cue-67
+00:06:11.500 --> 00:06:24.270
+<v Katie Chapman>I come at this from a very different perspective than most. I am not a researcher by trade or specific</v>
+
+cue-68
+00:06:25.450 --> 00:06:33.430
+<v Katie Chapman>lettered training. I am the coming at this more from a perspective of a citizen scientist, and</v>
+
+cue-69
+00:06:34.440 --> 00:06:37.480
+<v Katie Chapman>a researcher by curiosity rather than by trade</v>
+
+cue-70
+00:06:38.880 --> 00:06:39.210
+<v Katie Chapman>so</v>
+
+cue-71
+00:06:40.540 --> 00:06:41.260
+<v Katie Chapman>that that</v>
+
+cue-72
+00:06:42.100 --> 00:06:44.040
+<v Katie Chapman>alters a lot of the way I see some of</v>
+
+cue-73
+00:06:45.020 --> 00:06:46.140
+<v Katie Chapman>the things that we talk about.</v>
+
+cue-74
+00:06:50.670 --> 00:06:51.770
+<v Chris Chapman>Great thank you everyone!</v>
+
+cue-75
+00:06:54.880 --> 00:06:58.000
+<v Chris Chapman>Okay so moving moving down into the</v>
+
+cue-76
+00:06:59.290 --> 00:07:06.510
+<v Chris Chapman>meat of our discussion today. So a little bit of background for JS on what we're trying to accomplish here: it's</v>
+
+cue-77
+00:07:08.070 --> 00:07:13.410
+<v Chris Chapman>it's kind of - for this project we're working under the assumption that if someone is starting something new</v>
+
+cue-78
+00:07:14.570 --> 00:07:17.920
+<v Chris Chapman>they see a problem that needs to be solved, so we're inviting</v>
+
+cue-79
+00:07:18.770 --> 00:07:20.910
+<v Chris Chapman>leaders of these projects to come and chat with us about what they see</v>
+
+cue-80
+00:07:22.220 --> 00:07:26.960
+<v Chris Chapman>in order to better illuminate the problem space that the Scholarly Commons needs to solve.</v>
+
+cue-81
+00:07:28.390 --> 00:07:31.550
+<v Chris Chapman>Some of the workshops that we did did kind of a high-level</v>
+
+cue-82
+00:07:31.970 --> 00:07:35.710
+<v Chris Chapman>perspective of what what kinds of </v>
+
+cue-83
+00:07:36.550 --> 00:07:43.620
+<v Chris Chapman>social or cultural elements we we would like Scholarly Commons to kind of answer,</v>
+
+cue-84
+00:07:44.840 --> 00:07:52.610
+<v Chris Chapman>so what we're doing with this is is looking at more from the technical side, though there is definite overlap in</v>
+
+cue-85
+00:07:53.660 --> 00:07:55.050
+<v Chris Chapman>in all other areas.</v>
+
+cue-86
+00:07:58.320 --> 00:07:59.220
+<v Chris Chapman>On</v>
+
+cue-87
+00:07:59.800 --> 00:08:01.940
+<v Chris Chapman>what are these</v>
+
+cue-88
+00:08:04.320 --> 00:08:13.330
+<v Chris Chapman>the new and innovative types of things, or people that are trying to solve problems, what what is it that they see so we can get a richer understanding</v>
+
+cue-89
+00:08:14.400 --> 00:08:16.680
+<v Chris Chapman>of what the Scholarly Commons should</v>
+
+cue-90
+00:08:18.660 --> 00:08:20.190
+<v Chris Chapman>should achieve. So</v>
+
+cue-91
+00:08:22.000 --> 00:08:28.760
+<v Chris Chapman>with that, kind of the the process as we look at each of these topics is is</v>
+
+cue-92
+00:08:29.790 --> 00:08:31.610
+<v Chris Chapman>to go a little deeper than than the</v>
+
+cue-93
+00:08:32.570 --> 00:08:39.330
+<v Chris Chapman>this the the normal marketing pitch of a project, but try to understand</v>
+
+cue-94
+00:08:41.260 --> 00:08:49.420
+<v Chris Chapman>some of the deeper motivation for why you're why you created SciPost, some of the problems that you are</v>
+
+cue-95
+00:08:50.630 --> 00:08:51.300
+<v Chris Chapman></v>
+
+cue-96
+00:08:52.590 --> 00:08:53.520
+<v Chris Chapman>trying to solve</v>
+
+cue-97
+00:08:55.310 --> 00:08:55.810
+<v Chris Chapman>and</v>
+
+cue-98
+00:08:56.980 --> 00:08:57.920
+<v Chris Chapman>and to do that,</v>
+
+cue-99
+00:08:59.060 --> 00:09:05.370
+<v Chris Chapman>how, and this is kind of an evolving process as we're understanding how to do it, but</v>
+
+cue-100
+00:09:06.700 --> 00:09:11.010
+<v Chris Chapman>we're having a series of calls and and I I don't know what your schedule is but</v>
+
+cue-101
+00:09:12.050 --> 00:09:13.630
+<v Chris Chapman>you're welcome to come and join.</v>
+
+cue-102
+00:09:15.510 --> 00:09:16.540
+<v Chris Chapman></v>
+
+cue-103
+00:09:17.380 --> 00:09:23.630
+<v Chris Chapman>We kind of envision seeing over the next two or three weeks trying to get to some of these deeper issues,</v>
+
+cue-104
+00:09:25.000 --> 00:09:31.530
+<v Chris Chapman>so if you or any one of your team is able to join for that time</v>
+
+cue-105
+00:09:32.190 --> 00:09:46.540
+<v Chris Chapman>you would be we would be delighted to have you.</v><00:09:34.970><v J.-S. Caux>Okay, yeah, no that sounds great, and if I understand correctly you usually meet on Tuesdays like this?</v><00:09:40.210><v Chris Chapman>Right. We usually meet at this time every week.</v><00:09:44.300><v J.-S. Caux>okay so I can see I mean the</v>
+
+cue-106
+00:09:47.530 --> 00:09:58.920
+<v J.-S. Caux>I'll see in the coming weeks whether I can drill a hole in my agenda to make that possible, but if not I might be able to delegate that somebody within my organization so</v><00:09:56.080><v Chris Chapman>Super - yeah</v><00:09:57.760><v J.-S. Caux>that's very possible - okay.</v>
+
+cue-107
+00:10:00.010 --> 00:10:00.340
+<v Chris Chapman>That would be great.</v>
+
+cue-108
+00:10:03.260 --> 00:10:05.660
+<v Chris Chapman>So as you can see we</v>
+
+cue-109
+00:10:07.680 --> 00:10:14.750
+<v Chris Chapman>have started a document on SciPost. We started that last week just kind of looking at your website and</v>
+
+cue-110
+00:10:16.520 --> 00:10:20.420
+<v Chris Chapman>and as we looked and had questions we added them to this list.</v>
+
+cue-111
+00:10:21.380 --> 00:10:24.300
+<v Chris Chapman>But before we get to that why don't we have you give a</v>
+
+cue-112
+00:10:25.410 --> 00:10:26.100
+<v Chris Chapman></v>
+
+cue-113
+00:10:28.220 --> 00:10:32.200
+<v Chris Chapman>kind of a brief introduction to the SciPost project from your perspective and then</v>
+
+cue-114
+00:10:35.140 --> 00:10:47.200
+<v Chris Chapman>then we can go from there.</v><00:10:37.020><v J.-S. Caux>Okay so I mean there are there any things to use as kind of a starting points. Maybe I can do a very short history of how it came about.</v>
+
+cue-115
+00:10:48.660 --> 00:11:07.410
+<v J.-S. Caux>so essentially I've been involved of course in scientific publishing for quite awhile - a couple of decades now, and I've seen it first from the side of the authors in many different journals. I've also seen it from the side of more of the editorial boards in the last decade or something, [to] see how it all goes.</v>
+
+cue-116
+00:11:08.370 --> 00:11:46.050
+<v J.-S. Caux>Essentially, through my experience as an author and also as an editor I kind of developed some feelings that maybe the system as it was set up was not ideal. I was really thinking about all aspects of publishing here so starting from the actual editorial process itself, the review process also, about the kind of ownership of the of the work, copyright question, the questions of using technology to maybe move forward and kind of update it to something more modern than the tradition, how also</v>
+
+cue-117
+00:11:47.190 --> 00:11:54.730
+<v J.-S. Caux>post-publication evaluation of publications occurs and so on, metrification, et cetera, and how it influences the</v>
+
+cue-118
+00:11:55.680 --> 00:12:04.600
+<v J.-S. Caux>careers of scientists. So I mean I have always been a great fan of the arxiv. I've always viewed the arxiv as</v>
+
+cue-119
+00:12:05.900 --> 00:12:15.340
+<v J.-S. Caux>an example of an extremely well-identified problem, a narrow problem, but then an extremely well-implemented solution for it. So all the preprints essentially</v>
+
+cue-120
+00:12:16.600 --> 00:12:20.980
+<v J.-S. Caux>go through the arxiv in my field, in my art, it's not true of every single area</v>
+
+cue-121
+00:12:21.870 --> 00:12:29.790
+<v J.-S. Caux>but in my case it's mostly true and I think this is delivered immense acceleration to scientific communication that's really</v>
+
+cue-122
+00:12:30.640 --> 00:12:47.490
+<v J.-S. Caux>competely changed the dynamics of the execution of research and maybe the reorientation that you have, a lot of new information, so that's been extremely positive. So at some point I thought why not make a whole system based on an extension of the arXiv?</v>
+
+cue-123
+00:12:50.220 --> 00:12:58.540
+<v J.-S. Caux>I think that misses, that's missing on the arXiv is of course peer refereeing layer. Many people have argued that we should go</v>
+
+cue-124
+00:12:59.450 --> 00:13:02.640
+<v J.-S. Caux>without this anyway, but I do believe that there is a</v>
+
+cue-125
+00:13:03.590 --> 00:13:09.890
+<v J.-S. Caux>an advantage scientifically to a peer refereeing process where input can be made and improvements can be implemented on papers.</v>
+
+cue-126
+00:13:10.900 --> 00:13:11.320
+<v J.-S. Caux>so</v>
+
+cue-127
+00:13:12.160 --> 00:13:21.160
+<v J.-S. Caux>so I had some discussions with many colleagues including people who have been involved with the arxiv. I was trying to float the idea of some arXiv plus plus</v>
+
+cue-128
+00:13:22.250 --> 00:13:40.730
+<v J.-S. Caux>where we would have a complete system from preprints to peer review to post publication metadata handling and maintenance, essentially run by the community, owned by the community, and without all these financial shenanigans we're currently facing</v>
+
+cue-129
+00:13:41.980 --> 00:13:44.740
+<v J.-S. Caux>in the industry. So</v>
+
+cue-130
+00:13:46.520 --> 00:13:49.190
+<v J.-S. Caux>I mean strategically it became</v>
+
+cue-131
+00:13:50.260 --> 00:14:06.390
+<v J.-S. Caux>the choice to just do it separately from the arXiv. The people I talked to said that the mission of the arxiv was very well defined and it was just better to do this on top of it, or you know on the side of it, and that's why I decided to start implementing it as a separate organization</v>
+
+cue-132
+00:14:07.230 --> 00:14:09.920
+<v J.-S. Caux>based on that not for profit foundation in the Netherlands.</v>
+
+cue-133
+00:14:11.240 --> 00:14:21.690
+<v J.-S. Caux>So a lot of work went into thinking how it should be set up and a lot of that thinking actually involves looking at past initiatives,</v>
+
+cue-134
+00:14:22.530 --> 00:14:34.040
+<v J.-S. Caux>past journals that have been started, or maybe other initiatives that have tried to make some progress publishing reform, and trying to identify why they maybe have not taken off as much as as they could have done.</v>
+
+cue-135
+00:14:35.520 --> 00:14:44.780
+<v J.-S. Caux>So at some point I became quite ambitious and decided that the kind of theme behind SciPost is that we're going to reform <em>everything</em> about publishing!</v>
+
+cue-136
+00:14:45.790 --> 00:14:52.250
+<v J.-S. Caux>We're going to do everything differently from the the refereeing, to the</v>
+
+cue-137
+00:14:53.300 --> 00:15:25.530
+<v J.-S. Caux>organizational structures behind it, to the decisional structures behind it, to the financial structures behind, et cetera. That's what gave form to, if you want, the first principles that were behind the organization, and more recently I've kind of sharpened those into what I call these genuine open access principles. So if you want, SciPost tries to do its business, its work in order to fulfill all these ideas in there.</v>
+
+cue-138
+00:15:26.930 --> 00:15:42.940
+<v J.-S. Caux>So you know partly it was motivated out of frustration with the existing system - frustration both with the editorial processes and the quality of the peer review, the criteria that were used in peer review,</v>
+
+cue-139
+00:15:43.860 --> 00:15:47.420
+<v J.-S. Caux>the detrimental aspects of peer review sometimes.</v>
+
+cue-140
+00:15:48.550 --> 00:16:12.290
+<v J.-S. Caux>So personally one of my experiences at some point, I mean my group we had what I think was the best scientific results in my group from possibly, you know, five or ten years, and we tried to put it in very high caliber journals, but were were never able to do that because of this, because of that, didn't fit with journal perspectives and</v>
+
+cue-141
+00:16:13.560 --> 00:16:26.850
+<v J.-S. Caux>this kind of thing and we kept having to rewrite the version once again to try to communicate that according to a different style to fit with the journal, et cetera, and at some point I took a step back and I actually</v>
+
+cue-142
+00:16:27.710 --> 00:16:39.610
+<v J.-S. Caux>looked at the planning schedule and I noticed that we had spent more time writing and re-writing the paper and arguing with referees than the time we have done actually</v>
+
+cue-143
+00:16:40.870 --> 00:16:48.100
+<v J.-S. Caux>conceiving and implementing and realizing the research and I vowed myself never to do that again.</v>
+
+cue-144
+00:16:50.240 --> 00:16:55.710
+<v J.-S. Caux>So that was a kind of great, frustrating motivation behind it,</v>
+
+cue-145
+00:16:56.740 --> 00:17:05.630
+<v J.-S. Caux>and it's also what's a lead to the design of the more open refereeing system that we have at SciPost.</v>
+
+cue-146
+00:17:07.210 --> 00:17:11.150
+<v J.-S. Caux>And then also there's the question of the whole, the business side of it.</v>
+
+cue-147
+00:17:12.920 --> 00:17:37.340
+<v J.-S. Caux>For me of course the not for profit aspect is quite important because I think the value of the scientific publications mostly comes from the work that the scientist puts in there. There is of course added value to having a bit of formatting and that checking all these things, but these are things that can be greatly automatized and systematized, so I think I wanted to kind of give back the the weight of the emphasis to</v>
+
+cue-148
+00:17:38.850 --> 00:17:42.220
+<v J.-S. Caux>the scientists behind it all. That was a bit of the idea</v>
+
+cue-149
+00:17:43.060 --> 00:17:47.240
+<v J.-S. Caux>- a kind of community owned and community driven enterprise.</v>
+
+cue-150
+00:17:50.580 --> 00:18:16.060
+<v J.-S. Caux>So that's kind of a start of it. And then of course what happened is that I - I mean I have the technical skills to implement the thing myself, so I started coding the site by myself, and polished it bit by running some beta versions with colleagues <c.unintelligible>where I'm from</c>, until I finally released it. And then it's grown into what it is today with the help of some colleagues around Amsterdam. In particular one of my</v>
+
+cue-151
+00:18:16.920 --> 00:18:55.710
+<v J.-S. Caux>master's students actually walked into my office one day and shouted at me: <em>are you the guy behind SciPost?</em> And I said, yeah, yeah, okay and so I thought that he was going to do something bad or something. But no - he said look I'm like a semi-professional web programmer. I do that on the side of my studies to pay for everything. I want to work for you! And I told him well, I have no money to give you. And he said I don't care! I want to work for you! Let's do this together! So ever since I've been kind of coding the stuff with him. So his name is [Johann de ???], we're kind of the two evil programmers behind the whole infrastructure.</v>
+
+cue-152
+00:18:57.190 --> 00:18:57.470
+<v J.-S. Caux></v>
+
+cue-153
+00:18:59.140 --> 00:19:17.540
+<v J.-S. Caux>So that's about that how it started. Then of course there was a lot of work at the beginning to try to convince scientists to participate and get involved in this. So from the very beginning essentially the idea behind SciPost has been to leverage openness for quality. So we</v>
+
+cue-154
+00:19:18.990 --> 00:19:35.100
+<v J.-S. Caux>we try to view ourselves as a quite high-caliber journal. The thing that we try to achieve with this is that first of all it makes it more appealing for scientists to send their good work there.</v>
+
+cue-155
+00:19:35.950 --> 00:19:50.730
+<v J.-S. Caux>And second, by concentrating on, if you want, the the top tier of the publications we can start the operations with a lower volume than the asymptotic volume that we would like to reach.</v>
+
+cue-156
+00:19:52.540 --> 00:19:59.020
+<v J.-S. Caux>So that's a little bit part of our growth strategy, if you want. So the growth strategy is to start from the top down</v>
+
+cue-157
+00:19:59.860 --> 00:20:01.850
+<v J.-S. Caux>in terms of size scaling things up.</v>
+
+cue-158
+00:20:03.040 --> 00:20:28.860
+<v J.-S. Caux>So before or while I was implementing it also I discussed with many other people who had started similar initiatives. In particular I got extremely useful input from <lang de>Ulrich Pöschl</lang> from Germany, who was the one behind the journal called Atmospheric Chemistry and Physics that you might know.</v>
+
+cue-159
+00:20:30.370 --> 00:20:36.640
+<v J.-S. Caux>It's published by Copernicus Publications. And essentially this was an extremely pioneering journal in</v>
+
+cue-160
+00:20:37.480 --> 00:20:43.860
+<v J.-S. Caux>in terms of open refereeing. So I discussed that quite a lot with <lang de>Ulrich</lang> and that really kind of</v>
+
+cue-161
+00:20:45.410 --> 00:20:53.320
+<v J.-S. Caux>helped crystallize the referreing format that we have at SciPost which is a variation of what happens in</v>
+
+cue-162
+00:20:54.250 --> 00:20:57.460
+<v J.-S. Caux>Atmospheric Chemistry and Physics, and in the meantime others also.</v>
+
+cue-163
+00:20:58.710 --> 00:21:01.270
+<v J.-S. Caux>So that's a little bit the kind of grand story behind it.</v>
+
+cue-164
+00:21:04.770 --> 00:21:05.990
+<v Chris Chapman>Great! Thank you J. S.</v>
+
+cue-165
+00:21:09.450 --> 00:21:10.930
+<v Chris Chapman>So</v>
+
+cue-166
+00:21:12.580 --> 00:21:14.310
+<v Chris Chapman>let's go ahead with questions.</v>
+
+cue-167
+00:21:15.350 --> 00:21:16.340
+<v Chris Chapman>Go ahead and shout out</v>
+
+cue-168
+00:21:17.650 --> 00:21:20.200
+<v Chris Chapman>if you have questions, and I think we can</v>
+
+cue-169
+00:21:21.250 --> 00:21:22.760
+<v Chris Chapman>go from there and see.</v>
+
+cue-170
+00:21:26.730 --> 00:21:32.980
+<v Chris Chapman>Maybe leave five or ten minutes at the end to kind of wrap up with</v>
+
+cue-171
+00:21:33.920 --> 00:21:35.780
+<v Chris Chapman>what we've learned and where to go from here.</v>
+
+cue-172
+00:21:36.500 --> 00:21:36.710
+<v David Farmer>So</v>
+
+cue-173
+00:21:38.260 --> 00:22:02.660
+<v David Farmer>this is David. I have a question. So you're not an arXiv overlay journal. Is that right? You actually are your own archive, your only preprint server that people submit to?</v><21:49:50.500><v J.-S. Caux>So at the moment we're still working with the arXiv. So in order to process a submission we require the submitters to actually put their version on the arXiv.</v>
+
+cue-174
+00:22:03.500 --> 00:22:13.460
+<v J.-S. Caux>the the reason why we do this at the moment is that if we know that the paper's on the arXiv, we know that essentially everybody worldwide has seen it.</v>
+
+cue-175
+00:22:14.480 --> 00:22:32.240
+<v J.-S. Caux>And if the authors have kind of used our templates then it's clear for everybody that this was submitted to SciPost. And then once the habits and knowledge about SciPost will have spread further, people will know that they can contribute to the refereeing effort. That's the idea.</v>
+
+cue-176
+00:22:33.080 --> 00:22:56.310
+<v J.-S. Caux>And so at the moment, we do have a kind of separate preprint server in the background, but we're not using it yet. We will be using it for things that can't go on the arxiv. So for example perhaps lecture notes, more of a kind of Bachelor level or things like that. So we do use the arxiv</v>
+
+cue-177
+00:22:57.330 --> 00:23:25.960
+<v J.-S. Caux>for its purpose, namely to handle the preprints, but the publication itself is actually placed on our servers. So we do all the hosting, the metadata management, et cetera et cetera. So in that sense, what I say is that SciPost is not an overlay journal. It essentially works like every single other journal that you have. They host their own material. They maintain everything. Yeah so in that sense SciPost is not overlay journal.</v>
+
+cue-178
+00:23:27.420 --> 00:23:35.210
+<v David Farmer>Okay, let me ask a followup about sustainability. So as far as I know, arxiv does not yet have a sustainable business model, so where do you see yourself</v>
+
+cue-179
+00:23:36.110 --> 00:23:43.720
+<v David Farmer>solving that problem?</v><00:23:37.400><v J.-S. Caux>Yeah so this is perhaps the single greatest problem that we have long term.</v>
+
+cue-180
+00:23:44.560 --> 00:23:55.370
+<v J.-S. Caux>Essentially I can tell you much more about the kind of financial situation at the moment. First of all about about the arXiv, yes, so the arXiv essentially</v>
+
+cue-181
+00:23:56.210 --> 00:24:11.040
+<v J.-S. Caux>I mean if you look at their budget numbers, something of the order of eight hundred thousand, nine hundred thousand a year to actually run the whole thing and develop it. They got recently some extra grants to implement some improvements. That's why we've got this new search engine for at that moment, et cetera, et cetera.</v>
+
+cue-182
+00:24:12.140 --> 00:24:13.460
+<v J.-S. Caux>So</v>
+
+cue-183
+00:24:14.490 --> 00:25:07.780
+<v J.-S. Caux>the the arxiv itself does not have a permanent endowment ensuring its continued existence. However, in terms of the sustainability of the arXiv, I trust very much in the community, and I would imagine that if things were to go from bad to worse, I don't know, so Paul Ginsbarg gives up the ghost and you know suddenly it stops working. I'm sure that the community would rally together and just resuscitate the arXiv precisely as it is because it's an infrastructure that's really proven its worth and we want it to be maintained. And in fact I would say if the arxiv were to, you know, completely fall down then I would do my best via SciPost just to take it over. I don't think we're going to we're going to get there. I think the arXiv is going to be okay, but it's always contingent on continued support from institutions.</v>
+
+cue-184
+00:25:09.350 --> 00:25:30.230
+<v J.-S. Caux>Now about SciPost: so the business model that we have with is extremely challenging. So we have this model whereby we would like academic institutions worldwide, so that includes universities, the libraries, research institutes, funding agencies.</v>
+
+cue-185
+00:25:31.290 --> 00:25:40.650
+<v J.-S. Caux>We would like these institutions to provide basic means for us to run our infrastructure and what we</v>
+
+cue-186
+00:25:41.630 --> 00:26:02.310
+<v J.-S. Caux>what we don't want to do is to link the actual editorial process and the editorial workflow to the finances. So currently we have this big model, this big transition in the publishing business from the subscription journals into the APC based model. I've actually,</v>
+
+cue-187
+00:26:03.280 --> 00:26:08.710
+<v J.-S. Caux>so I guess I can say it: I'm against the APC model.</v>
+
+cue-188
+00:26:09.660 --> 00:26:26.530
+<v J.-S. Caux>I think it's not a good model. It encourages a lots of almost malpractice as the proliferation of these predatory open access journals as shown over the last few years. It links editorial decisions the financial consequences everywhere. It's kind of not the right way to do it.</v>
+
+cue-189
+00:26:27.370 --> 00:26:27.910
+<v J.-S. Caux></v>
+
+cue-190
+00:26:29.220 --> 00:26:53.170
+<v J.-S. Caux>The the thing that we want to implement, if you want, is a pooling mechanism whereby from these basic funds that institutions give us, we run the whole infrastructure without looking exactly in microscopic detail where the money is spent. So we're going to run the refereeing processes. We're gonna perform the production of the papers with what we have.</v>
+
+cue-191
+00:26:54.250 --> 00:27:21.560
+<v J.-S. Caux>If I look at our operations at the moment, my estimate is that we can be sustainable with infrastructure if we operate on a baseline of between three hundred and four hundred euros per publication <i>on average</i>. Of course there are short publications. There are longer publications. There are publications that have an extremely complicated refereeing process. There are other publications that go like through butter <c.unintelligible>and are</c> easy, so publication is not a proper financial unit.</v>
+
+cue-192
+00:27:23.060 --> 00:28:05.460
+<v J.-S. Caux>So one of the reasons why we think that we can perform great economies on all of this is first of all: we don't have thirty seven or eighty percent profit margins. We don't have a huge accounting later that tries to count all those peanuts left and right and tries to send invoices all over the place. What we would like is for institutions to compile a little bit the number of publications that they can associate to themselves through SciPost and then provide us yearly donations to match the expenses corresponding to these things. So that is the dream. So it's not yet the reality.</v>
+
+cue-193
+00:28:07.770 --> 00:28:26.450
+<v J.-S. Caux>Our our model for the finances is partly based on the on the arXiv which also tries to pool contributions. It's also based on other initiatives that are more recent than the arXiv that use such a similar consortial scheme. You might be familiar with the Open Library of Humanities?</v>
+
+cue-194
+00:28:27.720 --> 00:28:39.960
+<v J.-S. Caux>Maybe you've talked to Martin Eve in one of your meetings as well? So he's somebody who also has written about these consortial funding models and has really, you know,</v>
+
+cue-195
+00:28:40.860 --> 00:28:53.920
+<v J.-S. Caux>convincingly argued that they are much cheaper solution to go for. Although they have disadvantages, the sum of their advantages is financially much more attractive than the current models that we have.</v>
+
+cue-196
+00:28:56.260 --> 00:29:00.820
+<v J.-S. Caux>So at the moment we're trying to convince institutions to support us,</v>
+
+cue-197
+00:29:01.880 --> 00:29:25.830
+<v J.-S. Caux>and it's always a little bit of chicken before the egg. At the very beginning, when I started SciPost, institutions were telling me, well okay, you know, set your journal up, run it, and once it's running we will see if we support you. So that means that the whole thing had to be developed essentially without the financial backbone, without financial guarantees, without</v>
+
+cue-198
+00:29:26.670 --> 00:29:34.250
+<v J.-S. Caux>good prospects for the future. Lots and...it's been a lot of pro bono work - unpaid - in order to do that.</v>
+
+cue-199
+00:29:35.200 --> 00:29:49.220
+<v J.-S. Caux>Trust is that now that the infrastructure is running and slowly being scaled up, the institutions will feel, if you want, morally compelled to support it. And one of the things I would like to</v>
+
+cue-200
+00:29:50.340 --> 00:30:14.100
+<v J.-S. Caux>see from institutions, at some point, is the realization that by supporting our alternative model for the publishing infrastructure, they have an extremely powerful lever to try to change the existing infrastructure, you know bring the costs down, change the conditions, give much more power to the community, and the libraries, and institutions, and the funders.</v>
+
+cue-201
+00:30:15.800 --> 00:30:23.540
+<v J.-S. Caux>Yeah, so that was kind of a long answer that you were to your question, but if you have more specific things, questions about it, I can also answer them.</v>
+
+cue-202
+00:30:25.910 --> 00:30:43.240
+<v.question Katie Chapman>I have one along that same - with that in mind. With it becoming an institution essentially institution-funded eventually, where would that leave someone working outside of an institution in terms of interaction with SciPost?</v>
+
+cue-203
+00:30:44.560 --> 00:30:53.950
+<v J.-S. Caux>So first of all, all the content of SciPost is completely openly accessible. So somebody can certainly</v>
+
+cue-204
+00:30:54.930 --> 00:31:23.820
+<v J.-S. Caux>peruse and download all the material that we have. Now for the actual contributions which are defined by publications, referee reports, also comments, we actually have the concept of what we call a <i>contributor</i> and a contributor is defined as somebody that has to be a professionally active scientist. So that's somebody with at least a position corresponding to a PhD students and above.</v>
+
+cue-205
+00:31:24.660 --> 00:32:03.450
+<v J.-S. Caux>So in that sense we're not completely open. But the the reason it's like that is to essentially guarantee that the comments are going to be placed on the on the papers come from people within the field with the sufficient expertise to do that. And this was an extremely important criteria on that was underlined by the scientists that we surveyed at the beginning when we tried to convince them that these open refereeing methods were the way forward. They were always afraid that essentially anybody could comment on these things and essentially maybe their fear was that this would bring the the quality down.</v>
+
+cue-206
+00:32:04.670 --> 00:32:07.510
+<v J.-S. Caux>So in that sense, if you want, SciPost is not completely open.</v>
+
+cue-207
+00:32:08.710 --> 00:32:12.450
+<v J.-S. Caux>I could imagine a future in which, for example,</v>
+
+cue-208
+00:32:13.290 --> 00:32:38.090
+<v J.-S. Caux>we could open up to a larger audience if they want to ask questions about particular things. And then we have that. So we have, if you want, plans in the background that consider such things. But we didn't want to release that at first because it would probably confuse the mission of SciPost in the minds of scientists. So that we leave for the future.</v>
+
+cue-209
+00:32:40.680 --> 00:32:49.660
+<v.question Katie Chapman>May I ask one follow-on question with that? So would the commenters need to be from that same field of study then?</v>
+
+cue-210
+00:32:50.610 --> 00:32:51.860
+<v J.-S. Caux>Not necessarily.</v>
+
+cue-211
+00:32:53.220 --> 00:32:58.840
+<v J.-S. Caux>No so we don't force that. So at the moment we're only operating within physics.</v>
+
+cue-212
+00:32:59.720 --> 00:33:24.080
+<v J.-S. Caux>So the only journals that we have are within physics. However it is entirely possible for somebody working in gravitation and cosmology making, maybe, working on non-linear dynamical systems - it's entirely possible for that person to make a comment or ask a question on a paper in mathematical physics, doing that from a different perspective or even in <c.unintelligible>many-body condensed matter</c>. This is possible.</v>
+
+cue-213
+00:33:25.510 --> 00:33:26.270
+<v Katie Chapman>Okay</v>
+
+cue-214
+00:33:28.880 --> 00:33:32.660
+<v Chris Chapman>So I have a kind of a more general question along those lines.</v>
+
+cue-215
+00:33:33.770 --> 00:33:44.410
+<v.question Chris Chapman>I know you're working with the arXiv, but I am wondering if you could kind of explain a little bit more how your refereeing process works</v>
+
+cue-216
+00:33:45.480 --> 00:33:47.550
+<v.question Chris Chapman>behind the scenes?</v><00:33:46.740><v J.-S. Caux>yeah okay</v>
+
+cue-217
+00:33:48.770 --> 00:33:55.140
+<v J.-S. Caux>It's relatively simple. It goes through a number of steps. So</v>
+
+cue-218
+00:33:56.130 --> 00:34:01.910
+<v J.-S. Caux>maybe the first thing to explain is that we have decisional</v>
+
+cue-219
+00:34:02.750 --> 00:34:07.590
+<v J.-S. Caux>structure within SciPost which is based on what we call the <i>editorial college</i>.</v>
+
+cue-220
+00:34:08.740 --> 00:34:39.360
+<v J.-S. Caux>So the editorial college is a collection of professional academics of relatively senior level so that the vast majority of them are full professor and, you know, even senior full professors in various fields. You can find a list of them on our about page. And the idea is that all publication decisions at SciPost are taken by the editorial college.</v>
+
+cue-221
+00:34:40.660 --> 00:34:46.510
+<v J.-S. Caux>So there's no publication decision which is taken by a single</v>
+
+cue-222
+00:34:47.600 --> 00:34:49.840
+<v J.-S. Caux>editor or <i>fellow</i> as we call them.</v>
+
+cue-223
+00:34:51.070 --> 00:34:57.610
+<v J.-S. Caux>So what happens is that when an author wants to submit to SciPost, the very first step</v>
+
+cue-224
+00:34:58.450 --> 00:35:02.050
+<v J.-S. Caux>is to deposit the preprint on the arXiv.</v>
+
+cue-225
+00:35:03.230 --> 00:35:29.560
+<v J.-S. Caux>And then once the preprint has appeared on the arXiv, so when it has its official arXiv number, then the person who submits it, of course has to be registered at SciPost, but then you just fill in a submission form which is extremely simple because you just get the arXiv number with the version and then the system kind of reads - it talks to the arXiv API to fetch all the metadata associated to it,</v>
+
+cue-226
+00:35:31.040 --> 00:35:52.690
+<v J.-S. Caux>and then just submits the paper. So then the paper enters what we call the <i>pre-screening phase</i>. So the pre-screening phase mostly consists of a two things: first of all, a plagiarism check which is anyway run by the arXiv but we actually run a separate one independently.</v>
+
+cue-227
+00:35:53.710 --> 00:35:54.410
+<v J.-S. Caux>at SciPost.</v>
+
+cue-228
+00:35:55.580 --> 00:36:38.690
+<v J.-S. Caux>And if all is well with that, then our editorial administration proceeds to what we call the <i>assignments phase</i>. So that's within the pre-screening. So what we do is that we contact the fellows that we have within the college who specialization matches the specialization of the submission, and ask them if they want to become editor-in-charge of that particular submission. They do not have to accept. They can refuse because they're too busy, because they're not interested, et cetera. But we do wait until one of our fellows has taken charge of the submission.</v>
+
+cue-229
+00:36:40.470 --> 00:37:35.720
+<v J.-S. Caux>If none of the fellows take charge of the submission, then the paper can be, if you want like desk rejected - rejected at that stage. Then we say that the pre-screening has failed and the paper is, if you want, released back to the authors and then not processed further by SciPost. So this does not happen very often. I don't have the exact statistics here in front of my eyes, but you're talking maybe about one paper and twenty or something or one submission and twenty. Okay, so now we reached the stage where one of our fellows has decided to take charge of the submission and becomes editor-in-charge. So this fellow then has access to a special page that we call the editorial page that contains all the tools to handle the refereeing process.</v>
+
+cue-230
+00:37:36.930 --> 00:37:50.030
+<v J.-S. Caux>Primarily the means just inviting referees. So essentially the the fellow in charge will invite a number of referees to explicitly look at the submission and provide a report.</v>
+
+cue-231
+00:37:50.870 --> 00:37:59.990
+<v J.-S. Caux>Now we do not limit ourselves to reports which are obtained through explicit invitations for refereeing from the editor-in-charge.</v>
+
+cue-232
+00:38:00.830 --> 00:38:20.380
+<v J.-S. Caux>Once the paper has been taken charge of by one of our fellows, what we call the submission page becomes publicly accessible. That is, if you look at the SciPost site, you'll see submissions. And the submissions that you see there are undergoing refereeing. They have an editor-in-charge.</v>
+
+cue-233
+00:38:21.270 --> 00:38:45.420
+<v J.-S. Caux>If you are a registered contributor to SciPost, you can contribute a report or a comment during the refereeing phase. So these contributed reports which are then just, you know, anybody who was registered can provide those, these are also taken into account in the editorial processing,</v>
+
+cue-234
+00:38:46.260 --> 00:38:49.890
+<v J.-S. Caux>and they way into the editorial decision also.</v>
+
+cue-235
+00:38:51.160 --> 00:39:22.650
+<00:38:52.680><v J.-S. Caux>So we run refereeing periods of four weeks. We try to keep everybody on time. This is also an extreme challenge to kind of keep up the tempo and make sure to minimize the delays, but then when the reports have been obtained, it's the duty of editor-in-charge to formulate an editorial recommendation. So this is going to be a recommendation for maybe a minor or a major revision,</v>
+
+cue-236
+00:39:23.580 --> 00:39:45.760
+<v J.-S. Caux>it could be a recommendation for rejection or for acceptance. The important thing is that if it is a recommendation for acceptance or rejection, then the recommendation is only a recommendation. It's forwarded to the editorial college and then there's a voting which is organized within the editorial college. So the fellows that have</v>
+
+cue-237
+00:39:47.120 --> 00:39:51.300
+<v J.-S. Caux>specialist knowledge of this area get to vote on the</v>
+
+cue-238
+00:39:52.500 --> 00:39:57.680
+<v J.-S. Caux>on the submission, whether it's accepted or or rejected. So these decisions are taken</v>
+
+cue-239
+00:39:58.520 --> 00:40:03.530
+<v J.-S. Caux>communally like that, based on the recommendation of the editor-in-charge.</v>
+
+cue-240
+00:40:05.520 --> 00:40:42.740
+<v J.-S. Caux>And then once the paper is, while it's rejected, it's rejected. If it's accepted, then at that stage, once the editorial college decision is fixed, the submission is forwarded to the production stream workflow that we have. We have a little production team that produces the proofs of the papers, and then I send them to the authors. We converge, and finally when theproofs are converged, we proceed with publication of the manuscript, deposition of metadata et cetera.</v>
+
+cue-241
+00:40:45.610 --> 00:40:47.150
+<v J.-S. Caux>So that's the workflow, if you want.</v>
+
+cue-242
+00:40:48.370 --> 00:40:55.670
+<v.question David Farmer>Which of these things are public? At a referee's report, who voted which way on acceptance, and so on, the versions, all that?</v>
+
+cue-243
+00:40:56.650 --> 00:41:14.220
+<v J.-S. Caux>The contents of the reports are public. The referees can elect to remain anonymous or to waive anonymity. The voting at the college and the discussions at the college level are not made public.</v>
+
+cue-244
+00:41:17.240 --> 00:41:17.790
+<v David Farmer>okay thanks</v>
+
+cue-245
+00:41:20.250 --> 00:41:23.070
+<v Chris Chapman>thank you. So my</v>
+
+cue-246
+00:41:23.700 --> 00:41:29.070
+<v Chris Chapman>next question: I think it's only at that point when the</v>
+
+cue-247
+00:41:31.870 --> 00:41:46.080
+<v Chris Chapman>the papers are then in the production stream, or however you said it, that people can make comments on them? Is that the...?</v><00:41:42.950><v J.-S. Caux>During the refereeing phase people can make comments on them</v>
+
+cue-248
+00:41:47.100 --> 00:41:49.690
+<v Chris Chapman>And that's on the commentary section of your</v>
+
+cue-249
+00:41:50.800 --> 00:41:51.220
+<v Chris Chapman>site?</v>
+
+cue-255
+00:42:08.940 --> 00:42:25.640
+<v J.-S. Caux>Okay now now it's better yeah. So there are two separate sections on the site. There's a commentaries section. So this is a section which allows registered contributors to comment on published literature.</v>
+
+cue-256
+00:42:26.760 --> 00:42:35.330
+<v J.-S. Caux>So that can be a paper at SciPost. It can also be a paper in Nature or any journal whatsoever, even an old paper or whatnot.</v>
+
+cue-257
+00:42:36.290 --> 00:42:55.550
+<v J.-S. Caux>So in that case what we do is we have a separate commentary page for a published paper. We don't host the published paper we just we just have a link to the published paper, but then the contributors can actually provide comments onto those papers there. So if you want...</v>
+
+cue-258
+00:42:57.180 --> 00:43:02.940
+<v Chris Chapman>So that's completely separate than your refereeing track.</v><00:43:01.490><v J.-S. Caux>That's correct. Yeah. so</v>
+
+cue-259
+00:43:03.810 --> 00:43:22.810
+<v J.-S. Caux>if you want, we have code inside that's able to manage comments. So this is used in the commentary section, but it's also used in our submissions section. So submissions - these are the papers that are under consideration for publication inSciPost.</v>
+
+cue-260
+00:43:25.000 --> 00:43:39.980
+<v J.-S. Caux>And then for the papers that are undergoing refereeing, it is possible during the refereeing phase for general people also are registered contributors, anybody, can actually contribute a report</v>
+
+cue-261
+00:43:41.310 --> 00:44:04.210
+<v J.-S. Caux>or a comment. So the idea behind this is that sometimes as a researcher you wake up in the morning and then you see on the arXiv a paper whose contents you can very easily comment upon or maybe give some suggestions. But if you happen not to be one of those three or four referees that are invited to</v>
+
+cue-262
+00:44:05.270 --> 00:44:05.630
+<v J.-S. Caux></v>
+
+cue-263
+00:44:06.760 --> 00:44:27.790
+<v J.-S. Caux>referee this paper, then you don't have the chance to give your opinion on. So at SciPost we give this opportunity. So if you see the paper submitted at SciPost, you know that you can contribute something to it even though you're not explicitly invited by the editor-in-charge.</v>
+
+cue-264
+00:44:29.440 --> 00:44:32.300
+<v Ivar Martin>so but these comments, are</v><00:44:30.440><v Katie Chapman>And that stays with the...oh sorry</v>
+
+cue-265
+00:44:33.380 --> 00:44:40.380
+<v.question Ivar Martin>Just for clarification: so those comments, are they moderated by the editor? or they can just...?</v>
+
+cue-266
+00:44:41.370 --> 00:44:44.210
+<v J.-S. Caux>So we have a vetting procedure.</v>
+
+cue-267
+00:44:45.160 --> 00:45:09.840
+<v J.-S. Caux>That means that when the comment is submitted, at first it's not publicly available but somebody has to look at it. So either our editorial administration or the editor in charge of the submission will look at the comment, ascertain that no abusive language is used, that sort of thing, and if that's the case then the thing will be</v>
+
+cue-268
+00:45:11.330 --> 00:45:13.980
+<v J.-S. Caux>the thing will be put online, after vetting.</v>
+
+cue-269
+00:45:15.080 --> 00:45:39.240
+<v J.-S. Caux>But that was an interesting discussion that I had with <lang de>Ulrich Pöschl</lang> because they also have, of course, these open comments and open refereeing on their submissions, and he told me that this vetting procedure was actually completely superfluous because they have the history of thirty thousand comments on the papers and only two or three have proven problematic.</v>
+
+cue-270
+00:45:40.550 --> 00:45:45.740
+<v J.-S. Caux>So he thought I was being too conservative on that. But nonetheless I decided to keep the vetting because I don't...</v>
+
+cue-271
+00:45:46.730 --> 00:45:56.980
+<v J.-S. Caux>you know, I want to encourage a high level on these things and sometimes we return the comments to the authors of the comments and say you know yeah bring up the level a bit here and there and then we'll publish it.</v>
+
+cue-272
+00:46:00.700 --> 00:46:06.720
+<v.question Katie Chapman>and they stay with the submission right? Like they end up connected with it in the end?</v>
+
+cue-273
+00:46:08.640 --> 00:46:31.500
+<v J.-S. Caux>So if you look at the submission page, the submission page contains the information about the submission, the link to the arXiv, and then it contains also the reports and the comments that are deposited there. So all these things are together on the same web page. But once the paper is published, then of course only</v>
+
+cue-274
+00:46:32.390 --> 00:46:39.900
+<v J.-S. Caux>the paper itself forms the version of record of the article.</v>
+
+cue-275
+00:46:40.740 --> 00:47:01.850
+<v J.-S. Caux>And the reports, we actually give a DOI to, so if you want, the reports we also want to bring up in level up to something that the referees can get credit for. So we attach a DOI to the reports of the published papers, but also to the comments if they are substantial.</v>
+
+cue-276
+00:47:03.370 --> 00:47:24.100
+<v Katie Chapman>And the comments, I haven't stumbled on one yet that had comments. Are they able to be done both during the refereeing and after? I think you already said this, but I just wanted to make sure that I</v><00:47:16.380><v J.-S. Caux>So the reports can be submitted during refereeing and the comments can be submitted anytime.</v>
+
+cue-277
+00:47:25.030 --> 00:47:30.710
+<v Katie Chapman>okay okay that's what I thought you said and I just wanted to make sure that I</v><00:47:29.140><v J.-S. Caux>I understand it's a little bit confusing.</v>
+
+cue-278
+00:47:35.970 --> 00:47:38.230
+<v Katie Chapman>and my comments would show up just like the</v>
+
+cue-279
+00:47:40.420 --> 00:48:01.890
+<v Katie Chapman>reports do on a submission right just below it or whatever on the published one?</v><00:47:46.340><v J.-S. Caux>yeah, yeah. So what you'll find very typically is that so you'll have some reports attached to a submission, and then typically it will be a comment from the authors. So the authors are allowed to reply to reports.</v>
+
+cue-280
+00:48:03.470 --> 00:48:03.820
+<v Katie Chapman>okay</v>
+
+cue-281
+00:48:04.800 --> 00:48:10.210
+<v J.-S. Caux>So we call those, I mean they are comments, but we give them a special name. We call them <i>author replies</i></v>
+
+cue-282
+00:48:11.610 --> 00:48:15.930
+<v J.-S. Caux>because it's an author's response to a report. Soo we we have many of those.</v>
+
+cue-283
+00:48:19.770 --> 00:48:20.230
+<v Katie Chapman>thank you.</v>
+
+cue-284
+00:48:33.070 --> 00:48:43.280
+<v Katie Chapman>Can I ask you a very kind of probably fairly random question? But just for my understanding as I'm looking at things? When you go into a submission. I'm looking at ones that have been published.</v>
+
+cue-285
+00:48:44.350 --> 00:48:47.220
+<v Katie Chapman>often the authors are...</v>
+
+cue-286
+00:48:48.630 --> 00:48:51.660
+<v Katie Chapman>there will be one or two that are darker</v>
+
+cue-287
+00:48:52.860 --> 00:49:05.070
+<v Katie Chapman>writing and then the others are lighter? What is that differentiation?</v><00:48:57.290><v J.-S. Caux>So this is the differentiation between authors who actually have an account at SciPost and others who don't.</v>
+
+cue-288
+00:49:05.960 --> 00:49:06.530
+<v Katie Chapman>okay</v>
+
+cue-289
+00:49:07.650 --> 00:49:39.690
+<v J.-S. Caux>The ones that don't have a link, we we have them in the database as unregistered authors, so we don't have any information about their ORCiD or whatever else, whereas the others, we have all information. And then in particular we can link to maybe other publications that they have, comments that they've put, and things like that. So if you click on one of these names, you'll be taken to the kind of page for that person. It's a bit like on the arXiv if you do a keyword search for somebody's name.</v>
+
+cue-290
+00:49:46.980 --> 00:50:02.390
+<v Katie Chapman>One, may I ask another question that's unrelated but <c.question>when you turn down something, when something either in the very beginning, when it's desk-denied or whatever - it's just not picked up anyone,</c></v>
+
+cue-291
+00:50:03.630 --> 00:50:08.830
+<v.question Katie Chapman>or in the end when it is recommended that it be rejected,</v>
+
+cue-292
+00:50:09.670 --> 00:50:16.980
+<v.question Katie Chapman>what happens with those submissions? Do they remain anywhere on SciPost or do they kind of disappear from SciPost at that point?</v>
+
+cue-293
+00:50:17.910 --> 00:50:31.370
+<v J.-S. Caux>So at the moment for the ones that are rejected during the pre-screening phase, then, if you want, they've never become public on SciPost anyways so</v>
+
+cue-294
+00:50:32.230 --> 00:50:42.950
+<v J.-S. Caux>so you don't see them. It might be that the in the arXiv submission they have written, you know, submitted to SciPost and things like that, so then you can understand it went through pre-screening but didn't go further</v>
+
+cue-295
+00:50:44.080 --> 00:50:56.840
+<v J.-S. Caux>but then we don't host anything there. If the rejection occurs after a refereeing phase, then once the rejection decision is fixed by the college,</v>
+
+cue-296
+00:50:58.010 --> 00:51:10.060
+<v J.-S. Caux>we in principle remove everything. So we do give the authors the possibility of keeping all these things public.</v>
+
+cue-297
+00:51:10.900 --> 00:51:29.520
+<v J.-S. Caux>so it's happened, for example, that some authors wanted to still have the the reports available like this in order to accelerate processing somewhere else, but if the authors prefer not to see those things again, because of course in those circumstances typically the reports are more critical and</v>
+
+cue-298
+00:51:31.100 --> 00:51:41.880
+<v J.-S. Caux>point out problems, and we do give the authors of the submission the decision as to whether the things stay online or not. But the default is that the things are taken offline.</v>
+
+cue-299
+00:51:44.880 --> 00:51:45.270
+<v Katie Chapman>okay</v>
+
+cue-300
+00:51:47.510 --> 00:51:53.020
+<v David Farmer>I have another question about sustainability. So you would explain that...you'd like it that</v>
+
+cue-301
+00:51:54.160 --> 00:51:58.130
+<v David Farmer>institutions or whoever would pay a small amount of money</v>
+
+cue-302
+00:51:59.040 --> 00:51:59.890
+<v David Farmer>to SciPost.</v>
+
+cue-303
+00:52:01.060 --> 00:52:15.250
+<v David Farmer>Now currently you have three journals. So I'm just trying to do a quick calculation in my head. If all the paid journals out there were partitioned out in groups of three to different organizations, and all these organizations</v>
+
+cue-304
+00:52:15.990 --> 00:52:20.600
+<v David Farmer>we're going to be supported in various ways. That seems unlikely to me.</v>
+
+cue-305
+00:52:22.450 --> 00:52:42.700
+<v David Farmer>And so then I conclude SciPost needs to host hundreds of journals in order for this model to be sustainable. <c.question>So how do you respond to this?</c></v><00:52:32.320><v J.-S. Caux>yeah. So essentially the idea is that we ask a small amount from institutions. So we ask for a thousand euros per year just to kind of get started.</v>
+
+cue-306
+00:52:43.910 --> 00:52:44.570
+<v J.-S. Caux>Now</v>
+
+cue-307
+00:52:46.620 --> 00:53:08.470
+<v J.-S. Caux>so to kind of get a get a better idea of what we're thinking of for now, you can also look at a thing which we put online very recently. So I called it <i>expansion and sustainability drive</i>. If you go to our homepage you'll see a link to it in the top right. In there you have some stated goals for of the the coming year.</v>
+
+cue-308
+00:53:09.060 --> 00:53:17.760
+<v J.-S. Caux>So we have two big objectives. The first objective is that we want to scale up our editorial college to two hundred fellows and more.</v>
+
+cue-309
+00:53:18.600 --> 00:53:36.060
+<v J.-S. Caux>And the second goal is that we want to scale up our supporting partners boards to the equivalent of two hundred partners. And this would allow us to process, according to current estimates, about five hundred papers a year.</v>
+
+cue-310
+00:53:36.900 --> 00:53:51.060
+<v J.-S. Caux>So this is to get things started, if you want. To kind of converge on to this. Now let me speculate about the longer term future and how I would like to have it.</v>
+
+cue-311
+00:53:51.900 --> 00:54:03.030
+<v J.-S. Caux>So we would keep having our partners that would be the the institutions worldwide, and they would give us this kind of standard</v>
+
+cue-312
+00:54:03.950 --> 00:54:14.450
+<v J.-S. Caux>on the scale of the thousand euro a year contribution so that we could have a bit of a team running the infrastructure, the base of the infrastructure.</v>
+
+cue-313
+00:54:15.290 --> 00:54:24.350
+<v J.-S. Caux>Now, what I would like to have is a mechanism which is a little bit like scope three if you're familiar with that.</v>
+
+cue-314
+00:54:25.360 --> 00:54:25.730
+<v David Farmer>no</v>
+
+cue-315
+00:54:26.690 --> 00:54:34.960
+<v J.-S. Caux>So okay then - two-second explanation about scope three. Scope three</v>
+
+cue-316
+00:54:36.780 --> 00:55:08.940
+<v J.-S. Caux>is a mechanism whereby publishers of high-energy physics papers get their, if you want, article processing charges paid for centrally. So the authors of papers and high energy physics don't have to solve themselves, you know give their own credit card or arrange payment from their own institution, in order to publish open access in the list of journals that are within the scope three arrangement. So it's all centralized at CERN. But it is only for</v>
+
+cue-317
+00:55:09.780 --> 00:55:30.550
+<v J.-S. Caux>high-energy physics. And the way they work in a kind of a first approximation is that they look at the publication level of the publishers that they have within the agreement and then they say, okay so for next year publisher X is going to get that much money</v>
+
+cue-318
+00:55:31.070 --> 00:55:34.120
+<v J.-S. Caux>to publish all the high energy papers that will be thrown at them.</v>
+
+cue-319
+00:55:35.150 --> 00:56:02.990
+<v J.-S. Caux>And then the year after, they re-adjust, and then the year after they kind of readjust and redistribute and things like that. So what I would envision for the future would be something like this. So we would scale our operations up and then what we would do is for example at the end of a publication year, we could tell institution X that they were associated to the equivalent of that many publications.</v>
+
+cue-320
+00:56:03.830 --> 00:56:11.980
+<v J.-S. Caux>And then we look at our operational costs and see how much it is, and then the contribution that we would expect from that institution would match this.</v>
+
+cue-321
+00:56:12.520 --> 00:56:22.050
+<v J.-S. Caux>Well now the problem here is that you have a lot of institutional free riders, so you'd need typically to get like a bit more of that. But the</v>
+
+cue-322
+00:56:23.220 --> 00:56:32.000
+<v J.-S. Caux>the general idea would be that. So we're kind of thinking about like a bronze, silver, and gold versions of partners that give us either, you know,</v>
+
+cue-323
+00:56:32.920 --> 00:56:46.810
+<v J.-S. Caux>just the equivalent of what they received, or a bit more, or much more, and then try to be sustainable on that. The kind of idea is that we want to we want to cut the costs down quite a lot as compared to the current norm.</v>
+
+cue-324
+00:56:47.960 --> 00:56:49.500
+<v J.-S. Caux>I mean if you take the number of</v>
+
+cue-325
+00:56:50.340 --> 00:56:58.930
+<v J.-S. Caux>papers that are published worldwide, if you take the expenditure of universities worldwide, you come to these numbers like five thousand euros for publication.</v>
+
+cue-326
+00:57:00.560 --> 00:57:17.180
+<v J.-S. Caux>And a norm for open access publications is...it was about fifteen fifteen hundred euros, now it's rapidly increasing. Some places it's twenty four hundred, fifty two hundred, and things like that. So we want to kind of bring those costs down quite substantially by running this more centralized infrastructure.</v>
+
+cue-327
+00:57:18.410 --> 00:57:23.050
+<v J.-S. Caux>But the idea of - the base of the idea would still be our supporting partners board.</v>
+
+cue-328
+00:57:24.080 --> 00:57:28.120
+<v Chris Chapman>so I'm gonna have to cut in here. We have one minute left.</v>
+
+cue-329
+00:57:29.880 --> 00:57:32.560
+<v J.-S. Caux>okay</v><00:57:30.390><v Chris Chapman>this has been a great discussion.</v>
+
+cue-330
+00:57:33.470 --> 00:57:35.510
+<v Chris Chapman>So I guess</v>
+
+cue-331
+00:57:36.440 --> 00:57:40.080
+<v Chris Chapman>what I would kind of like to see maybe going into next week,</v>
+
+cue-332
+00:57:40.920 --> 00:57:44.330
+<v Chris Chapman>as you think about that, if you're available for next week J-S,</v>
+
+cue-333
+00:57:46.130 --> 00:57:52.960
+<v Chris Chapman>I am drawn to a question that Ben Upton asked you in your interview that you shared on</v>
+
+cue-334
+00:57:53.940 --> 00:57:55.750
+<v Chris Chapman>your blog.</v><00:57:54.950><v J.-S. Caux>yeah</v>
+
+cue-335
+00:57:56.700 --> 00:57:58.500
+<v Chris Chapman>and he asked: ultimately</v>
+
+cue-336
+00:57:59.420 --> 00:58:08.750
+<v Chris Chapman>don't we want quite a centralized publishing system rather than a large number of partially overlapping very poor quality hard to find platforms? So</v>
+
+cue-337
+00:58:09.450 --> 00:58:18.570
+<v Chris Chapman>what I want to think about I guess for this next week is how do you see, like what is your understanding of the</v>
+
+cue-338
+00:58:19.940 --> 00:58:22.210
+<v Chris Chapman>the future in a more macro scale</v>
+
+cue-339
+00:58:23.160 --> 00:58:28.610
+<v Chris Chapman>in the Scholarly Commons? How do you see initiatives like yours</v>
+
+cue-340
+00:58:30.520 --> 00:58:32.900
+<v Chris Chapman>working together?</v><00:58:32.610><v J.-S. Caux>yeah</v>
+
+cue-341
+00:58:35.220 --> 00:58:40.360
+<v Chris Chapman>and generally to get some more of your perspective on the Scholarly Commons from what you</v>
+
+cue-342
+00:58:41.270 --> 00:58:44.730
+<v Chris Chapman>even just from the idea: if we could start over what would it look like?</v>
+
+cue-343
+00:58:45.680 --> 00:58:45.940
+<v J.-S. Caux>yeah</v>
+
+cue-344
+00:58:46.840 --> 00:58:47.430
+<v Chris Chapman>So</v>
+
+cue-345
+00:58:48.900 --> 00:58:49.270
+<v Chris Chapman>I'm</v>
+
+cue-348
+00:59:14.020 --> 00:59:19.820
+<v David Farmer>and I'm going to miss this next week also.</v><00:59:16.620><v Chris Chapman>Or we can plan for that in two weeks from now that work better for you.</v>
+
+cue-349
+00:59:21.570 --> 00:59:23.070
+<v J.-S. Caux>Let me see...two weeks from now...</v>
+
+cue-350
+00:59:27.940 --> 00:59:33.950
+<v J.-S. Caux>Oh no that Tuesday doesn't work</v>
+
+cue-352
+00:59:41.880 --> 00:59:54.660
+<v Katie Chapman>Should we utilize the document that has been created to continue the conversation in the meantime? or just to gather thoughts for that next call whenever that will be able to happen?</v>
+
+cue-353
+00:59:56.030 --> 01:00:04.690
+<v J.-S. Caux>So on my side for a call, maybe the next sure opportunity would be nineteenth of June. I think I could make that.</v>
+
+cue-354
+01:00:07.240 --> 01:00:12.240
+<v J.-S. Caux>I think I'll be back by that time.</v><01:00:11.830><v Chris Chapman>okay</v>
+
+cue-355
+01:00:13.450 --> 01:00:22.960
+<v J.-S. Caux>So we can see. But otherwise indeed we could we could use the documents to do that. So in a sense it's easier just talking...</v>
+
+cue-356
+01:00:23.810 --> 01:00:25.550
+<v Katie Chapman>right</v>
+
+cue-357
+01:00:27.450 --> 01:00:29.410
+<v J.-S. Caux>...but maybe I could put some kind of</v>
+
+cue-358
+01:00:30.510 --> 01:00:31.890
+<v J.-S. Caux>bullet points set in there.</v>
+
+cue-359
+01:00:33.210 --> 01:00:34.290
+<v Chris Chapman>Yeah. Let's...</v>
+
+cue-360
+01:00:35.200 --> 01:00:40.430
+<v Chris Chapman>I think using the document is great, but let's also plan, if you're okay with the nineteenth of June,</v>
+
+cue-361
+01:00:41.520 --> 01:00:44.290
+<v Chris Chapman>that would work great for us too.</v>
+
+cue-362
+01:00:45.130 --> 01:00:49.500
+<v J.-S. Caux>Okay. Let me pre-book it and then I'll confirm in the meantime.</v><01:00:49.020><v Chris Chapman>great</v>
+
+cue-363
+01:00:51.020 --> 01:00:55.620
+<v Chris Chapman>I think there are a lot of things to think about with what you've talked about today and</v>
+
+cue-364
+01:00:57.040 --> 01:00:58.780
+<v J.-S. Caux>yeah</v><01:00:57.670><v Chris Chapman>with the Scholarly Commons.</v>
+
+cue-365
+01:00:59.720 --> 01:00:59.920
+<v Chris Chapman>We</v>
+
+cue-366
+01:01:00.760 --> 01:01:01.590
+<v Chris Chapman>can be working on questions too.</v>
+
+cue-367
+01:01:02.440 --> 01:01:07.090
+<v Chris Chapman>And anyone that is coming coming up with questions</v>
+
+cue-368
+01:01:07.770 --> 01:01:09.120
+<v Chris Chapman>also feel free to add</v>
+
+cue-369
+01:01:09.960 --> 01:01:11.550
+<v Chris Chapman>to the SciPost document</v>
+
+cue-370
+01:01:12.590 --> 01:01:16.530
+<v Chris Chapman>and we can address those during calls or off</v>
+
+cue-371
+01:01:17.680 --> 01:01:18.140
+<v Chris Chapman></v>
+
+cue-372
+01:01:19.180 --> 01:01:25.000
+<v J.-S. Caux>yeah</v><01:01:19.760><v Chris Chapman>in more asynchronously</v><01:01:22.560><v J.-S. Caux>yeah</v><01:01:22.930><v J.-S. Caux>sounds good, sounds good</v>
+
+cue-373
+01:01:25.870 --> 01:01:26.350
+<v Chris Chapman>okay</v>
+
+cue-374
+01:01:27.220 --> 01:01:29.860
+<v Chris Chapman>thank you so much J-S and</v>
+
+cue-375
+01:01:30.900 --> 01:01:38.220
+<v J.-S. Caux>alright thank you it's great to meet you all and to chat about all these things. And I think clearly we still have much to talk about so let's keep it up.</v>
+
+cue-376
+01:01:39.380 --> 01:01:39.720
+<v Chris Chapman>Great! Okay,</v>
+
+cue-377
+01:01:41.350 --> 01:01:42.540
+<v Chris Chapman>thank you and</v>
+
+cue-378
+01:01:43.380 --> 01:01:44.370
+<v Chris Chapman>we'll look forward to next time.</v>
+
+cue-379
+01:01:45.210 --> 01:01:46.570
+<v J.-S. Caux>Okay! Thank you very much.</v>
+
+cue-380
+01:01:47.410 --> 01:01:48.010
+<v Ivar Martin>Alright, thank you</v>
+
+cue-381
+01:01:50.190 --> 01:01:50.490
+<v Katie Chapman>thanks, bye!</v>
