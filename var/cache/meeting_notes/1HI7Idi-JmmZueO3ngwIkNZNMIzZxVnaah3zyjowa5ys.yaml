@@ -1,0 +1,18 @@
+---
+:alternate_link: https://docs.google.com/document/d/1HI7Idi-JmmZueO3ngwIkNZNMIzZxVnaah3zyjowa5ys/edit?usp=drivesdk
+:created_date: !ruby/object:DateTime 2018-06-05 00:32:28.026000000 Z
+:embed_link: https://docs.google.com/document/d/1HI7Idi-JmmZueO3ngwIkNZNMIzZxVnaah3zyjowa5ys/preview?ouid=102332274449851755462
+:etag: '"HPeBWzrNkWqp0rz2LrVPmfIGOTs/MTUyODE1ODc0ODA3OA"'
+:icon_link: https://drive-thirdparty.googleusercontent.com/16/type/application/vnd.google-apps.document
+:id: 1HI7Idi-JmmZueO3ngwIkNZNMIzZxVnaah3zyjowa5ys
+:kind: drive#file
+:last_modifying_user:
+  :display_name: Chris Chapman
+  :email_address: chris@pentandra.com
+  :kind: drive#user
+  :picture:
+    :url: https://lh3.googleusercontent.com/-a61xAsIhAOA/AAAAAAAAAAI/AAAAAAAAAIk/gg4RcQb5yTM/s64/photo.jpg
+:mime_type: application/vnd.google-apps.document
+:modified_date: !ruby/object:DateTime 2018-06-05 00:32:28.078000000 Z
+:title: 2018-06-05 Agenda
+:version: 4
