@@ -19,16 +19,16 @@ class MailInvite < ::Nanoc::CLI::CommandRunner
     if arguments.length != 1
       raise Nanoc::Int::Errors::GenericTrivial, "usage: #{command.usage}"
     end
-    mail_path = arguments[0]
 
+    mail_path = arguments[0]
     if !File.exist?(mail_path)
       raise(
         Nanoc::Int::Errors::GenericTrivial,
         "The invite was not sent because '#{mail_path}' was not found."
       )
     end
-    output_dir = @config[:output_dir]
 
+    output_dir = @config[:output_dir]
     if !File.fnmatch?("#{output_dir}/meetings/*/*.mail", mail_path)
       raise(
         Nanoc::Int::Errors::GenericTrivial,
@@ -36,9 +36,9 @@ class MailInvite < ::Nanoc::CLI::CommandRunner
         'the output directory or is not a mail file.'
       )
     end
+
     content_dir = @config[:data_sources][0][:content_dir]
     sent_mail_path = mail_path.sub(output_dir, content_dir)
-
     if File.exist?(sent_mail_path)
       raise Nanoc::Int::Errors::GenericTrivial, 'The invite was already sent.'
     end
