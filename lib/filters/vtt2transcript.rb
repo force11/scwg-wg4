@@ -59,7 +59,7 @@ class WebVTT2Transcript < Nanoc::Filter
             html.dl(id: "statement_#{idx}", :"data-video-time" => v_spans.first.start) {
               html.dt speaker
               html.dd(title: speaker) {
-                html << v_spans.map { |f| html_tag('span', f.text, f.classes) }.join(' ')
+                html << v_spans.map { |f| html_tag('span', f.text, class: f.classes) }.join(' ')
               }
             }
           end
@@ -80,16 +80,15 @@ class WebVTT2Transcript < Nanoc::Filter
   end
 
   # Assumes that none of the text is evil markup
-  def html_tag(tag_name, cue_text, cue_classes = '', lang = '')
-    text = cue_text.dup.gsub(/<c((?:\.[\w-]+)*)>(.*?)<\/c>/) { html_tag('span', $2, $1) }
-    text.gsub!(/<([ibu])((?:\.[\w-]+)*)>(.*?)<\/\1>/) { html_tag($1, $3, $2) }
-    text.gsub!(/<lang((?:\.[\w-]+)*) ([\w-]+)>(.*?)<\/lang>/) { html_tag('span', $3, $1, $2) }
+  def html_tag(tag_name, text, attributes = {})
+    t = text.dup.gsub(/<c((?:\.[\w-]+)*)>(.*?)<\/c>/) { html_tag('span', $2, class: $1) }
+    t.gsub!(/<([ibu])((?:\.[\w-]+)*)>(.*?)<\/\1>/) { html_tag($1, $3, class: $2) }
+    t.gsub!(/<lang((?:\.[\w-]+)*) ([\w-]+)>(.*?)<\/lang>/) { html_tag('span', $3, class: $1, lang: $2) }
 
-    attributes = {}
-    attributes[:class] = cue_classes.scan(/\.([\w-]+)/).join(' ') unless cue_classes.empty?
-    attributes[:lang] = lang unless lang.empty?
-    attributes = attributes.map { |key, value| %(#{key}="#{h(value)}") }.join(' ')
+    attributes.delete_if { |_, v| !v || v.empty? }
+    attributes[:class] &&= attributes[:class].scan(/[\.\s]([\w-]+)/).join(' ')
+    attributes = attributes.map { |k, v| %(#{k}="#{h(v)}") }.join(' ')
 
-    "<#{tag_name} #{attributes}>#{text}</#{tag_name}>"
+    "<#{tag_name} #{attributes}>#{t}</#{tag_name}>"
   end
 end
