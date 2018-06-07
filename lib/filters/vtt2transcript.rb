@@ -3,9 +3,12 @@
 class WebVTT2Transcript < Nanoc::Filter
   include Nanoc::Helpers::HTMLEscape
 
-  VoiceSpan = Struct.new(:speaker, :text, :start, :classes) unless defined? VoiceSpan
+  VoiceSpan = Struct.new(:speaker, :text, :start, :classes)
 
   V_SPAN_REGEXP = /(?:<(\d{2}:\d{2}:\d{2}\.\d{3})>)?<v((?:\.[\w-]+)*) (.+?)>(.*?)(?:<\/v>|\z)/
+  C_SPAN_REGEXP = /<c((?:\.[\w-]+)*)>(.*?)<\/c>/
+  IBU_SPAN_REGEXP = /<([ibu])((?:\.[\w-]+)*)>(.*?)<\/\1>/
+  LANG_SPAN_REGEXP = /<lang((?:\.[\w-]+)*) ([\w-]+)>(.*?)<\/lang>/
 
   identifier :vtt2transcript
 
@@ -81,9 +84,9 @@ class WebVTT2Transcript < Nanoc::Filter
 
   # Assumes that none of the text is evil markup
   def html_tag(tag_name, text, attributes = {})
-    t = text.dup.gsub(/<c((?:\.[\w-]+)*)>(.*?)<\/c>/) { html_tag('span', $2, class: $1) }
-    t.gsub!(/<([ibu])((?:\.[\w-]+)*)>(.*?)<\/\1>/) { html_tag($1, $3, class: $2) }
-    t.gsub!(/<lang((?:\.[\w-]+)*) ([\w-]+)>(.*?)<\/lang>/) { html_tag('span', $3, class: $1, lang: $2) }
+    t = text.dup.gsub(C_SPAN_REGEXP) { html_tag('span', $2, class: $1) }
+    t.gsub!(IBU_SPAN_REGEXP) { html_tag($1, $3, class: $2) }
+    t.gsub!(LANG_SPAN_REGEXP) { html_tag('span', $3, class: $1, lang: $2) }
 
     attributes.delete_if { |_, v| !v || v.empty? }
     attributes[:class] &&= attributes[:class].scan(/[\.\s]([\w-]+)/).join(' ')
