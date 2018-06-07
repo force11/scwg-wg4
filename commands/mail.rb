@@ -1,8 +1,7 @@
 # frozen_string_literal: true
 
-usage 'mail-invite [options] mail_path'
-aliases :mail_invite, :mi
-summary 'send a meeting invite via SMTP'
+usage 'mail [options] mail_path'
+summary 'send a meeting invite or index via SMTP'
 optional :u, :username, 'the username of the mail account used to send the mail'
 
 class MailInvite < ::Nanoc::CLI::CommandRunner
@@ -29,18 +28,21 @@ class MailInvite < ::Nanoc::CLI::CommandRunner
     end
 
     output_dir = @config[:output_dir]
-    if !File.fnmatch?("#{output_dir}/meetings/*/*.mail", mail_path)
+    if !File.fnmatch?("#{output_dir}/meetings/*/{index,agenda}.mail", mail_path)
       raise(
         Nanoc::Int::Errors::GenericTrivial,
         "The invite was not sent because '#{mail_path}' is not found under " \
-        'the output directory or is not a mail file.'
+        'the meetings output directory or is not a meeting index or invite mail.'
       )
     end
 
     content_dir = @config[:data_sources][0][:content_dir]
     sent_mail_path = mail_path.sub(output_dir, content_dir)
     if File.exist?(sent_mail_path)
-      raise Nanoc::Int::Errors::GenericTrivial, 'The invite was already sent.'
+      raise(
+        Nanoc::Int::Errors::GenericTrivial,
+        'The invite was not sent because it was already sent.'
+      )
     end
 
     # Setup notifications
