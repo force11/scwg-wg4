@@ -1,6 +1,6 @@
 # frozen_string_literal = true
 
-class WebVTT2Transcript < Nanoc::Filter
+class TranscriptFromVTT < Nanoc::Filter
   include Nanoc::Helpers::HTMLEscape
 
   VoiceSpan = Struct.new(:speaker, :text, :start, :classes)
@@ -10,30 +10,33 @@ class WebVTT2Transcript < Nanoc::Filter
   IBU_SPAN_REGEXP = /<([ibu])((?:\.[\w-]+)*)>(.*?)<\/\1>/
   LANG_SPAN_REGEXP = /<lang((?:\.[\w-]+)*) ([\w-]+)>(.*?)<\/lang>/
 
-  identifier :vtt2transcript
+  identifier :transcript_from_vtt
 
   requires 'nokogiri', 'webvtt', 'active_support/core_ext/string/indent'
 
   # Transform a WebVTT file into a transcript, as either Markdown or HTML.
   #
+  # This filter has not been designed to accept any generic WebVTT, but to take
+  # the output from the `generate-vtt` command at the root of this project.
+  #
   # @param [String] content The content to filter
   #
-  # @option params [Symbol] :output The type of output desired; can be
-  #   `:html` or `:markdown`.
+  # @option params [Symbol] :to The type of output desired; can be `:html` or
+  # `:markdown`.
   #
   # @return [String] The filtered content
   def run(content, params = {})
     webvtt = WebVTT.from_blob(content)
 
     # Filter
-    case params[:output]
+    case params[:to]
     when :markdown, :md
       vtt_to_markdown(webvtt)
     when :html
       vtt_to_html(webvtt)
     else
-      raise 'The vtt2transcript filter needs to know the type of output desired. ' \
-        'Pass a :output to the filter call (:html for HTML, ' \
+      raise 'The transcript_from_vtt filter needs to know the type of output ' \
+        'desired. Pass a :output to the filter call (:html for HTML, ' \
         ':markdown or :md for Markdown).'
     end
   end

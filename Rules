@@ -39,11 +39,11 @@ compile '/meetings/*/index', rep: :mail do
 end
 
 compile '/meetings/*/audio_*.vtt', rep: :html do
-  filter :vtt2transcript, output: :html
+  filter :transcript_from_vtt, to: :html
 end
 
 compile '/meetings/*/audio_*.vtt', rep: :text do
-  filter :vtt2transcript, output: :markdown
+  filter :transcript_from_vtt, to: :markdown
   filter :pandoc, from: :markdown, to: :plain
 end
 
