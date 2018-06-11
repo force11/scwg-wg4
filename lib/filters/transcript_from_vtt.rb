@@ -5,7 +5,7 @@ class TranscriptFromVTT < Nanoc::Filter
 
   VoiceSpan = Struct.new(:speaker, :text, :start, :classes)
 
-  V_SPAN_REGEXP = /(?:<(\d{2}:\d{2}:\d{2}\.\d{3})>)?<v((?:\.[\w-]+)*) (.+?)>(.*?)(?:<\/v>|\z)/
+  V_SPAN_REGEXP = /(?:<(\d+:\d{2}(?::\d{2})?\.\d{3})>)?<v((?:\.[\w-]+)*) (.+?)>(.*?)(?:<\/v>|\z)/
   C_SPAN_REGEXP = /<c((?:\.[\w-]+)*)>(.*?)<\/c>/
   IBU_SPAN_REGEXP = /<([ibu])((?:\.[\w-]+)*)>(.*?)<\/\1>/
   LANG_SPAN_REGEXP = /<lang((?:\.[\w-]+)*) ([\w-]+)>(.*?)<\/lang>/
