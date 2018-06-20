@@ -3,7 +3,7 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Chris Chapman -- lead developer -- @cd_chapman
 
 # THANKS
 
@@ -11,5 +11,5 @@
 
 # TECHNOLOGY COLOPHON
 
-    CSS3, HTML5
-    Apache Server Configs, jQuery, Modernizr, Normalize.css
+    HTML5, CSS3
+    jQuery, Modernizr, Normalize.css
