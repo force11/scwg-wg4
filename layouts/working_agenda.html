@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="Nanoc <%= Nanoc::VERSION %>" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="creator" content="FORCE11 SCWG4" />
+  <meta name="dcterms.date" content="<%= @item.fetch(:meeting_time).to_date %>" />
+  <meta name="keywords" content="FORCE11,Scholarly Commons,technologies,infrastructures" />
+  <title><%= @item.fetch(:title) %></title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      a.uri{font-family: monospace, monospace;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+      q { quotes: "“" "”" "‘" "’"; }
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header>
+<h1 class="title">SCWG4: Enabling Technologies and Infrastructures Weekly Meeting</h1>
+<p class="date"><%= @item.fetch(:meeting_time).to_date.to_s(:long) %></p>
+</header>
+<p>Participants:</p>
+<p>Text Chat: CommonsPatterns Slack <a href="https://commonspatterns.slack.com/messages/C6V6AAEUF/">#tech-meetings channel</a> (<a href="https://limitless-island-44565.herokuapp.com/">invite</a>) or in this doc.</p>
+<% previous_index = previous_index_for(@item) %>
+<% if previous_index && notes_for(previous_index) %>
+<p>Agenda and meeting notes from last call: <a href="<%= short notes_for(previous_index).fetch(:alternate_link) %>" class="uri"><%= short notes_for(previous_index).fetch(:alternate_link) %></a></p>
+<% end %>
+<p>Recording of this call:</p>
+<p>Transcript of this call:</p>
+<%= yield %>
+<hr>
+</body>
+</html>

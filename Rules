@@ -12,10 +12,12 @@ ignore '/meetings/*/*.json'
 ignore '/meetings/*/notes'
 
 compile '/meetings/*/agenda.md' do
-  layout '/working_agenda.md'
   filter :erb
-  filter :pandoc, from: :"markdown+autolink_bare_uris", to: :html5
-  layout '/default.html'
+  filter :pandoc, args: [
+    { from: :"markdown+autolink_bare_uris", to: :html5 },
+    { base_header_level: 2 }
+  ]
+  layout '/working_agenda.html'
   write ext: 'html'
 end
 
