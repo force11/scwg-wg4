@@ -3,7 +3,7 @@
 class TranscriptFromVTT < Nanoc::Filter
   include Nanoc::Helpers::HTMLEscape
 
-  VoiceSpan = Struct.new(:speaker, :text, :start, :classes)
+  VoiceSpan = Struct.new(:voice, :text, :start, :classes)
 
   V_SPAN_REGEXP = /(?:<(\d+:\d{2}(?::\d{2})?\.\d{3})>)?<v((?:\.[\w-]+)*) (.+?)>(.*?)(?:<\/v>|\z)/
   C_SPAN_REGEXP = /<c((?:\.[\w-]+)*)>(.*?)<\/c>/
@@ -46,10 +46,10 @@ class TranscriptFromVTT < Nanoc::Filter
   def vtt_to_markdown(webvtt)
     webvtt.cues
       .flat_map { |cue| voice_spans_from(cue) }
-      .chunk { |s| s.speaker }
-      .map do |speaker, v_spans|
+      .chunk { |s| s.voice }
+      .map do |voice, v_spans|
         statement = ::Nokogiri::HTML.fragment(v_spans.map(&:text).join(' ')).text
-        "#{speaker}\n:#{statement.indent(3)}\n\n"
+        "#{voice}\n:#{statement.indent(3)}\n\n"
       end.join
   end
 
@@ -60,12 +60,12 @@ class TranscriptFromVTT < Nanoc::Filter
       html.section(id: 'cues', class: 'transcript') {
         webvtt.cues
           .flat_map { |cue| voice_spans_from(cue) }
-          .chunk { |f| f.speaker }
-          .each_with_index do |(speaker, v_spans), v_idx|
+          .chunk { |f| f.voice }
+          .each_with_index do |(voice, v_spans), v_idx|
             html.dl(:"data-video-time" => v_spans.first.start) {
-              html.dt speaker
+              html.dt voice
               v_spans.slice_when { |_, j| j.classes['newthought'] }.each_with_index do |t_spans, t_idx|
-                html.dd(id: "statement_#{v_idx}_#{t_idx}", title: speaker) {
+                html.dd(id: "statement_#{v_idx}_#{t_idx}", title: voice) {
                   html << t_spans.map { |f| html_tag('span', f.text, class: f.classes) }.join(' ')
                 }
               end
@@ -81,9 +81,9 @@ class TranscriptFromVTT < Nanoc::Filter
     cue.text.scan(V_SPAN_REGEXP).map do |v_span|
       timestamp = v_span[0] ? WebVTT::Timestamp.new(v_span[0]) : cue.start
       classes = cue.identifier ? v_span[1] << cue.identifier.dup.prepend('.') : v_span[1]
-      speaker = v_span[2]
+      voice = v_span[2]
       text = v_span[3]
-      VoiceSpan.new(speaker, text, timestamp.to_f.round(2, half: :down), classes)
+      VoiceSpan.new(voice, text, timestamp.to_f.round(2, half: :down), classes)
     end
   end
 
