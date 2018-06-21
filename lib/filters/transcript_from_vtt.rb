@@ -64,9 +64,11 @@ class TranscriptFromVTT < Nanoc::Filter
           .each_with_index do |(speaker, v_spans), idx|
             html.dl(id: "statement_#{idx}", :"data-video-time" => v_spans.first.start) {
               html.dt speaker
-              html.dd(title: speaker) {
-                html << v_spans.map { |f| html_tag('span', f.text, class: f.classes) }.join(' ')
-              }
+              v_spans.slice_when { |_, j| j.classes['newthought'] }.each do |t_spans|
+                html.dd(title: speaker) {
+                  html << t_spans.map { |f| html_tag('span', f.text, class: f.classes) }.join(' ')
+                }
+              end
             }
           end
       }
