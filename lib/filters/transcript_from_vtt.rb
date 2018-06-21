@@ -61,11 +61,11 @@ class TranscriptFromVTT < Nanoc::Filter
         webvtt.cues
           .flat_map { |cue| voice_spans_from(cue) }
           .chunk { |f| f.speaker }
-          .each_with_index do |(speaker, v_spans), idx|
-            html.dl(id: "statement_#{idx}", :"data-video-time" => v_spans.first.start) {
+          .each_with_index do |(speaker, v_spans), v_idx|
+            html.dl(:"data-video-time" => v_spans.first.start) {
               html.dt speaker
-              v_spans.slice_when { |_, j| j.classes['newthought'] }.each do |t_spans|
-                html.dd(title: speaker) {
+              v_spans.slice_when { |_, j| j.classes['newthought'] }.each_with_index do |t_spans, t_idx|
+                html.dd(id: "statement_#{v_idx}_#{t_idx}", title: speaker) {
                   html << t_spans.map { |f| html_tag('span', f.text, class: f.classes) }.join(' ')
                 }
               end
