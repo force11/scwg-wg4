@@ -78,7 +78,7 @@ and prepare for a meeting:
 ### Transcription
 
 High-level overview of the sequential nanoc commands to generate a
-transcription:
+broad transcription of a call:
 
                     +-----+               +------+               +-----+
                +----| ogg +-----+   +-----| json +------+   +----| vtt +-----+
