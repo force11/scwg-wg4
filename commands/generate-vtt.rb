@@ -8,7 +8,7 @@ flag nil, :force, 'force creation of a caption file'
 
 class GenerateVTT < ::Nanoc::CLI::CommandRunner
 
-  Utterance = Struct.new(:word, :start_time, :end_time, :speaker) unless defined? Utterance
+  Utterance = Struct.new(:word, :start_time, :end_time, :speaker)
 
   class VTTCue
     attr_reader :identifier, :start_time, :end_time, :text
@@ -99,10 +99,18 @@ class GenerateVTT < ::Nanoc::CLI::CommandRunner
       Group 4 through a semi-automatic process. It now represents the
       authoritative transcript of this telecon, and should be edited for
       correction, clarification, and diplomacy. Other representations of the
-      meeting will be generated from this document.
+      meeting will be generated from this document. Except in the case of
+      elision or redaction of content, please keep time intervals and other cue
+      metadata intact.
 
       NOTE For further information about the WebVTT syntax and data model,
       visit: https://w3c.github.io/webvtt/
+
+      NOTE A few specific directions to consider:
+      - Use the `newthought` class on a voice span to split up one speaker's text into separate thoughts.
+      - Use the `unintelligible` class to mark something as unintelligible.
+      - Use lang spans to mark up words from languages other than English.
+      - Use the `question` class to mark up questions for the person being interviewed.
     EOS
 
     content = header + cues.map(&:to_webvtt).compact.join
