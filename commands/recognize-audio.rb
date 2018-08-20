@@ -59,10 +59,7 @@ class RecognizeAudio < ::Nanoc::CLI::CommandRunner
     }
     uri.query = URI.encode_www_form(params)
 
-    $stderr.print 'Reading bits of audio file into memory… '
-    $stderr.flush
     audio_data = File.binread(audio_file)
-    $stderr.puts 'done'
 
     req = Net::HTTP::Post.new uri
     req.basic_auth(ibm.username, ibm.password)
