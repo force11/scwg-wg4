@@ -26,7 +26,7 @@
 <p class="date"><%= @item.fetch(:meeting_time).to_date.to_s(:long) %></p>
 </header>
 <p>Participants:</p>
-<p>Text Chat: CommonsPatterns Slack <a href="https://commonspatterns.slack.com/messages/C6V6AAEUF/">#tech-meetings channel</a> (<a href="https://limitless-island-44565.herokuapp.com/">invite</a>) or in this doc.</p>
+<p>Connection information on the group's <a href="https://www.force11.org/group/wg4enabling-technologies-and-infrastructures/meetings">meetings page</a>.</p>
 <% previous_index = previous_index_for(@item) %>
 <% if previous_index && notes_for(previous_index) %>
 <p>Agenda and meeting notes from last call: <a href="<%= short notes_for(previous_index).fetch(:alternate_link) %>" class="uri"><%= short notes_for(previous_index).fetch(:alternate_link) %></a></p>
