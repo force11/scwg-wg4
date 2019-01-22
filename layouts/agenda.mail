@@ -25,13 +25,15 @@ As always, these calls are open. Anyone is welcome to join these weekly
 calls at any time. For those that are joining the call this week, here
 are the call details:
 
-Zoom: https://ucsd.zoom.us/j/489-033-2111, Meeting ID: 489-033-2111
 Date: <%= @item.fetch(:meeting_time).to_date.to_s(:long_ordinal_with_weekday) %>
 Time: <%= ['America/Los_Angeles', 'America/New_York', 'UTC', 'Berlin', 'Moscow']
           .map { |tz| time_in_zone(@item.fetch(:meeting_time), tz) }.join(', ') %>
       other time zones: <%= short link_to_other_timezones(@item) %>
-Voice: tel:+1-646-558-8656, Meeting ID: 489-033-2111
-       international numbers: https://goo.gl/6wqeoA
+PC, Mac, Linux, iOS or Android: https://ucsd.zoom.us/j/489-033-2111
+Voice: tel:+1-646-558-8656 or tel:+1-669-900-6833, Meeting ID: 489-033-2111
+       international numbers: https://zoom.us/u/eg46wlMxu
+VoIP: sip:4890332111@zoomcrc.com
+Skype for Business (Lync): https://ucsd.zoom.us/skype/4890332111
 Text Chat: CommonsPatterns Slack (#tech-meetings channel)
            https://commonspatterns.slack.com/messages/C6V6AAEUF/
            invite here: https://limitless-island-44565.herokuapp.com/
@@ -40,8 +42,7 @@ Duration: 60 minutes
 Headsets (+ mic) are recommended for the call unless, of course, you are
 calling in by phone. If this is your first time using Zoom, be sure to
 give ample time to download the Zoom client before the call (~200MB
-download depending on the platform). I can look into the possibility of
-an additional SIP option if that would work better for any.
+download depending on the platform).
 
 <% previous_index = previous_index_for(@item) %>
 <% if previous_index && notes_for(previous_index) %>
