@@ -29,11 +29,11 @@ Date: <%= @item.fetch(:meeting_time).to_date.to_s(:long_ordinal_with_weekday) %>
 Time: <%= ['America/Los_Angeles', 'America/New_York', 'UTC', 'Berlin', 'Moscow']
           .map { |tz| time_in_zone(@item.fetch(:meeting_time), tz) }.join(', ') %>
       other time zones: <%= short link_to_other_timezones(@item) %>
-PC, Mac, Linux, iOS or Android: https://ucsd.zoom.us/j/489-033-2111
-Voice: tel:+1-646-558-8656 or tel:+1-669-900-6833, Meeting ID: 489-033-2111
+PC, Mac, Linux, iOS or Android: https://ucsd.zoom.us/j/394-550-765
+Voice: tel:+1-646-558-8656 or tel:+1-669-900-6833, Meeting ID: 394-550-765
        international numbers: https://zoom.us/u/eg46wlMxu
-VoIP: sip:4890332111@zoomcrc.com
-Skype for Business (Lync): https://ucsd.zoom.us/skype/4890332111
+VoIP: sip:394550765@zoomcrc.com
+Skype for Business (Lync): https://ucsd.zoom.us/skype/394550765
 Text Chat: CommonsPatterns Slack (#tech-meetings channel)
            https://commonspatterns.slack.com/messages/C6V6AAEUF/
            invite here: https://limitless-island-44565.herokuapp.com/
